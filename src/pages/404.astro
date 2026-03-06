@@ -1,0 +1,56 @@
+---
+import Layout from "../layouts/Layout.astro";
+import FundingBanner from "../components/site/FundingBanner.astro";
+import SiteFooter from "../components/site/SiteFooter.astro";
+import CookieConsent from "../components/site/CookieConsent.astro";
+import SiteScripts from "../components/site/SiteScripts.astro";
+---
+
+<Layout title="404 - Page Not Found | DUAL.AI.TEACHer">
+  <CookieConsent />
+  <div class="min-h-screen flex flex-col">
+    <FundingBanner />
+
+    <header class="sticky top-0 z-50 bg-white border-b-4 border-accent shadow-sm">
+      <div class="mx-auto px-4 py-4">
+        <a href="/" class="inline-flex items-center no-underline hover:no-underline">
+          <img
+            src="/dual-ai-navbar.png"
+            alt="DUAL.AI.TEACHer"
+            class="h-10 sm:h-12 ml-6 w-auto"
+          />
+        </a>
+      </div>
+    </header>
+
+    <main
+      class="flex-1 flex items-center justify-center py-24 px-6 bg-brand text-white relative overflow-hidden"
+    >
+      <div class="absolute inset-0 opacity-[0.03] pointer-events-none bg-pattern-dark"></div>
+
+      <div class="max-w-3xl text-center relative z-10">
+        <p class="text-accent text-2xl md:text-3xl font-black uppercase tracking-[0.2em] mb-4">
+          Error 404
+        </p>
+        <h1 class="text-5xl md:text-7xl font-black leading-tight tracking-tight mb-8">
+          Page Not Found
+        </h1>
+        <p class="text-xl md:text-2xl text-slate-200 leading-relaxed mb-16 md:mb-20 font-medium">
+          The page you are looking for does not exist or may have moved.
+        </p>
+
+        <div class="flex items-center justify-center">
+          <a
+            href="/"
+            class="inline-flex items-center justify-center px-10 py-5 text-xl font-black uppercase tracking-wide text-slate-600 bg-accent hover:bg-accent-hover rounded-full transition-all shadow-[0_8px_20px_rgba(255,204,0,0.4)] hover:shadow-[0_12px_25px_rgba(255,204,0,0.6)] hover:-translate-y-1 no-underline"
+          >
+            Back to Home
+          </a>
+        </div>
+      </div>
+    </main>
+
+    <SiteFooter sectionLinkPrefix="/" />
+  </div>
+  <SiteScripts />
+</Layout>

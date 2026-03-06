@@ -1,0 +1,167 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand: #1a95b0;
+  --color-brand-light: #3366cc;
+  --color-brand-bg: #e6eeff;
+  --color-accent: #ffcc00;
+  --color-accent-hover: #ffdb4d;
+  --color-accent-text: #2f4a52;
+  --color-surface-1: #ffffff;
+  --color-surface-2: #f8fafc;
+  --color-surface-3: #e2e8f0;
+  --color-text-1: #0f172a;
+  --color-text-2: #475569;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    color-scheme: light only;
+  }
+}
+
+.bg-pattern-light {
+  background-image: radial-gradient(var(--color-brand) 1.5px, transparent 1.5px);
+  background-size: 40px 40px;
+}
+
+.bg-pattern-dark {
+  background-image: radial-gradient(#ffcc00 1.5px, transparent 1.5px);
+  background-size: 40px 40px;
+}
+
+.consent-banner {
+  position: fixed;
+  inset-inline: 0;
+  bottom: 0;
+  z-index: 1000;
+  display: none;
+  animation: consent-slide-up 0.35s cubic-bezier(0, 0, 0.15, 1);
+}
+
+.consent-banner[data-visible="true"] {
+  display: block;
+}
+
+@keyframes consent-slide-up {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.consent-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 1001;
+  display: none;
+}
+
+.consent-backdrop[data-visible="true"] {
+  display: block;
+  animation: consent-fade-in 0.2s cubic-bezier(0, 0, 0.2, 1);
+}
+
+@keyframes consent-fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.consent-modal {
+  position: fixed;
+  z-index: 1002;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: min(520px, calc(100% - 2rem));
+  max-height: 90vh;
+  overflow-y: auto;
+  display: none;
+}
+
+.consent-modal[data-visible="true"] {
+  display: block;
+  animation: consent-scale-in 0.25s cubic-bezier(0, 0, 0.15, 1);
+}
+
+@keyframes consent-scale-in {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.95);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+.toggle {
+  position: relative;
+  flex-shrink: 0;
+  width: 48px;
+  height: 26px;
+  margin-top: 2px;
+}
+
+.toggle input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+  position: absolute;
+}
+
+.toggle-track {
+  position: absolute;
+  inset: 0;
+  background: #9ca3af;
+  border-radius: 9999px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.toggle-track::after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.toggle input:checked + .toggle-track {
+  background: var(--color-brand);
+}
+
+.toggle input:checked + .toggle-track::after {
+  transform: translateX(22px);
+}
+
+.toggle input:focus-visible + .toggle-track {
+  outline: 2px solid var(--color-brand);
+  outline-offset: 2px;
+}
+
+.toggle input:disabled + .toggle-track {
+  background: var(--color-brand-light);
+  cursor: default;
+}
+
+.toggle input:disabled + .toggle-track::after {
+  transform: translateX(22px);
+}

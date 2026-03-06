@@ -1,0 +1,147 @@
+<div
+  class="consent-banner bg-white border-t-4 border-brand shadow-[0_-4px_24px_rgba(0,0,0,0.15)] px-4 py-6"
+  id="consentBanner"
+  role="alert"
+  aria-live="polite"
+>
+  <div class="max-w-7xl mx-auto flex items-center gap-6 flex-wrap">
+    <div class="flex-1 min-w-[300px]">
+      <h3
+        class="text-base font-extrabold mb-1 flex items-center gap-2 text-brand"
+        data-i18n="cookies.title"
+      >
+        We value your privacy
+      </h3>
+      <p class="text-sm font-medium text-text-2 leading-7 m-0">
+        <span data-i18n="cookies.bannerBefore">
+          We use cookies and Microsoft Clarity to understand how our site is used
+          and to improve your experience. You can accept all cookies, reject
+          non-essential ones, or
+        </span>
+        <a
+          href="#"
+          id="openPrefsLink"
+          class="font-bold text-brand hover:text-accent transition-colors underline"
+          data-i18n="cookies.customize"
+          >customize your preferences</a
+        >.
+      </p>
+    </div>
+    <div class="flex gap-3 flex-wrap items-center">
+      <button
+        class="px-6 py-3 rounded-full text-sm font-bold bg-accent text-accent-text shadow-lg hover:-translate-y-1 hover:bg-accent-hover transition-all cursor-pointer"
+        id="acceptAllBtn"
+        type="button"
+        data-i18n="cookies.acceptAll">Accept All</button
+      >
+      <button
+        class="px-6 py-3 rounded-full text-sm font-bold bg-white text-brand border-2 border-brand/20 shadow-sm hover:-translate-y-1 hover:border-brand transition-all cursor-pointer"
+        id="rejectAllBtn"
+        type="button"
+        data-i18n="cookies.rejectAll">Reject All</button
+      >
+    </div>
+  </div>
+</div>
+
+<div
+  class="consent-backdrop bg-brand/80 backdrop-blur-md"
+  id="consentBackdrop"
+  data-visible="false"
+  aria-hidden="true"
+>
+</div>
+<div
+  class="consent-modal bg-white rounded-2xl shadow-2xl overflow-hidden border-2 border-accent"
+  id="consentModal"
+  data-visible="false"
+  role="dialog"
+  aria-modal="true"
+  aria-labelledby="prefsTitle"
+>
+  <div class="bg-brand px-6 py-6 text-white">
+    <h2
+      id="prefsTitle"
+      class="text-2xl font-black flex items-center gap-2 m-0 text-accent"
+      data-i18n="cookies.preferencesTitle"
+    >
+      Cookie Preferences
+    </h2>
+    <p class="text-sm text-blue-100 mt-2 mb-0 leading-relaxed font-medium" data-i18n="cookies.preferencesBody">
+      Choose which categories of cookies you'd like to allow. Essential cookies
+      are always active as they are required for the site to function.
+    </p>
+  </div>
+  <div class="px-6 py-6 flex flex-col gap-6">
+    <div
+      class="flex items-start justify-between gap-4 pb-6 border-b border-surface-3"
+    >
+      <div class="flex-1">
+        <h4 class="text-base font-bold mb-1 text-brand" data-i18n-html="cookies.essentialTitle">
+          Essential Cookies <span
+            class="inline-block text-xs font-black bg-accent text-brand px-2 py-0.5 rounded-full ml-2 align-middle uppercase"
+            >Always active</span>
+        </h4>
+        <p class="text-sm font-medium text-text-2 leading-relaxed m-0" data-i18n="cookies.essentialBody">
+          Required for basic site functionality such as navigation and security.
+          These cannot be disabled.
+        </p>
+      </div>
+    </div>
+    <div
+      class="flex items-start justify-between gap-4 pb-6 border-b border-surface-3"
+    >
+      <div class="flex-1">
+        <h4 class="text-base font-bold mb-1 text-brand" data-i18n="cookies.analyticsTitle">
+          Analytics Cookies
+        </h4>
+        <p class="text-sm font-medium text-text-2 leading-relaxed m-0" data-i18n="cookies.analyticsBody">
+          Help us understand how visitors interact with the website by
+          collecting anonymous usage data via Microsoft Clarity.
+        </p>
+      </div>
+      <label class="toggle">
+        <input type="checkbox" id="analyticsToggle" />
+        <span class="toggle-track"></span>
+      </label>
+    </div>
+    <div class="flex items-start justify-between gap-4">
+      <div class="flex-1">
+        <h4 class="text-base font-bold mb-1 text-brand" data-i18n="cookies.adsTitle">
+          Advertising Cookies
+        </h4>
+        <p class="text-sm font-medium text-text-2 leading-relaxed m-0" data-i18n="cookies.adsBody">
+          Used to deliver relevant content and measure the effectiveness of
+          campaigns. We do not currently run ads, but this setting controls
+          ad-related data storage.
+        </p>
+      </div>
+      <label class="toggle">
+        <input type="checkbox" id="adToggle" />
+        <span class="toggle-track"></span>
+      </label>
+    </div>
+  </div>
+  <div
+    class="bg-surface-2 px-6 py-5 border-t border-surface-3 flex gap-3 justify-end flex-wrap"
+  >
+    <button
+      class="px-5 py-2.5 rounded-full text-sm font-bold bg-white text-text-2 border-2 border-surface-3 hover:bg-surface-3 hover:text-text-1 transition-colors cursor-pointer"
+      id="cancelPrefsBtn"
+      type="button"
+      data-i18n="common.cancel">Cancel</button
+    >
+    <button
+      class="px-5 py-2.5 rounded-full text-sm font-bold bg-white text-red-600 border-2 border-red-200 hover:bg-red-50 hover:border-red-600 transition-colors cursor-pointer"
+      id="rejectAllPrefsBtn"
+      type="button"
+      data-i18n="cookies.rejectAll">Reject All</button
+    >
+    <button
+      class="px-5 py-2.5 rounded-full text-sm font-bold bg-brand text-accent shadow-md hover:bg-brand/80 hover:shadow-lg transition-transform cursor-pointer"
+      id="savePrefsBtn"
+      type="button"
+      data-i18n="cookies.save">Save Preferences</button
+    >
+  </div>
+</div>

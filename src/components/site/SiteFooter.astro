@@ -1,0 +1,96 @@
+---
+interface Props {
+  sectionLinkPrefix?: string;
+}
+
+const { sectionLinkPrefix = "" } = Astro.props;
+const currentYear = new Date().getFullYear();
+---
+
+<footer
+  class="bg-white text-slate-600 py-16 px-6 border-t-8 border-brand"
+>
+  <div
+    class="max-w-4xl mx-auto flex flex-col items-center gap-8 text-center"
+  >
+    <div class="w-full flex flex-col items-center gap-3">
+      <p
+        class="text-lg sm:text-2xl font-semibold text-slate-700 leading-relaxed m-0 max-w-3xl"
+        data-i18n="footer.summary"
+      >
+        AI-Powered Teaching and AI Education for Future-Proof Education
+      </p>
+      <p class="text-sm sm:text-base text-slate-600 leading-relaxed m-0 flex flex-wrap items-center justify-center gap-x-3 gap-y-1">
+        <span data-i18n="footer.call">ERASMUS-EDU-2025-PEX-TEACH-ACA</span>
+        <span aria-hidden="true" class="text-slate-300">|</span>
+        <span data-i18n="footer.projectNumber">101249519</span>
+        <span aria-hidden="true" class="text-slate-300">|</span>
+        <a
+          href="https://creativecommons.org/licenses/by-nc-sa/4.0/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="font-semibold text-brand hover:text-accent transition-colors"
+          data-i18n="footer.licenseName"
+        >
+          CC BY-NC-SA 4.0
+        </a>
+      </p>
+      <p class="text-sm text-slate-500 leading-relaxed m-0">
+        &copy; {currentYear} DUAL.AI.TEACHer
+      </p>
+    </div>
+    <ul class="flex gap-8 list-none p-0 m-0 flex-wrap justify-center">
+      <li>
+        <a
+          href={`${sectionLinkPrefix}#about`}
+          class="text-slate-600 font-bold hover:text-accent no-underline transition-colors uppercase tracking-wide"
+          data-i18n="nav.what">What</a>
+      </li>
+      <li>
+        <a
+          href={`${sectionLinkPrefix}#why`}
+          class="text-slate-600 font-bold hover:text-accent no-underline transition-colors uppercase tracking-wide"
+          data-i18n="nav.why">Why</a>
+      </li>
+      <li>
+        <a
+          href={`${sectionLinkPrefix}#how`}
+          class="text-slate-600 font-bold hover:text-accent no-underline transition-colors uppercase tracking-wide"
+          data-i18n="nav.how">How</a>
+      </li>
+      <li>
+        <a
+          href={`${sectionLinkPrefix}#partners`}
+          class="text-slate-600 font-bold hover:text-accent no-underline transition-colors uppercase tracking-wide"
+          data-i18n="nav.who">Who</a>
+      </li>
+      <li>
+        <a
+          class="text-slate-600 font-bold hover:text-accent cursor-pointer no-underline transition-colors uppercase tracking-wide"
+          onclick="openCookieSettings()"
+          role="button"
+          tabindex="0"
+          data-i18n="footer.cookieSettings">Cookie Settings</a>
+      </li>
+    </ul>
+    <div
+      class="flex items-center justify-center gap-3 text-sm opacity-80 mt-6 max-w-4xl border-t border-slate-300/50 pt-8"
+    >
+      <div class="bg-white rounded-md p-1.5 shrink-0">
+        <img
+          src="/cofunded.png"
+          alt="Co-funded by the European Union"
+          class="h-10 w-auto"
+          loading="lazy"
+          decoding="async"
+        />
+      </div>
+      <p class="text-left leading-relaxed" data-i18n-html="footer.disclaimer">
+        Funded by the European Union. Views and opinions expressed are however those
+        of the author(s) only and do not necessarily reflect those of the European
+        Union or the European Education and Culture Executive Agency (EACEA). Neither
+        the European Union nor EACEA can be held responsible for them.
+      </p>
+    </div>
+  </div>
+</footer>

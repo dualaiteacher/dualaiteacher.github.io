@@ -1,0 +1,416 @@
+---
+import { siteTranslations } from "../../i18n/siteTranslations";
+---
+
+<script is:inline define:vars={{ translations: siteTranslations }}>
+  (function () {
+    "use strict";
+
+    var LANG_STORAGE_KEY = "site_lang";
+    var DEFAULT_LANG = "en";
+    var SUPPORTED_LANGS = ["en", "sl"];
+    function getNested(obj, path) {
+      return path.split(".").reduce(function (acc, part) {
+        if (acc && Object.prototype.hasOwnProperty.call(acc, part)) {
+          return acc[part];
+        }
+        return undefined;
+      }, obj);
+    }
+
+    function resolveLang(lang) {
+      return SUPPORTED_LANGS.indexOf(lang) >= 0 ? lang : DEFAULT_LANG;
+    }
+
+    function getText(lang, key) {
+      var activeLang = resolveLang(lang);
+      var value = getNested(translations[activeLang], key);
+      if (value === undefined) {
+        value = getNested(translations[DEFAULT_LANG], key);
+      }
+      return value;
+    }
+
+    function applyLanguage(lang) {
+      var activeLang = resolveLang(lang);
+      document.documentElement.setAttribute("lang", activeLang);
+      localStorage.setItem(LANG_STORAGE_KEY, activeLang);
+
+      var title = getText(activeLang, "meta.title");
+      if (title) {
+        document.title = title;
+      }
+
+      document.querySelectorAll("[data-i18n]").forEach(function (el) {
+        var key = el.getAttribute("data-i18n");
+        var value = getText(activeLang, key);
+        if (typeof value === "string") {
+          el.textContent = value;
+        }
+      });
+
+      document.querySelectorAll("[data-i18n-html]").forEach(function (el) {
+        var key = el.getAttribute("data-i18n-html");
+        var value = getText(activeLang, key);
+        if (typeof value === "string") {
+          el.innerHTML = value;
+        }
+      });
+
+      document.querySelectorAll("[data-i18n-attr]").forEach(function (el) {
+        var defs = (el.getAttribute("data-i18n-attr") || "").split(";");
+        defs.forEach(function (def) {
+          var trimmed = def.trim();
+          if (!trimmed) return;
+          var parts = trimmed.split(":");
+          var attr = parts[0] ? parts[0].trim() : "";
+          var key = parts[1] ? parts[1].trim() : "";
+          if (!attr || !key) return;
+          var value = getText(activeLang, key);
+          if (typeof value === "string") {
+            el.setAttribute(attr, value);
+          }
+        });
+      });
+
+      var desktopPicker = document.getElementById("languagePickerDesktop");
+      var mobilePicker = document.getElementById("languagePickerMobile");
+      if (desktopPicker) desktopPicker.value = activeLang;
+      if (mobilePicker) mobilePicker.value = activeLang;
+    }
+
+    function getInitialLang() {
+      var saved = localStorage.getItem(LANG_STORAGE_KEY);
+      if (saved && SUPPORTED_LANGS.indexOf(saved) >= 0) {
+        return saved;
+      }
+
+      var browserLang = (navigator.language || "").toLowerCase();
+      if (browserLang.indexOf("sl") === 0) {
+        return "sl";
+      }
+
+      return DEFAULT_LANG;
+    }
+
+    function initI18n() {
+      var selectedLang = getInitialLang();
+      applyLanguage(selectedLang);
+
+      ["languagePickerDesktop", "languagePickerMobile"].forEach(function (id) {
+        var picker = document.getElementById(id);
+        if (!picker) return;
+        picker.addEventListener("change", function (e) {
+          applyLanguage(e.target.value);
+        });
+      });
+    }
+
+    window.getSiteI18nText = function (key) {
+      return getText(document.documentElement.lang || DEFAULT_LANG, key) || key;
+    };
+
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", initI18n);
+    } else {
+      initI18n();
+    }
+  })();
+
+  (function () {
+    var menuBtn = document.getElementById("mobileMenuBtn");
+    var menu = document.getElementById("mobileMenu");
+    if (menuBtn && menu) {
+      menuBtn.addEventListener("click", function () {
+        menu.classList.toggle("hidden");
+      });
+
+      menu.querySelectorAll("a").forEach(function (link) {
+        link.addEventListener("click", function () {
+          menu.classList.add("hidden");
+        });
+      });
+    }
+  })();
+
+  document.addEventListener("DOMContentLoaded", function () {
+    var counters = document.querySelectorAll(".counter");
+
+    var numberObserver = new IntersectionObserver(
+      function (entries, observer) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            var target = Number(entry.target.getAttribute("data-target"));
+            var count = 0;
+            var duration = 2000;
+            var frameRate = 30;
+            var increment = target / (duration / frameRate);
+
+            var updateCount = function () {
+              if (count < target) {
+                count += increment;
+                entry.target.innerText = Math.ceil(count).toLocaleString();
+                setTimeout(updateCount, frameRate);
+              } else {
+                entry.target.innerText = target.toLocaleString();
+              }
+            };
+
+            updateCount();
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.5 },
+    );
+
+    counters.forEach(function (counter) {
+      numberObserver.observe(counter);
+    });
+  });
+
+  (function () {
+    "use strict";
+
+    var STORAGE_KEY = "clarity_consent_v2";
+    var CONSENT_EXPIRY_DAYS = 365;
+
+    var banner = document.getElementById("consentBanner");
+    var backdrop = document.getElementById("consentBackdrop");
+    var modal = document.getElementById("consentModal");
+    var acceptAllBtn = document.getElementById("acceptAllBtn");
+    var rejectAllBtn = document.getElementById("rejectAllBtn");
+    var openPrefsLink = document.getElementById("openPrefsLink");
+    var analyticsToggle = document.getElementById("analyticsToggle");
+    var adToggle = document.getElementById("adToggle");
+    var cancelPrefsBtn = document.getElementById("cancelPrefsBtn");
+    var rejectAllPrefs = document.getElementById("rejectAllPrefsBtn");
+    var savePrefsBtn = document.getElementById("savePrefsBtn");
+
+    if (
+      !banner ||
+      !backdrop ||
+      !modal ||
+      !acceptAllBtn ||
+      !rejectAllBtn ||
+      !openPrefsLink ||
+      !analyticsToggle ||
+      !adToggle ||
+      !cancelPrefsBtn ||
+      !rejectAllPrefs ||
+      !savePrefsBtn
+    ) {
+      return;
+    }
+
+    function safeParse(json) {
+      try {
+        return JSON.parse(json);
+      } catch (e) {
+        return null;
+      }
+    }
+
+    function deleteCookie(name) {
+      var encoded = encodeURIComponent(name);
+      document.cookie = encoded + "=; Max-Age=0; Path=/; SameSite=Lax";
+      var parts = location.hostname.split(".");
+      if (parts.length >= 2) {
+        var baseDomain = parts.slice(-2).join(".");
+        document.cookie =
+          encoded +
+          "=; Max-Age=0; Path=/; Domain=." +
+          baseDomain +
+          "; SameSite=Lax";
+      }
+    }
+
+    function eraseClarityCookies() {
+      deleteCookie("_clck");
+      deleteCookie("_clsk");
+    }
+
+    function saveConsent(consent) {
+      localStorage.setItem(
+        STORAGE_KEY,
+        JSON.stringify({
+          ad_Storage: consent.ad_Storage,
+          analytics_Storage: consent.analytics_Storage,
+          timestamp: Date.now(),
+        }),
+      );
+    }
+
+    function loadConsent() {
+      var raw = localStorage.getItem(STORAGE_KEY);
+      if (!raw) return null;
+      var parsed = safeParse(raw);
+      if (!parsed || !parsed.ad_Storage || !parsed.analytics_Storage)
+        return null;
+      if (parsed.timestamp) {
+        var age = Date.now() - parsed.timestamp;
+        if (age > CONSENT_EXPIRY_DAYS * 24 * 60 * 60 * 1000) {
+          localStorage.removeItem(STORAGE_KEY);
+          return null;
+        }
+      }
+      return {
+        ad_Storage: parsed.ad_Storage,
+        analytics_Storage: parsed.analytics_Storage,
+      };
+    }
+
+    function applyClarityConsent(consent) {
+      if (!consent) return;
+      if (typeof window.clarity === "function") {
+        window.clarity("consentv2", {
+          ad_Storage: consent.ad_Storage,
+          analytics_Storage: consent.analytics_Storage,
+        });
+      }
+      if (
+        consent.ad_Storage === "denied" &&
+        consent.analytics_Storage === "denied"
+      ) {
+        eraseClarityCookies();
+      }
+    }
+
+    function showBanner() {
+      banner.setAttribute("data-visible", "true");
+    }
+
+    function hideBanner() {
+      banner.removeAttribute("data-visible");
+    }
+
+    function openModal() {
+      backdrop.setAttribute("data-visible", "true");
+      backdrop.setAttribute("aria-hidden", "false");
+      modal.setAttribute("data-visible", "true");
+      savePrefsBtn.focus();
+    }
+
+    function closeModal() {
+      modal.removeAttribute("data-visible");
+      backdrop.removeAttribute("data-visible");
+      backdrop.setAttribute("aria-hidden", "true");
+    }
+
+    function syncToggles(consent) {
+      analyticsToggle.checked = consent.analytics_Storage === "granted";
+      adToggle.checked = consent.ad_Storage === "granted";
+    }
+
+    function applyAndClose(consent) {
+      saveConsent(consent);
+      applyClarityConsent(consent);
+      closeModal();
+      hideBanner();
+    }
+
+    var existing = loadConsent();
+    if (existing) {
+      applyClarityConsent(existing);
+    } else {
+      showBanner();
+    }
+
+    acceptAllBtn.addEventListener("click", function () {
+      applyAndClose({ ad_Storage: "granted", analytics_Storage: "granted" });
+    });
+
+    rejectAllBtn.addEventListener("click", function () {
+      applyAndClose({ ad_Storage: "denied", analytics_Storage: "denied" });
+    });
+
+    openPrefsLink.addEventListener("click", function (e) {
+      e.preventDefault();
+      var current = loadConsent() || {
+        ad_Storage: "denied",
+        analytics_Storage: "denied",
+      };
+      syncToggles(current);
+      openModal();
+    });
+
+    backdrop.addEventListener("click", closeModal);
+    cancelPrefsBtn.addEventListener("click", closeModal);
+
+    rejectAllPrefs.addEventListener("click", function () {
+      applyAndClose({ ad_Storage: "denied", analytics_Storage: "denied" });
+    });
+
+    savePrefsBtn.addEventListener("click", function () {
+      applyAndClose({
+        analytics_Storage: analyticsToggle.checked ? "granted" : "denied",
+        ad_Storage: adToggle.checked ? "granted" : "denied",
+      });
+    });
+
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape" && modal.getAttribute("data-visible") === "true") {
+        closeModal();
+      }
+    });
+
+    window.openCookieSettings = function () {
+      var current = loadConsent() || {
+        ad_Storage: "denied",
+        analytics_Storage: "denied",
+      };
+      syncToggles(current);
+      showBanner();
+      openModal();
+    };
+  })();
+
+  window.openSubscribeModal = function () {
+    var subscribeBackdrop = document.getElementById("subscribeBackdrop");
+    var subscribeModal = document.getElementById("subscribeModal");
+    var emailInput = document.getElementById("emailInput");
+
+    if (subscribeBackdrop)
+      subscribeBackdrop.setAttribute("data-visible", "true");
+    if (subscribeModal) subscribeModal.setAttribute("data-visible", "true");
+    if (emailInput) {
+      setTimeout(function () {
+        emailInput.focus();
+      }, 100);
+    }
+  };
+
+  window.closeSubscribeModal = function () {
+    var subscribeBackdrop = document.getElementById("subscribeBackdrop");
+    var subscribeModal = document.getElementById("subscribeModal");
+    if (subscribeBackdrop) subscribeBackdrop.removeAttribute("data-visible");
+    if (subscribeModal) subscribeModal.removeAttribute("data-visible");
+  };
+
+  var subscribeBackdrop = document.getElementById("subscribeBackdrop");
+  if (subscribeBackdrop) {
+    subscribeBackdrop.addEventListener("click", window.closeSubscribeModal);
+  }
+
+  document.addEventListener("keydown", function (e) {
+    var subscribeModal = document.getElementById("subscribeModal");
+    if (
+      e.key === "Escape" &&
+      subscribeModal &&
+      subscribeModal.getAttribute("data-visible") === "true"
+    ) {
+      window.closeSubscribeModal();
+    }
+  });
+
+  var subscribeForm = document.getElementById("subscribeForm");
+  if (subscribeForm) {
+    subscribeForm.addEventListener("submit", function (e) {
+      e.preventDefault();
+      alert(window.getSiteI18nText("alerts.followThanks"));
+      window.closeSubscribeModal();
+      subscribeForm.reset();
+    });
+  }
+</script>
+
