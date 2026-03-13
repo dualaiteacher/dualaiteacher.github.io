@@ -1,120 +1,6 @@
----
-import { siteTranslations } from "../../i18n/siteTranslations";
----
-
-<script is:inline define:vars={{ translations: siteTranslations }}>
+<script is:inline>
   (function () {
     "use strict";
-
-    var LANG_STORAGE_KEY = "site_lang";
-    var DEFAULT_LANG = "en";
-    var SUPPORTED_LANGS = ["en", "sl"];
-    function getNested(obj, path) {
-      return path.split(".").reduce(function (acc, part) {
-        if (acc && Object.prototype.hasOwnProperty.call(acc, part)) {
-          return acc[part];
-        }
-        return undefined;
-      }, obj);
-    }
-
-    function resolveLang(lang) {
-      return SUPPORTED_LANGS.indexOf(lang) >= 0 ? lang : DEFAULT_LANG;
-    }
-
-    function getText(lang, key) {
-      var activeLang = resolveLang(lang);
-      var value = getNested(translations[activeLang], key);
-      if (value === undefined) {
-        value = getNested(translations[DEFAULT_LANG], key);
-      }
-      return value;
-    }
-
-    function applyLanguage(lang) {
-      var activeLang = resolveLang(lang);
-      document.documentElement.setAttribute("lang", activeLang);
-      localStorage.setItem(LANG_STORAGE_KEY, activeLang);
-
-      var title = getText(activeLang, "meta.title");
-      if (title) {
-        document.title = title;
-      }
-
-      document.querySelectorAll("[data-i18n]").forEach(function (el) {
-        var key = el.getAttribute("data-i18n");
-        var value = getText(activeLang, key);
-        if (typeof value === "string") {
-          el.textContent = value;
-        }
-      });
-
-      document.querySelectorAll("[data-i18n-html]").forEach(function (el) {
-        var key = el.getAttribute("data-i18n-html");
-        var value = getText(activeLang, key);
-        if (typeof value === "string") {
-          el.innerHTML = value;
-        }
-      });
-
-      document.querySelectorAll("[data-i18n-attr]").forEach(function (el) {
-        var defs = (el.getAttribute("data-i18n-attr") || "").split(";");
-        defs.forEach(function (def) {
-          var trimmed = def.trim();
-          if (!trimmed) return;
-          var parts = trimmed.split(":");
-          var attr = parts[0] ? parts[0].trim() : "";
-          var key = parts[1] ? parts[1].trim() : "";
-          if (!attr || !key) return;
-          var value = getText(activeLang, key);
-          if (typeof value === "string") {
-            el.setAttribute(attr, value);
-          }
-        });
-      });
-
-      var desktopPicker = document.getElementById("languagePickerDesktop");
-      var mobilePicker = document.getElementById("languagePickerMobile");
-      if (desktopPicker) desktopPicker.value = activeLang;
-      if (mobilePicker) mobilePicker.value = activeLang;
-    }
-
-    function getInitialLang() {
-      var saved = localStorage.getItem(LANG_STORAGE_KEY);
-      if (saved && SUPPORTED_LANGS.indexOf(saved) >= 0) {
-        return saved;
-      }
-
-      var browserLang = (navigator.language || "").toLowerCase();
-      if (browserLang.indexOf("sl") === 0) {
-        return "sl";
-      }
-
-      return DEFAULT_LANG;
-    }
-
-    function initI18n() {
-      var selectedLang = getInitialLang();
-      applyLanguage(selectedLang);
-
-      ["languagePickerDesktop", "languagePickerMobile"].forEach(function (id) {
-        var picker = document.getElementById(id);
-        if (!picker) return;
-        picker.addEventListener("change", function (e) {
-          applyLanguage(e.target.value);
-        });
-      });
-    }
-
-    window.getSiteI18nText = function (key) {
-      return getText(document.documentElement.lang || DEFAULT_LANG, key) || key;
-    };
-
-    if (document.readyState === "loading") {
-      document.addEventListener("DOMContentLoaded", initI18n);
-    } else {
-      initI18n();
-    }
   })();
 
   (function () {
@@ -365,7 +251,7 @@ import { siteTranslations } from "../../i18n/siteTranslations";
     };
   })();
 
-  window.openSubscribeModal = function () {
+  /*window.openSubscribeModal = function () {
     var subscribeBackdrop = document.getElementById("subscribeBackdrop");
     var subscribeModal = document.getElementById("subscribeModal");
     var emailInput = document.getElementById("emailInput");
@@ -407,10 +293,10 @@ import { siteTranslations } from "../../i18n/siteTranslations";
   if (subscribeForm) {
     subscribeForm.addEventListener("submit", function (e) {
       e.preventDefault();
-      alert(window.getSiteI18nText("alerts.followThanks"));
+      alert("Thanks for following the project.");
       window.closeSubscribeModal();
       subscribeForm.reset();
     });
-  }
+  }*/
 </script>
 

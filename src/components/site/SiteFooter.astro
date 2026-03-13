@@ -16,21 +16,21 @@ const currentYear = new Date().getFullYear();
     <div class="w-full flex flex-col items-center gap-3">
       <p
         class="text-lg sm:text-2xl font-semibold text-slate-700 leading-relaxed m-0 max-w-3xl"
-        data-i18n="footer.summary"
+       
       >
         AI-Powered Teaching and AI Education for Future-Proof Education
       </p>
       <p class="text-sm sm:text-base text-slate-600 leading-relaxed m-0 flex flex-wrap items-center justify-center gap-x-3 gap-y-1">
-        <span data-i18n="footer.call">ERASMUS-EDU-2025-PEX-TEACH-ACA</span>
+        <span>ERASMUS-EDU-2025-PEX-TEACH-ACA</span>
         <span aria-hidden="true" class="text-slate-300">|</span>
-        <span data-i18n="footer.projectNumber">101249519</span>
+        <span>101249519</span>
         <span aria-hidden="true" class="text-slate-300">|</span>
         <a
           href="https://creativecommons.org/licenses/by-nc-sa/4.0/"
           target="_blank"
           rel="noopener noreferrer"
           class="font-semibold text-brand hover:text-accent transition-colors"
-          data-i18n="footer.licenseName"
+         
         >
           CC BY-NC-SA 4.0
         </a>
@@ -38,31 +38,32 @@ const currentYear = new Date().getFullYear();
       <p class="text-sm text-slate-500 leading-relaxed m-0">
         &copy; {currentYear} DUAL.AI.TEACHer
       </p>
+      
     </div>
     <ul class="flex gap-8 list-none p-0 m-0 flex-wrap justify-center">
       <li>
         <a
           href={`${sectionLinkPrefix}#about`}
           class="text-slate-600 font-bold hover:text-accent no-underline transition-colors uppercase tracking-wide"
-          data-i18n="nav.what">What</a>
+         >What</a>
       </li>
       <li>
         <a
           href={`${sectionLinkPrefix}#why`}
           class="text-slate-600 font-bold hover:text-accent no-underline transition-colors uppercase tracking-wide"
-          data-i18n="nav.why">Why</a>
+         >Why</a>
       </li>
       <li>
         <a
           href={`${sectionLinkPrefix}#how`}
           class="text-slate-600 font-bold hover:text-accent no-underline transition-colors uppercase tracking-wide"
-          data-i18n="nav.how">How</a>
+         >How</a>
       </li>
       <li>
         <a
-          href={`${sectionLinkPrefix}#partners`}
+          href={`${sectionLinkPrefix}#about-partners`}
           class="text-slate-600 font-bold hover:text-accent no-underline transition-colors uppercase tracking-wide"
-          data-i18n="nav.who">Who</a>
+          >Partners</a>
       </li>
       <li>
         <a
@@ -70,9 +71,12 @@ const currentYear = new Date().getFullYear();
           onclick="openCookieSettings()"
           role="button"
           tabindex="0"
-          data-i18n="footer.cookieSettings">Cookie Settings</a>
+         >Cookie Settings</a>
       </li>
     </ul>
+    <p class="max-w-3xl text-xs sm:text-sm text-slate-500 leading-relaxed m-0">
+      Translations on this website are provided automatically for convenience only, and in the event of any inconsistency or ambiguity, the English-language version shall prevail as the authoritative reference.
+    </p>
     <div
       class="flex items-center justify-center gap-3 text-sm opacity-80 mt-6 max-w-4xl border-t border-slate-300/50 pt-8"
     >
@@ -85,7 +89,7 @@ const currentYear = new Date().getFullYear();
           decoding="async"
         />
       </div>
-      <p class="text-left leading-relaxed" data-i18n-html="footer.disclaimer">
+      <p class="text-left leading-relaxed">
         Funded by the European Union. Views and opinions expressed are however those
         of the author(s) only and do not necessarily reflect those of the European
         Union or the European Education and Culture Executive Agency (EACEA). Neither
@@ -94,3 +98,5 @@ const currentYear = new Date().getFullYear();
     </div>
   </div>
 </footer>
+
+
