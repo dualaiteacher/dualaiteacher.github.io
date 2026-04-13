@@ -1,0 +1,48 @@
+---
+import Layout from "../../layouts/Layout.astro";
+
+import FundingBanner from "../../components/site/FundingBanner.astro";
+import SiteNav from "../../components/site/SiteNav.astro";
+import HeroSection from "../../components/site/HeroSection.astro";
+import AboutSection from "../../components/site/AboutSection.astro";
+import WhySection from "../../components/site/WhySection.astro";
+import DualSection from "../../components/site/DualSection.astro";
+import DeliverablesSection from "../../components/site/DeliverablesSection.astro";
+import HowSection from "../../components/site/HowSection.astro";
+import AboutPartnersSection from "../../components/site/AboutPartnersSection.astro";
+import AudienceSection from "../../components/site/AudienceSection.astro";
+import SiteFooter from "../../components/site/SiteFooter.astro";
+import CookieConsent from "../../components/site/CookieConsent.astro";
+import SiteScripts from "../../components/site/SiteScripts.astro";
+import {
+  defaultLang,
+  getDictionary,
+  languages,
+  type Lang,
+} from "../../i18n";
+
+export function getStaticPaths() {
+  return Object.keys(languages).map((lang) => ({
+    params: { lang },
+  }));
+}
+
+const lang = (Astro.params.lang ?? defaultLang) as Lang;
+const dict = getDictionary(lang);
+---
+
+<Layout title={dict.meta.title} lang={lang}>
+  <CookieConsent />
+  <FundingBanner t={dict.fundingBanner} />
+  <SiteNav lang={lang} t={dict.nav} />
+  <HeroSection t={dict.hero} />
+  <AboutSection t={dict.about} />
+  <WhySection t={dict.why} />
+  <DualSection t={dict.dual} />
+  <DeliverablesSection t={dict.deliverables} />
+  <HowSection t={dict.how} />
+  <AboutPartnersSection t={dict.aboutPartners} />
+  <AudienceSection t={dict.audience} />
+  <SiteFooter sectionLinkPrefix={`/${lang}/`} t={dict.footer} />
+  <SiteScripts />
+</Layout>

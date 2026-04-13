@@ -1,0 +1,125 @@
+---
+import { languages, type Lang } from "../../i18n";
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+
+const entries = Object.entries(languages) as [Lang, string][];
+const flags: Record<Lang, string> = {
+  en: "/flags/gb.svg",
+  sl: "/flags/si.svg",
+};
+const abbreviations: Record<Lang, string> = {
+  en: "EN",
+  sl: "SI",
+};
+---
+
+<div class="language-picker" data-language-picker>
+  <button
+    type="button"
+    class="language-picker__button"
+    aria-expanded="false"
+    aria-haspopup="true"
+    aria-label="Select language"
+    data-language-picker-toggle
+  >
+    <img
+      src={flags[lang]}
+      alt=""
+      class="language-picker__flag"
+      width="18"
+      height="14"
+      loading="eager"
+      decoding="async"
+    />
+    <span>{abbreviations[lang]}</span>
+  </button>
+
+  <div
+    class="language-picker__menu"
+    hidden
+    data-language-picker-menu
+  >
+    {entries.map(([code, label]) => (
+      <a
+        href={`/${code}/`}
+        class:list={[
+          "language-picker__option",
+          code === lang && "language-picker__option--active",
+        ]}
+        data-lang-link={code}
+      >
+        <img
+          src={flags[code]}
+          alt=""
+          class="language-picker__option-flag"
+          width="20"
+          height="15"
+          loading="lazy"
+          decoding="async"
+        />
+        {label}
+      </a>
+    ))}
+  </div>
+</div>
+
+<script is:inline>
+  (function () {
+    var picker = document.querySelector("[data-language-picker]");
+    if (!picker) return;
+
+    var toggle = picker.querySelector("[data-language-picker-toggle]");
+    var menu = picker.querySelector("[data-language-picker-menu]");
+    var links = picker.querySelectorAll("[data-lang-link]");
+
+    if (!toggle || !menu) return;
+
+    function getLocalizedPath(targetLang) {
+      var url = new URL(window.location.href);
+      var parts = url.pathname.split("/").filter(Boolean);
+      var supported = ["en", "sl"];
+
+      if (parts.length && supported.indexOf(parts[0]) !== -1) {
+        parts[0] = targetLang;
+      } else {
+        parts.unshift(targetLang);
+      }
+
+      return "/" + parts.join("/") + "/" + url.search + url.hash;
+    }
+
+    function openMenu() {
+      toggle.setAttribute("aria-expanded", "true");
+      menu.hidden = false;
+    }
+
+    function closeMenu() {
+      toggle.setAttribute("aria-expanded", "false");
+      menu.hidden = true;
+    }
+
+    toggle.addEventListener("click", function () {
+      if (menu.hidden) openMenu();
+      else closeMenu();
+    });
+
+    document.addEventListener("click", function (event) {
+      if (!picker.contains(event.target)) closeMenu();
+    });
+
+    document.addEventListener("keydown", function (event) {
+      if (event.key === "Escape") closeMenu();
+    });
+
+    links.forEach(function (link) {
+      var targetLang = link.getAttribute("data-lang-link");
+      if (!targetLang) return;
+      link.setAttribute("href", getLocalizedPath(targetLang));
+    });
+  })();
+</script>

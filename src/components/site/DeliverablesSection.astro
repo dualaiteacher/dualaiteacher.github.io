@@ -1,3 +1,20 @@
+---
+interface Props {
+  t: {
+    title: string;
+    lead: string;
+    cards: {
+      badge: string;
+      title: string;
+      body: string;
+    }[];
+  };
+}
+
+const { t } = Astro.props;
+const [primaryCard, platformCard, hubsCard, pilotCard] = t.cards;
+---
+
 <section id="deliverables" class="py-24 md:py-32 bg-slate-50 relative">
   <div class="max-w-[1200px] mx-auto px-6">
     <div class="text-center mb-20">
@@ -5,14 +22,13 @@
         class="text-[clamp(2rem,6vw,3.75rem)] font-black leading-tight text-brand mb-6 tracking-tight"
        
       >
-        Delivering a new standard in AI education.
+        {t.title}
       </h2>
       <p
         class="text-2xl text-slate-600 max-w-3xl mx-auto font-medium leading-relaxed"
        
       >
-        Over a 3-year timeline, the project will build an entire ecosystem of
-        resources for educators across Europe.
+        {t.lead}
       </p>
     </div>
 
@@ -30,7 +46,7 @@
             <span
               class="bg-accent text-brand text-sm font-black px-5 py-2.5 rounded-xl uppercase tracking-wider shadow-lg"
              
-              >🏅 Micro-credentials</span
+              >{primaryCard.badge}</span
             >
           </div>
           <div>
@@ -38,14 +54,13 @@
               class="text-4xl md:text-5xl font-black mb-6 text-white leading-tight"
              
             >
-              Dual Certification Pathway
+              {primaryCard.title}
             </h3>
             <p
               class="text-xl md:text-2xl text-slate-100 leading-relaxed font-medium max-w-xl"
              
             >
-              A formal system where teachers earn stackable micro-credentials
-              and a 5-year EU-recognized certification.
+              {primaryCard.body}
             </p>
           </div>
         </div>
@@ -64,18 +79,17 @@
             <span
               class="inline-block bg-brand/10 text-brand text-sm font-black px-4 py-2 rounded-xl uppercase tracking-wider"
              
-              >🌐 15+ Modules</span
+              >{platformCard.badge}</span
             >
           </div>
           <div>
             <h3 class="text-3xl font-black mb-4 text-brand leading-tight"
              >
-              AI-Powered Learning Platform
+              {platformCard.title}
             </h3>
             <p class="text-lg text-slate-600 leading-relaxed font-medium"
              >
-              A multilingual digital hub offering interactive training modules
-              and curated open-access AI lesson plans.
+              {platformCard.body}
             </p>
           </div>
         </div>
@@ -94,18 +108,17 @@
             <span
               class="inline-block bg-brand text-white text-sm font-black px-4 py-2 rounded-xl uppercase tracking-wider shadow-md"
              
-              >✈️ 5 Hubs</span
+              >{hubsCard.badge}</span
             >
           </div>
           <div>
             <h3 class="text-3xl font-black mb-4 text-brand leading-tight"
              >
-              Transnational Academies
+              {hubsCard.title}
             </h3>
             <p class="text-lg text-slate-500 font-bold leading-relaxed"
              >
-              Five hubs across Europe funding mobility for educators to travel,
-              workshop, and share best practices.
+              {hubsCard.body}
             </p>
           </div>
         </div>
@@ -127,21 +140,20 @@
               <span
                 class="bg-accent/20 text-brand text-sm font-black px-5 py-2.5 rounded-xl uppercase tracking-wider border border-accent/50"
                
-                >🏫 50+ Schools</span
+                >{pilotCard.badge}</span
               >
             </div>
             <h3
               class="text-4xl md:text-5xl font-black mb-6 text-brand leading-tight"
              
             >
-              Real-World Classroom Pilots
+              {pilotCard.title}
             </h3>
             <p
               class="text-xl text-slate-600 leading-relaxed font-medium max-w-lg"
              
             >
-              Trained teachers test AI-enhanced lessons in schools to generate
-              evidence-based insights.
+              {pilotCard.body}
             </p>
           </div>
         </div>
