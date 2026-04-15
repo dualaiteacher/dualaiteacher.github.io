@@ -1,10 +1,11 @@
 ---
 import "../styles/global.css";
 import LanguagePicker from "../components/site/LanguagePicker.astro";
+import type { Lang } from "../i18n";
 
 interface Props {
   title?: string;
-  lang?: string;
+  lang?: Lang;
 }
 
 const { title = "DUAL.AI.TEACHer", lang = "en" } = Astro.props;

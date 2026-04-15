@@ -14,105 +14,108 @@
     "partners": "Partnerji"
   },
   "hero": {
-    "titleAccent": "Poučevanje z Umetno Inteligenco",
-    "titleRest": "in izobraževanje o Umetni Inteligenci"
+    "titleAccent": "Poučevanje z umetno Inteligenco",
+    "titleRest": "in o umetni Inteligenci",
+    "subtitle": "za izobraževanje, pripravljeno na prihodnost",
+    "primaryCta": "Več informacij",
+    "secondaryCta": "Partnerji"
   },
   "about": {
     "eyebrow": "Kaj",
-    "title": "Premoscamo vrzel v AI pismenosti v evropskem izobrazevanju.",
-    "lead": "Vseevropska pobuda za posodobitev izobrazevanja uciteljev, ki izobrazevalce opremlja z znanjem, samozavestjo in certificiranjem za uspesno delovanje v okolju, ki ga preoblikuje umetna inteligenca.",
-    "body": "Gradimo celovit ekosistem, ki ponuja prakticno usposabljanje in uradni certifikacijski okvir, usklajen z EU, da v digitalnem prehodu ne bo nihce od izobrazevalcev ostal zadaj."
+    "title": "Zapolnjevanje vrzeli v znanju o umetni inteligenci v Evropi.",
+    "lead": "Pobuda, namenjena posodobitvi izobraževanja učiteljev, ki jim bo omogočila pridobitev potrebnih veščin za uspešno delovanje v okolju, ki ga zaznamuje umetna inteligenca.",
+    "body": "Gradimo ekosistem, ki ponuja praktično usposabljanje in uradni certifikacijski okvir, usklajen z EU."
   },
   "why": {
     "eyebrow": "Zakaj",
     "title": "Nujna potreba po spremembi.",
-    "lead": "Orodja umetne inteligence hitro preoblikujejo izobrazevanje, vendar se ucitelji pocutijo nepripravljene. Za premostitev te vrzeli ni standardiziranega okvira na ravni EU.",
+    "lead": "Orodja umetne inteligence spreminjajo šolstvo, učitelji pa se počutijo nepripravljeni. Ni standardiziranega okvira na ravni EU, ki bi zapolnil to vrzel.",
     "items": [
       {
-        "title": "Prepad med ucitelji in tehnologijo",
-        "body": "Medtem ko orodja umetne inteligence, kot so inteligentni tutorski sistemi in generativna umetna inteligenca, spreminjajo ucilnice, ucitelji porocajo, da se ne cutijo pripravljene za vkljucevanje UI v pedagogiko ali za soocanje z njenimi zahtevnimi eticnimi razseznostmi."
+        "title": "Razkorak med učitelji in tehnologijo",
+        "body": "Medtem ko orodja umetne inteligence, revolucionirajo pouk, učitelji poročajo, da se ne počutijo pripravljeni na vključitev umetne inteligence v svojo pedagoško prakso."
       },
       {
         "title": "Ni standardiziranega okvira",
-        "body": "Trenutno ni standardiziranega okvira na ravni EU za usposabljanje uciteljev za odgovorno uporabo orodij UI, kar pusca pomembno vrzel v znanjih po evropskih izobrazevalnih sistemih."
+        "body": "Trenutno na ravni EU ni standardiziranega okvira za usposabljanje učiteljev o odgovorni rabi orodij umetne inteligence, kar povzroča kritično pomanjkanje znanja in veščin v evropskih izobraževalnih sistemih."
       },
       {
-        "title": "Eticni in zasebnostni izzivi",
-        "body": "Ucitelji potrebujejo usmeritve pri obvladovanju algoritmicne pristranskosti, varstva podatkov, digitalnega drzavljanstva in eticnih posledic uvajanja sistemov UI v izobrazevalna okolja z mladimi ucenci."
+        "title": "Etčni izzivi in izzivi na področju varstva zasebnosti",
+        "body": "Učitelji potrebujejo usmeritve pri uvajanju sistemov UI v izobraževalna okolja z mladimi učenci."
       }
     ]
   },
   "dual": {
-    "title": "Obvladovanje obeh plati umetne inteligence v izobrazevanju.",
-    "lead": "Projekt temelji na dvojnem pristopu, ki izobrazevalce pripravlja na dva razlicna, a tesno povezana cilja.",
+    "title": "Obvladovanje obeh vidikov umetne inteligence v izobraževanju.",
+    "lead": "Projekt temelji na kombiniranem pristopu, ki učitelje pripravlja na doseganje dveh različnih, a med seboj tesno povezanih ciljev.",
     "with": {
-      "titleStart": "Poucevanje",
+      "titleStart": "Poučevanje",
       "titleAccent": "z",
       "titleEnd": "UI",
-      "label": "Pedagogika, okrepljena z UI:",
-      "body": "Usposabljanje uciteljev za aktivno uporabo orodij UI pri nacrtovanju ucnih ur, prilagajanju ucenja posameznim ucencem, avtomatizaciji administrativnih nalog in podajanju povratnih informacij v realnem casu - za pametnejso in odzivnejso ucilnico."
+      "label": "Pedagogika, podprta z UI:",
+      "body": "Usposabljanje učiteljev za aktivno uporabo orodij umetne inteligence pri načrtovanju pouka, prilagajanju učenja in avtomatizaciji administrativnih nalog."
     },
     "about": {
-      "titleStart": "Poucevanje",
+      "titleStart": "Poučevanje",
       "titleAccent": "o",
       "titleEnd": "UI",
       "label": "UI pismenost:",
-      "body": "Opolnomocenje uciteljev, da svoje ucence ucijo, kako UI deluje, kaksne so njene eticne posledice, kaj pomeni digitalno drzavljanstvo in kako razvijati algoritmicno razmisljanje - s tem pa gradijo generacijo informiranih in odgovornih digitalnih drzavljanov."
+      "body": "Učiteljem zagotoviti znanje, da bodo lahko učence poučili o delovanju umetne inteligence in njenih etičnih posledicah – vzgojiti generacijo ozaveščenih in odgovornih državljanov"
     }
   },
   "deliverables": {
-    "title": "Vzpostavljamo nov standard na podrocju izobrazevanja o UI.",
-    "lead": "V obdobju treh let bo projekt vzpostavil celoten ekosistem virov za izobrazevalce po vsej Evropi.",
+    "title": "Uvedba novega standarda v izobraževanju na področju umetne inteligence.",
+    "lead": "V obdobju treh let bo projekt vzpostavil celoten ekosistem virov za učitelje po vsej Evropi.",
     "cards": [
       {
-        "badge": "🏅 Mikro-kvalifikacije",
-        "title": "Dvojna certifikacijska pot",
-        "body": "Formalni sistem, v katerem ucitelji pridobivajo sestavljive mikro-kvalifikacije in petletni certifikat, priznan na ravni EU."
+        "badge": "🏅 Mikrodokazila",
+        "title": "Kombinirana certifikacijska pot",
+        "body": "Uradni sistem, v okviru katerega učitelji pridobivajo mikrodokazila, ki se kumulirajo, ter 5-letno certifikacijo, priznano na ravni EU."
       },
       {
         "badge": "🌐 15+ Modulov",
-        "title": "Ucna platforma, podprta z UI",
-        "body": "Vecjezicno digitalno sredisce z interaktivnimi moduli usposabljanja in skrbno izbranimi odprtodostopnimi ucnimi nacrti za poucevanje o UI."
+        "title": "Učna platforma,",
+        "body": "Večjezično platforma, ki ponuja interaktivne izobraževalne module in skrbno izbrane učne načrte o umetni inteligenci."
       },
       {
-        "badge": "✈️ 5 Sredisc",
-        "title": "Transnacionalne akademije",
-        "body": "Pet sredisc po Evropi, ki financirajo mobilnost izobrazevalcev za potovanja, delavnice in izmenjavo dobrih praks."
+        "badge": "✈️ 5 Središč",
+        "title": "Mednarodne akademije",
+        "body": "Pet centrov po Evropi, ki zagotavljajo mobilnost in omogočajo sodelovanje na delavnicah za izmenjavo najboljših praks."
       },
       {
-        "badge": "🏫 50+ Sol",
-        "title": "Preizkusi v resnicnih ucilnicah",
-        "body": "Usposobljeni ucitelji preizkusajo z UI podprte ucne ure v solah, da bi ustvarili vpoglede, utemeljene na dokazih."
+        "badge": "🏫 50+ Šol",
+        "title": "Pilotne ure v praksi",
+        "body": "Usposobljeni učitelji v šolah preizkušajo pouk, podprt z umetno inteligenco, da bi pridobili na dokazih temelječe ugotovitve."
       }
     ]
   },
   "how": {
     "eyebrow": "KAKO",
     "title": "Kako bo projekt dosegel svoje cilje?",
-    "lead": "Skozi stiri medsebojno povezane faze v 36-mesecnem casovnem okviru.",
+    "lead": "Skozi štiri medsebojno povezane faze v 36-mesečnem časovnem okviru.",
     "phases": [
       {
-        "title": "Faza 1 - Sooblikovanje",
-        "body": "Sooblikovanje prirocnika za poucevanje z UI in certifikacijskega okvira za opredelitev pedagoskih standardov ter mikro-kvalifikacij, usklajenih z okviri EU."
+        "title": "Faza 1",
+        "body": "Oblikovanje priročnika za poučevanje z uporabo umetne inteligence in okvira za certificiranje, da se opredelijo pedagoški standardi, usklajeni z okviri EU."
       },
       {
-        "title": "Faza 2 - Razvoj platforme",
-        "body": "Razvoj vecjezicne ucne platforme o UI (MOOC), ki bo vkljucevala vec kot 15 modulov usposabljanja in vec kot 50 prenosljivih ucnih nacrtov, podprtih z UI."
+        "title": "Faza 2",
+        "body": "Razvoj večjezične platforme za učenje , z več kot 15 izobraževalnih modulov in več kot 50 učnih načrtov, obogatenih z umetno inteligenco."
       },
       {
-        "title": "Faza 3 - Akademije za ucitelje",
-        "body": "Vzpostavitev 5 transnacionalnih akademij za ucitelje, ki bodo omogocale kombinirano ucenje in cezmejne moznosti mobilnosti ter neposredno usposobile vec kot 100 izobrazevalcev."
+        "title": "Faza 3",
+        "body": "Uvedba petih mednarodnih akademij za učitelje, ki bodo omogočale učenje in čezmejno mobilnost ter neposredno usposabljale več kot 100 pedagogov."
       },
       {
-        "title": "Faza 4 - Preizkusi v ucilnicah",
-        "body": "Izvajanje preizkusov v resnicnih ucilnicah, kjer bodo usposobljeni ucitelji preizkusali ucne ure, podprte z UI, v vec kot 50 solah, dosegli vec kot 1.000 ucencev in oblikovali priporocila za politike na podlagi dokazov."
+        "title": "Faza 4",
+        "body": "Izvajanje pilotnih učnih ur v praksi, v okviru katerih usposobljeni učitelji preizkušajo z umetno inteligenco podprte učne ure v več kot 50 šolah, pri čemer vključujejo več kot 1.000 učencev, da bi oblikovali na dokazih temelječa priporočila za oblikovanje politik."
       }
     ]
   },
   "aboutPartners": {
     "eyebrow": "Konzorcij",
     "title": "11 partnerjev. Ena skupna misija.",
-    "lead": "Medsektorsko partnerstvo, ki povezuje univerze, javne institucije, MSP-je, poklicno izobrazevanje in certificiranje.",
+    "lead": "Medsektorska mreža, ki združuje univerze, javne ustanove, mala in srednja podjetja, poklicno izobraževanje in usposabljanje ter certificiranje.",
     "partners": [
       {
         "type": "MSP",
@@ -127,7 +130,7 @@
       {
         "type": "Javni organ",
         "name": "Consellería de Educación, Ciencia, Universidades e Formación Profesional",
-        "country": "Spanija"
+        "country": "Španija"
       },
       {
         "type": "Univerza",
@@ -137,12 +140,12 @@
       {
         "type": "Certifikacijski organ",
         "name": "ICEP Institute of European Certification of Personnel s.r.o.",
-        "country": "Slovaska"
+        "country": "Slovaška"
       },
       {
         "type": "MSP",
         "name": "INSTITUT INPRO AS",
-        "country": "Ceska"
+        "country": "Češka"
       },
       {
         "type": "Poklicni ponudnik",
@@ -152,7 +155,7 @@
       {
         "type": "Univerza",
         "name": "University of Education Weingarten",
-        "country": "Nemcija"
+        "country": "Nemčija"
       },
       {
         "type": "Univerza",
@@ -162,60 +165,59 @@
       {
         "type": "Univerza",
         "name": "University of Vigo",
-        "country": "Spanija"
+        "country": "Španija"
       },
       {
         "type": "Univerza",
         "name": "University of Žilina",
-        "country": "Slovaska"
+        "country": "Slovaška"
       }
     ]
   },
   "audience": {
-    "title": "Opolnomocenje celotnega izobrazevalnega ekosistema.",
-    "lead": "Projekt naslavlja sirok spekter deleznikov v evropskem izobrazevalnem prostoru.",
+    "title": "Podpora celotnemu izobraževalnemu ekosistemu.",
+    "lead": "Projekt je namenjen širokemu krogu deležnikov v evropskem izobraževalnem prostoru.",
     "groups": [
       {
-        "title": "Bodoci ucitelji",
-        "body": "Prihodnji izobrazevalci, ki ze med zacetnim usposabljanjem pridobivajo kompetence s podrocja UI, da vstopijo na trg dela popolnoma pripravljeni."
+        "title": "Bodoči učitelji",
+        "body": "Bodoči pedagogi že v času usposabljanjem pridobivajo znanja s področja umetne inteligence, da bi se na trg dela vključili popolnoma pripravljeni."
       },
       {
-        "title": "Ucitelji v praksi",
-        "body": "Aktivni izobrazevalci, ki nadgrajujejo svoje znanje za ucinkovito vkljucevanje UI."
+        "title": "Učitelji",
+        "body": "Aktivni pedagogi, ki se dodatno izobražujejo za učinkovito vključevanje umetne inteligence."
       },
       {
         "title": "Izobrazevanje uciteljev",
-        "body": "Institucije, ki posodabljajo kurikule s specializiranimi moduli usposabljanja o UI."
+        "body": "Institucije, ki posodabljajo učne načrte s specializiranimi moduli za usposabljanje na področju umetne inteligence."
       },
       {
-        "title": "Sole",
-        "body": "Institucije, ki bodo neposredno koristile od na novo uvedenih, z UI podprtih pedagoskih praks."
+        "title": "Šole",
+        "body": "Institucije, ki imajo neposredne koristi od na novo uvedene, z umetno inteligenco podprte pedagoške prakse."
       },
       {
         "title": "Oblikovalci politik",
-        "body": "Odlocevalci, ki usmerjajo in standardizirajo na dokazih temeljece politike izobrazevanja o UI."
+        "body": "Odločevalci, ki usmerjajo in standardizirajo politike izobraževanja o UI."
       }
     ]
   },
   "footer": {
-    "tagline": "Poucevanje z UI in izobrazevanje o UI za prihodnostno odporno izobrazevanje",
+    "tagline": "Poučevanje z in o umetni inteligenci. Pripravljeni na prihodnost.",
     "licenseLabel": "CC BY-NC-SA 4.0",
     "nav": {
       "what": "Kaj",
       "why": "Zakaj",
       "how": "Kako",
       "partners": "Partnerji",
-      "cookieSettings": "Nastavitve piskotkov"
+      "cookieSettings": "Nastavitve piškotkov"
     },
-    "translationNotice": "Prevodi na tej spletni strani so na voljo samodejno zgolj zaradi prirocnosti; v primeru kakrsnih koli neskladij ali nejasnosti velja angleska razlicica kot verodostojno merilo.",
     "euFlagAlt": "Sofinancira Evropska unija",
-    "euDisclaimer": "Financira Evropska unija. Izrazena stalisca in mnenja so izkljucno stalisca avtorja oziroma avtorjev in ne odrazajo nujno stalisc Evropske unije ali Evropske izvajalske agencije za izobrazevanje in kulturo (EACEA). Niti Evropska unija niti EACEA zanje ne moreta biti odgovorni."
+    "euDisclaimer": "Financira Evropska unija. Izražena stališča in mnenja so izključno stališča avtorja oziroma avtorjev in ne odražajo nujno stališč Evropske unije ali Evropske izvajalske agencije za izobraževanje in kulturo (EACEA). Niti Evropska unija niti EACEA zanje ne moreta biti odgovorni."
   },
   "notFound": {
     "metaTitle": "404 - Stran ni najdena | DUAL.AI.TEACHer",
     "eyebrow": "Napaka 404",
     "title": "Stran ni najdena",
-    "body": "Stran, ki jo iscete, ne obstaja ali pa je bila premaknjena.",
+    "body": "Stran, ki jo iščete, ne obstaja ali pa je bila premaknjena.",
     "backHome": "Nazaj na domov"
   }
 }

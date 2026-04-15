@@ -15,22 +15,25 @@
   },
   "hero": {
     "titleAccent": "AI-Powered Teaching",
-    "titleRest": "& AI Education"
+    "titleRest": "& AI Education",
+    "subtitle": "for Future-Proof Education",
+    "primaryCta": "Learn more",
+    "secondaryCta": "Partners"
   },
   "about": {
     "eyebrow": "What",
     "title": "Bridging the AI literacy gap in European education.",
-    "lead": "A pan-European initiative designed to modernize teacher education by equipping educators with the skills, confidence, and certification required to navigate an AI-driven landscape.",
-    "body": "We are building a comprehensive ecosystem that provides hands-on training and a formal EU-aligned certification framework - ensuring no educator is left behind in the digital transition."
+    "lead": "A pan-European initiative designed to modernize teacher education by equipping educators with the required skills to navigate an AI-driven landscape.",
+    "body": "We are building an ecosystem that provides hands-on training and a formal EU-aligned certification framework - ensuring no educator is left behind in the digital transition."
   },
   "why": {
     "eyebrow": "Why",
     "title": "The urgent need for change.",
-    "lead": "AI tools are rapidly reshaping education, but teachers feel unprepared. There is no standardized, EU-level framework to close this gap.",
+    "lead": "AI tools are reshaping education, but teachers feel unprepared. There is no standardized, EU-level framework to close this gap.",
     "items": [
       {
         "title": "The Teachers-Technology Disconnect",
-        "body": "While AI tools like intelligent tutoring systems and generative AI are revolutionizing classrooms, teachers report feeling unprepared to integrate AI into their pedagogy or to navigate its complex ethical dimensions."
+        "body": "While AI tools like intelligent tutoring systems and generative AI are revolutionizing classrooms, teachers report feeling unprepared to integrate AI into their pedagogy."
       },
       {
         "title": "No Standardized Framework",
@@ -38,7 +41,7 @@
       },
       {
         "title": "Ethical & Privacy Challenges",
-        "body": "Teachers need guidance on navigating algorithmic bias, data privacy, digital citizenship, and the ethical implications of deploying AI systems in educational environments with young learners."
+        "body": "Teachers need guidance on navigating and deploying AI systems in educational environments with young learners."
       }
     ]
   },
@@ -50,14 +53,14 @@
       "titleAccent": "with",
       "titleEnd": "AI",
       "label": "AI-Enhanced Pedagogy:",
-      "body": "Training teachers to actively use AI tools to design lessons, personalize student learning, automate administrative tasks, and provide real-time feedback - making every classroom smarter and more responsive."
+      "body": "Training teachers to actively use AI tools to design lessons, personalize student learning, automate administrative tasks."
     },
     "about": {
       "titleStart": "Teaching",
       "titleAccent": "about",
       "titleEnd": "AI",
       "label": "AI Literacy:",
-      "body": "Equipping teachers to educate their students on how AI works, its ethical implications, digital citizenship, and algorithmic thinking - building a generation of informed, responsible digital citizens."
+      "body": "Equipping teachers to educate their students on how AI works and its ethical implications - building a generation of informed and responsible citizens."
     }
   },
   "deliverables": {
@@ -71,7 +74,7 @@
       },
       {
         "badge": "🌐 15+ Modules",
-        "title": "AI-Powered Learning Platform",
+        "title": "Learning Platform",
         "body": "A multilingual digital hub offering interactive training modules and curated open-access AI lesson plans."
       },
       {
@@ -101,7 +104,7 @@
       },
       {
         "title": "Phase 3 - Teacher Academies",
-        "body": "Launching 5 transnational Teacher Academies to provide blended learning and cross-border mobility opportunities, directly training over 100 educators."
+        "body": "Launching 5 transnational Teacher Academies to provide learning and cross-border mobility opportunities, directly training over 100 educators."
       },
       {
         "title": "Phase 4 - Classroom Pilots",
@@ -193,7 +196,7 @@
       },
       {
         "title": "Policymakers",
-        "body": "Decision-makers shaping and standardizing evidence-based AI education policy."
+        "body": "Decision-makers shaping and standardizing AI education policy."
       }
     ]
   },
@@ -207,7 +210,6 @@
       "partners": "Partners",
       "cookieSettings": "Cookie Settings"
     },
-    "translationNotice": "Translations on this website are provided automatically for convenience only, and in the event of any inconsistency or ambiguity, the English-language version shall prevail as the authoritative reference.",
     "euFlagAlt": "Co-funded by the European Union",
     "euDisclaimer": "Funded by the European Union. Views and opinions expressed are however those of the author(s) only and do not necessarily reflect those of the European Union or the European Education and Culture Executive Agency (EACEA). Neither the European Union nor EACEA can be held responsible for them."
   },
