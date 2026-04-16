@@ -7,11 +7,46 @@
     "euFunding": "Funded by the European Union, ERASMUS-EDU-2025-PEX-TEACH-ACA 101249519",
     "euFlagAlt": "EU flag"
   },
+  "cookieConsent": {
+    "banner": {
+      "title": "We value your privacy",
+      "bodyBeforeLink": "We use cookies and Microsoft Clarity to understand how our site is used and to improve your experience. You can accept all cookies, reject non-essential ones, or ",
+      "preferencesLink": "customize your preferences",
+      "bodyAfterLink": ".",
+      "acceptAll": "Accept All",
+      "rejectAll": "Reject All"
+    },
+    "modal": {
+      "title": "Cookie Preferences",
+      "description": "Choose which categories of cookies you'd like to allow. Essential cookies are always active as they are required for the site to function.",
+      "essential": {
+        "title": "Essential Cookies",
+        "badge": "Always active",
+        "body": "Required for basic site functionality such as navigation and security. These cannot be disabled."
+      },
+      "analytics": {
+        "title": "Analytics Cookies",
+        "body": "Help us understand how visitors interact with the website by collecting anonymous usage data via Microsoft Clarity."
+      },
+      "advertising": {
+        "title": "Advertising Cookies",
+        "body": "Used to deliver relevant content and measure the effectiveness of campaigns. We do not currently run ads, but this setting controls ad-related data storage."
+      },
+      "cancel": "Cancel",
+      "rejectAll": "Reject All",
+      "savePreferences": "Save Preferences"
+    }
+  },
+  "contactSection": {
+    "title": "Get in touch with us.",
+    "lead": "For questions, collaboration, or more information, send us a message using the form below."
+  },
   "nav": {
     "what": "What",
     "why": "Why",
     "how": "How",
-    "partners": "Partners"
+    "partners": "Partners",
+    "contact": "Contact"
   },
   "hero": {
     "titleAccent": "AI-Powered Teaching",
@@ -46,8 +81,6 @@
     ]
   },
   "dual": {
-    "title": "Mastering both sides of AI in education.",
-    "lead": "The project focuses on a dual-perspective approach, preparing educators for two distinct but deeply connected goals.",
     "with": {
       "titleStart": "Teaching",
       "titleAccent": "with",
@@ -120,57 +153,101 @@
       {
         "type": "SME",
         "name": "ACCELERAS KG",
-        "country": "Austria"
+        "country": "Austria",
+        "website": "https://www.acceleras.io",
+        "linkedin": "https://www.linkedin.com/company/accelerasaustria/",
+        "facebook": "https://www.facebook.com/acceleras.io",
+        "instagram": "https://www.instagram.com/acceleras.io/"
       },
       {
         "type": "University",
         "name": "College of Business and Health Sciences",
-        "country": "Poland"
+        "country": "Poland",
+        "website": "https://www.wsbinoz.edu.pl",
+        "linkedin": "https://www.linkedin.com/school/wy%C5%BCsza-szko%C5%82a-biznesu-i-nauk-o-zdrowiu-w-%C5%82odzi/",
+        "facebook": "",
+        "instagram": ""
       },
       {
         "type": "Public Authority",
         "name": "Consellería de Educación, Ciencia, Universidades e Formación Profesional",
-        "country": "Spain"
+        "country": "Spain",
+        "website": "",
+        "linkedin": "",
+        "facebook": "",
+        "instagram": ""
       },
       {
         "type": "University",
         "name": "Daugavpils University",
-        "country": "Latvia"
+        "country": "Latvia",
+        "website": "http://www.du.lv/",
+        "linkedin": "",
+        "facebook": "https://www.facebook.com/DaugavpilsUniversitate",
+        "instagram": ""
       },
       {
         "type": "Certification Body",
         "name": "ICEP Institute of European Certification of Personnel s.r.o.",
-        "country": "Slovakia"
+        "country": "Slovakia",
+        "website": "https://www.iceponline.com/",
+        "linkedin": "https://sk.linkedin.com/company/iceponline",
+        "facebook": "https://www.facebook.com/iceponline/",
+        "instagram": "https://www.instagram.com/icep.online"
       },
       {
         "type": "SME",
         "name": "INSTITUT INPRO AS",
-        "country": "Czechia"
+        "country": "Czechia",
+        "website": "",
+        "linkedin": "",
+        "facebook": "",
+        "instagram": ""
       },
       {
         "type": "Vocational Provider",
         "name": "SIA Macibu centrs \"Austrumvidzeme\"",
-        "country": "Latvia"
+        "country": "Latvia",
+        "website": "http://www.austrumvidzeme.lv/",
+        "linkedin": "https://www.linkedin.com/company/austrumvidzeme/",
+        "facebook": "https://www.facebook.com/Austrumvidzeme/",
+        "instagram": ""
       },
       {
         "type": "University",
         "name": "University of Education Weingarten",
-        "country": "Germany"
+        "country": "Germany",
+        "website": "https://www.ph-weingarten.de/de",
+        "linkedin": "https://www.linkedin.com/school/p%C3%A4dagogische-hochschule-weingarten/posts/?feedView=all",
+        "facebook": "https://www.facebook.com/pages/P%C3%A4dagogische-Hochschule-Weingarten/107917349236439",
+        "instagram": "https://www.instagram.com/ph_weingarten/"
       },
       {
         "type": "University",
         "name": "University of Maribor",
-        "country": "Slovenia"
+        "country": "Slovenia",
+        "website": "https://www.um.si/",
+        "linkedin": "https://www.linkedin.com/school/univerza-v-mariboru/posts/?feedView=all",
+        "facebook": "https://www.facebook.com/UniversityOfMaribor/",
+        "instagram": "https://www.instagram.com/univerza_v_mariboru/"
       },
       {
         "type": "University",
         "name": "University of Vigo",
-        "country": "Spain"
+        "country": "Spain",
+        "website": "",
+        "linkedin": "",
+        "facebook": "",
+        "instagram": ""
       },
       {
         "type": "University",
         "name": "University of Žilina",
-        "country": "Slovakia"
+        "country": "Slovakia",
+        "website": "https://uniza.sk/",
+        "linkedin": "https://sk.linkedin.com/school/university-of-zilina/",
+        "facebook": "https://www.facebook.com/uniza.sk",
+        "instagram": "https://www.instagram.com/zilinska.univerzita/?hl=en"
       }
     ]
   },

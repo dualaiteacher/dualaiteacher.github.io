@@ -5,7 +5,7 @@ export default defineConfig({
   site: 'https://dualaiteacher.github.io',
   i18n: {
     defaultLocale: 'en',
-    locales: ['cz', 'de', 'en', 'es', 'gb', 'lv', 'pl', 'sk', 'sl'],
+    locales: ['cs', 'de', 'en', 'es', 'gb', 'lv', 'pl', 'sk', 'sl'],
   },
   vite: {
     plugins: [tailwindcss()],

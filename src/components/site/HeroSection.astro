@@ -1,5 +1,8 @@
 ---
+import type { Lang } from '../../i18n';
+
 interface Props {
+  lang: Lang;
   t: {
     titleAccent: string;
     titleRest: string;
@@ -9,7 +12,9 @@ interface Props {
   };
 }
 
-const { t } = Astro.props;
+const { lang, t } = Astro.props;
+const homeHref = `/${lang}/`;
+const partnersHref = `/${lang}/partners/`;
 ---
 
 <section
@@ -35,14 +40,14 @@ const { t } = Astro.props;
 
     <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
       <a
-        href="#about"
+        href={`${homeHref}#about`}
         class="inline-flex items-center justify-center rounded-full bg-accent px-6 py-3 text-base font-bold text-brand transition hover:scale-105"
       >
         {t.primaryCta}
       </a>
 
       <a
-        href="#about-partners"
+        href={partnersHref}
         class="inline-flex items-center justify-center rounded-full border border-white/30 px-6 py-3 text-base font-semibold text-white/95 backdrop-blur-sm transition hover:bg-white/10"
       >
         {t.secondaryCta}

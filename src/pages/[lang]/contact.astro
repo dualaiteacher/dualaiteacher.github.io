@@ -1,24 +1,19 @@
 ---
 import Layout from "../../layouts/Layout.astro";
-import ConstructionBanner from "../../components/site/ConstructionBanner.astro";
 import SiteNav from "../../components/site/SiteNav.astro";
-import HeroSection from "../../components/site/HeroSection.astro";
-import AboutSection from "../../components/site/AboutSection.astro";
-import WhySection from "../../components/site/WhySection.astro";
-import DualSection from "../../components/site/DualSection.astro";
-import DeliverablesSection from "../../components/site/DeliverablesSection.astro";
-import HowSection from "../../components/site/HowSection.astro";
-import AudienceSection from "../../components/site/AudienceSection.astro";
 import SiteFooter from "../../components/site/SiteFooter.astro";
 import CookieConsent from "../../components/site/CookieConsent.astro";
 import SiteScripts from "../../components/site/SiteScripts.astro";
+import ContactSection from "../../components/site/ContactSection.astro";
 import {
   defaultCookieConsent,
+  defaultContactSection,
   defaultLang,
   getDictionary,
   languages,
   type Lang,
 } from "../../i18n";
+import ConstructionBanner from "../../components/site/ConstructionBanner.astro";
 
 export function getStaticPaths() {
   return Object.keys(languages).map((lang) => ({
@@ -34,13 +29,7 @@ const dict = getDictionary(lang);
   <CookieConsent t={"cookieConsent" in dict ? dict.cookieConsent : defaultCookieConsent} />
   <ConstructionBanner t={dict.fundingBanner} />
   <SiteNav lang={lang} t={dict.nav} />
-  <HeroSection lang={lang} t={dict.hero} />
-  <AboutSection t={dict.about} />
-  <DualSection t={dict.dual} />
-  <WhySection t={dict.why} />
-  <DeliverablesSection t={dict.deliverables} />
-  <HowSection t={dict.how} />
-  <AudienceSection t={dict.audience} />
+  <ContactSection t={"contactSection" in dict ? dict.contactSection : defaultContactSection} />
   <SiteFooter lang={lang} t={dict.footer} />
   <SiteScripts />
 </Layout>

@@ -1,3 +1,13 @@
+---
+import type { CookieConsentTranslation } from "../../i18n";
+
+interface Props {
+  t: CookieConsentTranslation;
+}
+
+const { t } = Astro.props;
+---
+
 <div
   class="consent-banner bg-white border-t-4 border-brand shadow-[0_-4px_24px_rgba(0,0,0,0.15)] px-4 py-6"
   id="consentBanner"
@@ -10,21 +20,19 @@
         class="text-base font-extrabold mb-1 flex items-center gap-2 text-brand"
        
       >
-        We value your privacy
+        {t.banner.title}
       </h3>
       <p class="text-sm font-medium text-text-2 leading-7 m-0">
         <span>
-          We use cookies and Microsoft Clarity to understand how our site is used
-          and to improve your experience. You can accept all cookies, reject
-          non-essential ones, or
+          {t.banner.bodyBeforeLink}
         </span>
         <a
           href="#"
           id="openPrefsLink"
           class="font-bold text-brand hover:text-accent transition-colors underline"
          
-          >customize your preferences</a
-        >.
+          >{t.banner.preferencesLink}</a
+        >{t.banner.bodyAfterLink}
       </p>
     </div>
     <div class="flex gap-3 flex-wrap items-center">
@@ -32,13 +40,13 @@
         class="px-6 py-3 rounded-full text-sm font-bold bg-accent text-accent-text shadow-lg hover:-translate-y-1 hover:bg-accent-hover transition-all cursor-pointer"
         id="acceptAllBtn"
         type="button"
-       >Accept All</button
+       >{t.banner.acceptAll}</button
       >
       <button
         class="px-6 py-3 rounded-full text-sm font-bold bg-white text-brand border-2 border-brand/20 shadow-sm hover:-translate-y-1 hover:border-brand transition-all cursor-pointer"
         id="rejectAllBtn"
         type="button"
-       >Reject All</button
+       >{t.banner.rejectAll}</button
       >
     </div>
   </div>
@@ -65,11 +73,10 @@
       class="text-2xl font-black flex items-center gap-2 m-0 text-accent"
      
     >
-      Cookie Preferences
+      {t.modal.title}
     </h2>
     <p class="text-sm text-blue-100 mt-2 mb-0 leading-relaxed font-medium">
-      Choose which categories of cookies you'd like to allow. Essential cookies
-      are always active as they are required for the site to function.
+      {t.modal.description}
     </p>
   </div>
   <div class="px-6 py-6 flex flex-col gap-6">
@@ -78,13 +85,12 @@
     >
       <div class="flex-1">
         <h4 class="text-base font-bold mb-1 text-brand">
-          Essential Cookies <span
+          {t.modal.essential.title} <span
             class="inline-block text-xs font-black bg-accent text-brand px-2 py-0.5 rounded-full ml-2 align-middle uppercase"
-            >Always active</span>
+            >{t.modal.essential.badge}</span>
         </h4>
         <p class="text-sm font-medium text-text-2 leading-relaxed m-0">
-          Required for basic site functionality such as navigation and security.
-          These cannot be disabled.
+          {t.modal.essential.body}
         </p>
       </div>
     </div>
@@ -93,11 +99,10 @@
     >
       <div class="flex-1">
         <h4 class="text-base font-bold mb-1 text-brand">
-          Analytics Cookies
+          {t.modal.analytics.title}
         </h4>
         <p class="text-sm font-medium text-text-2 leading-relaxed m-0">
-          Help us understand how visitors interact with the website by
-          collecting anonymous usage data via Microsoft Clarity.
+          {t.modal.analytics.body}
         </p>
       </div>
       <label class="toggle">
@@ -108,12 +113,10 @@
     <div class="flex items-start justify-between gap-4">
       <div class="flex-1">
         <h4 class="text-base font-bold mb-1 text-brand">
-          Advertising Cookies
+          {t.modal.advertising.title}
         </h4>
         <p class="text-sm font-medium text-text-2 leading-relaxed m-0">
-          Used to deliver relevant content and measure the effectiveness of
-          campaigns. We do not currently run ads, but this setting controls
-          ad-related data storage.
+          {t.modal.advertising.body}
         </p>
       </div>
       <label class="toggle">
@@ -129,19 +132,19 @@
       class="px-5 py-2.5 rounded-full text-sm font-bold bg-white text-text-2 border-2 border-surface-3 hover:bg-surface-3 hover:text-text-1 transition-colors cursor-pointer"
       id="cancelPrefsBtn"
       type="button"
-     >Cancel</button
+     >{t.modal.cancel}</button
     >
     <button
       class="px-5 py-2.5 rounded-full text-sm font-bold bg-white text-red-600 border-2 border-red-200 hover:bg-red-50 hover:border-red-600 transition-colors cursor-pointer"
       id="rejectAllPrefsBtn"
       type="button"
-     >Reject All</button
+     >{t.modal.rejectAll}</button
     >
     <button
       class="px-5 py-2.5 rounded-full text-sm font-bold bg-brand text-accent shadow-md hover:bg-brand/80 hover:shadow-lg transition-transform cursor-pointer"
       id="savePrefsBtn"
       type="button"
-     >Save Preferences</button
+     >{t.modal.savePreferences}</button
     >
   </div>
 </div>

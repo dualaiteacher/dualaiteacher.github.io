@@ -1,0 +1,40 @@
+---
+import type { ContactSectionTranslation } from "../../i18n";
+
+interface Props {
+  t: ContactSectionTranslation;
+}
+
+const { t } = Astro.props;
+---
+
+<section
+  id="contact"
+  class="py-16 bg-surface-2 relative overflow-hidden border-b border-surface-3"
+>
+  <div class="max-w-6xl mx-auto">
+    <div class="text-center mb-10">
+
+      <h1 class="text-5xl md:text-6xl lg:text-7xl font-black leading-tight text-brand tracking-tight">
+        {t.title}
+      </h1>
+
+      <p class="mx-auto mt-6 max-w-3xl text-xl md:text-2xl text-slate-600 leading-relaxed font-medium">
+        {t.lead}
+      </p>
+    </div>
+
+    <div class="mx-auto max-w-4xl">
+      <div class="overflow-hidden rounded-2xl bg-surface-1 shadow-xl pt-8">
+        <iframe
+          src="https://docs.google.com/forms/d/e/1FAIpQLScSQYirepAf9bccyZkKYOtMT-V5EiXLUB8F6CSDvm8kSO9ljw/viewform?embedded=true"
+          width="640"
+          height="700"
+          class="block w-full"
+        >
+          Loading…
+        </iframe>
+      </div>
+    </div>
+  </div>
+</section>

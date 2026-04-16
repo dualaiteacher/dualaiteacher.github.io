@@ -1,10 +1,11 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import FundingBanner from "../components/site/FundingBanner.astro";
+import ConstructionBanner from "../components/site/ConstructionBanner.astro";
 import SiteFooter from "../components/site/SiteFooter.astro";
 import CookieConsent from "../components/site/CookieConsent.astro";
 import SiteScripts from "../components/site/SiteScripts.astro";
 import {
+  defaultCookieConsent,
   defaultLang,
   getDictionary,
   isLang,
@@ -17,9 +18,9 @@ const dict = getDictionary(lang);
 ---
 
 <Layout title={dict.notFound.metaTitle} lang={lang}>
-  <CookieConsent />
+  <CookieConsent t={"cookieConsent" in dict ? dict.cookieConsent : defaultCookieConsent} />
   <div class="min-h-screen flex flex-col">
-    <FundingBanner t={dict.fundingBanner} />
+    <ConstructionBanner t={dict.fundingBanner} />
 
     <header class="sticky top-0 z-50 bg-white border-b-4 border-accent shadow-sm">
       <div class="mx-auto px-4 py-4">
@@ -63,7 +64,7 @@ const dict = getDictionary(lang);
       </div>
     </main>
 
-    <SiteFooter sectionLinkPrefix={`/${lang}/`} t={dict.footer} />
+    <SiteFooter lang={lang} t={dict.footer} />
   </div>
   <SiteScripts />
 </Layout>

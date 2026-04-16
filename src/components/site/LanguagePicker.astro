@@ -9,12 +9,24 @@ const { lang } = Astro.props;
 
 const entries = Object.entries(languages) as [Lang, string][];
 const flags: Record<Lang, string> = {
+  cs: "/flags/cs.svg",
+  de: "/flags/de.svg",
   en: "/flags/gb.svg",
+  es: "/flags/es.svg",
+  lv: "/flags/lv.svg",
+  pl: "/flags/pl.svg",
   sl: "/flags/si.svg",
+  sk: "/flags/sk.svg",
 };
 const abbreviations: Record<Lang, string> = {
   en: "EN",
   sl: "SI",
+  sk: "SK",
+  cs: "CS",
+  de: "DE",
+  es: "ES",
+  lv: "LV",
+  pl: "PL",
 };
 ---
 
@@ -82,7 +94,7 @@ const abbreviations: Record<Lang, string> = {
     function getLocalizedPath(targetLang) {
       var url = new URL(window.location.href);
       var parts = url.pathname.split("/").filter(Boolean);
-      var supported = ["en", "sl"];
+      var supported = ["en", "sl", "sk", "cs", "de", "es", "lv", "pl"];
 
       if (parts.length && supported.indexOf(parts[0]) !== -1) {
         parts[0] = targetLang;

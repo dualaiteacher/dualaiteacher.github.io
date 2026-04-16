@@ -8,6 +8,10 @@ interface Props {
       type: string;
       name: string;
       country: string;
+      website?: string;
+      facebook?: string;
+      instagram?: string;
+      linkedin?: string;
     }[];
   };
 }
@@ -47,7 +51,22 @@ const { t } = Astro.props;
 
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
       {t.partners.map((partner, index) => (
-        <a href="#about-partners" class="group bg-white rounded-2xl border-t-4 border-brand p-5 shadow-md transition-all hover:-translate-y-1 hover:shadow-xl">
+        <div
+          class:list={[
+            "group bg-white rounded-2xl border-t-4 border-brand p-5 shadow-md transition-all",
+            partner.website && "hover:-translate-y-1 hover:shadow-xl",
+            partner.website && "cursor-pointer",
+          ]}
+          role={partner.website ? "link" : undefined}
+          tabindex={partner.website ? "0" : undefined}
+          data-href={partner.website || undefined}
+          onclick={partner.website
+            ? "const href=this.getAttribute('data-href');if(href){window.location.href=href;}"
+            : undefined}
+          onkeydown={partner.website
+            ? "const keyboardEvent=arguments[0];const href=this.getAttribute('data-href');if((keyboardEvent.key==='Enter'||keyboardEvent.key===' ')&&href){keyboardEvent.preventDefault();window.location.href=href;}"
+            : undefined}
+        >
           <p
             class:list={[
               "inline-flex text-[10px] font-black uppercase tracking-wider px-2.5 py-1 rounded-full mb-3",
@@ -70,8 +89,42 @@ const { t } = Astro.props;
           <p class="text-xs font-bold uppercase tracking-wider text-slate-600/80 mt-2">
             {partner.country}
           </p>
-          <div class="w-10 h-1 rounded-full bg-accent mt-4"></div>
-        </a>
+          <div class="flex items-center justify-between gap-4 mt-4">
+            <div class="w-10 h-1 rounded-full bg-accent"></div>
+            <div class="flex items-center gap-2">
+              {partner.facebook && (
+                <a
+                  href={partner.facebook}
+                  onclick="arguments[0].stopPropagation()"
+                  aria-label={`${partner.name} on Facebook`}
+                  class="inline-flex h-8 w-8 items-center justify-center rounded-full border border-slate-200 text-brand transition-colors hover:border-brand hover:bg-accent/30"
+                >
+                  <img src="/icons/facebook.svg" alt="" class="h-4 w-4" />
+                </a>
+              )}
+              {partner.instagram && (
+                <a
+                  href={partner.instagram}
+                  onclick="arguments[0].stopPropagation()"
+                  aria-label={`${partner.name} on Instagram`}
+                  class="inline-flex h-8 w-8 items-center justify-center rounded-full border border-slate-200 text-brand transition-colors hover:border-brand hover:bg-accent/30"
+                >
+                  <img src="/icons/instagram.svg" alt="" class="h-4 w-4" />
+                </a>
+              )}
+              {partner.linkedin && (
+                <a
+                  href={partner.linkedin}
+                  onclick="arguments[0].stopPropagation()"
+                  aria-label={`${partner.name} on LinkedIn`}
+                  class="inline-flex h-8 w-8 items-center justify-center rounded-full border border-slate-200 text-brand transition-colors hover:border-brand hover:bg-accent/30"
+                >
+                  <img src="/icons/linkedin.svg" alt="" class="h-4 w-4" />
+                </a>
+              )}
+            </div>
+          </div>
+        </div>
       ))}
     </div>
   </div>

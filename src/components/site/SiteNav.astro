@@ -8,10 +8,14 @@ interface Props {
     why: string;
     how: string;
     partners: string;
+    contact: string;
   };
 }
 
 const { lang, t } = Astro.props;
+const homeHref = `/${lang}/`;
+const partnersHref = `/${lang}/partners/`;
+const contactHref = `/${lang}/contact/`;
 ---
 
 <nav
@@ -19,7 +23,7 @@ const { lang, t } = Astro.props;
 >
   <div class="mx-auto px-4 flex items-center py-4 flex-wrap gap-3">
     <a
-      href={`/${lang}/`}
+      href={`${homeHref}`}
       class="flex items-center no-underline hover:no-underline"
     >
       <img
@@ -31,27 +35,33 @@ const { lang, t } = Astro.props;
     <ul class="hidden md:flex gap-8 list-none m-0 p-0 ml-16 flex-wrap">
       <li>
         <a
-          href="#about"
+          href={`${homeHref}#about`}
           class="text-base font-bold text-slate-600 hover:text-brand no-underline transition-colors uppercase tracking-wide"
          >{t.what}</a>
       </li>
       <li>
         <a
-          href="#why"
+          href={`${homeHref}#why`}
           class="text-base font-bold text-slate-600 hover:text-brand no-underline transition-colors uppercase tracking-wide"
          >{t.why}</a>
       </li>
       <li>
         <a
-          href="#how"
+          href={`${homeHref}#how`}
           class="text-base font-bold text-slate-600 hover:text-brand no-underline transition-colors uppercase tracking-wide"
          >{t.how}</a>
       </li>
       <li>
         <a
-          href="#about-partners"
+          href={partnersHref}
           class="text-base font-bold text-slate-600 hover:text-brand no-underline transition-colors uppercase tracking-wide"
          >{t.partners}</a>
+      </li>
+      <li>
+        <a
+          href={contactHref}
+          class="text-base font-bold text-slate-600 hover:text-brand no-underline transition-colors uppercase tracking-wide"
+         >{t.contact}</a>
       </li>
     </ul>
     <button
@@ -75,25 +85,25 @@ const { lang, t } = Astro.props;
     <ul class="list-none m-0 p-0 flex flex-col gap-2 pt-4">
       <li>
         <a
-          href="#about"
+          href={`${homeHref}#about`}
           class="block py-3 text-lg font-black text-brand uppercase border-b border-slate-100"
          >{t.what}</a>
       </li>
       <li>
         <a
-          href="#why"
+          href={`${homeHref}#why`}
           class="block py-3 text-lg font-black text-brand uppercase border-b border-slate-100"
          >{t.why}</a>
       </li>
       <li>
         <a
-          href="#how"
+          href={`${homeHref}#how`}
           class="block py-3 text-lg font-black text-brand uppercase border-b border-slate-100"
          >{t.how}</a>
       </li>
       <li>
         <a
-          href="#about-partners"
+          href={partnersHref}
           class="block py-3 text-lg font-black text-brand uppercase border-b border-slate-100"
          >{t.partners}</a>
       </li>

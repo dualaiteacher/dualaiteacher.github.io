@@ -1,6 +1,8 @@
 ---
+import { type Lang } from "../../i18n";
+
 interface Props {
-  sectionLinkPrefix?: string;
+  lang: Lang;
   t: {
     tagline: string;
     licenseLabel: string;
@@ -16,8 +18,11 @@ interface Props {
   };
 }
 
-const { sectionLinkPrefix = "", t } = Astro.props;
+const { lang, t } = Astro.props;
 const currentYear = new Date().getFullYear();
+const homeHref = `/${lang}/`;
+const partnersHref = `/${lang}/partners/`;
+const euBadgeSrc = `/cofunded/${lang}.png`;
 ---
 
 <footer
@@ -40,7 +45,7 @@ const currentYear = new Date().getFullYear();
         <span aria-hidden="true" class="text-slate-300">|</span>
         <a
           href="https://creativecommons.org/licenses/by-nc-sa/4.0/"
-          target="_blank"
+          target="_self"
           rel="noopener noreferrer"
           class="font-semibold text-brand hover:text-accent transition-colors"
          
@@ -56,25 +61,25 @@ const currentYear = new Date().getFullYear();
     <ul class="flex gap-8 list-none p-0 m-0 flex-wrap justify-center">
       <li>
         <a
-          href={`${sectionLinkPrefix}#about`}
+          href={`${homeHref}#about`}
           class="text-slate-600 font-bold hover:text-accent no-underline transition-colors uppercase tracking-wide"
          >{t.nav.what}</a>
       </li>
       <li>
         <a
-          href={`${sectionLinkPrefix}#why`}
+          href={`${homeHref}#why`}
           class="text-slate-600 font-bold hover:text-accent no-underline transition-colors uppercase tracking-wide"
          >{t.nav.why}</a>
       </li>
       <li>
         <a
-          href={`${sectionLinkPrefix}#how`}
+          href={`${homeHref}#how`}
           class="text-slate-600 font-bold hover:text-accent no-underline transition-colors uppercase tracking-wide"
          >{t.nav.how}</a>
       </li>
       <li>
         <a
-          href={`${sectionLinkPrefix}#about-partners`}
+          href={partnersHref}
           class="text-slate-600 font-bold hover:text-accent no-underline transition-colors uppercase tracking-wide"
           >{t.nav.partners}</a>
       </li>
@@ -92,7 +97,7 @@ const currentYear = new Date().getFullYear();
     >
       <div class="bg-white rounded-md p-1.5 shrink-0">
         <img
-          src="/cofunded.png"
+          src={euBadgeSrc}
           alt={t.euFlagAlt}
           class="h-10 w-auto"
           loading="lazy"
@@ -105,5 +110,3 @@ const currentYear = new Date().getFullYear();
     </div>
   </div>
 </footer>
-
-

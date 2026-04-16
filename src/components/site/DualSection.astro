@@ -1,8 +1,6 @@
 ---
 interface Props {
   t: {
-    title: string;
-    lead: string;
     with: {
       titleStart: string;
       titleAccent: string;
@@ -31,22 +29,6 @@ const { t } = Astro.props;
     class="absolute inset-0 opacity-[0.02] bg-pattern-light pointer-events-none"
   >
   </div>
-
-  <div class="max-w-[1200px] mx-auto px-6 relative z-10">
-    <div class="text-center mb-24">
-      <h2
-        class="text-5xl md:text-6xl font-black leading-tight text-brand mb-6 tracking-tight"
-       
-      >
-        {t.title}
-      </h2>
-      <p
-        class="text-2xl text-slate-600 max-w-3xl mx-auto font-medium leading-relaxed"
-       
-      >
-        {t.lead}
-      </p>
-    </div>
 
     <div
       class="relative flex flex-col md:flex-row items-stretch justify-between w-full max-w-5xl mx-auto gap-12 md:gap-0"

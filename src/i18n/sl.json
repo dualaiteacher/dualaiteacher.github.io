@@ -7,11 +7,46 @@
     "euFunding": "Financira Evropska unija, ERASMUS-EDU-2025-PEX-TEACH-ACA 101249519",
     "euFlagAlt": "Zastava EU"
   },
+  "cookieConsent": {
+    "banner": {
+      "title": "Spoštujemo vašo zasebnost",
+      "bodyBeforeLink": "Uporabljamo piškotke in Microsoft Clarity, da bi bolje razumeli, kako se naša spletna stran uporablja, in izboljšali vašo izkušnjo. Piškotke lahko sprejmete v celoti, zavrnete tiste, ki niso nujno potrebni, ali ",
+      "preferencesLink": "prilagodite svoje nastavitve",
+      "bodyAfterLink": ".",
+      "acceptAll": "Sprejmi vse",
+      "rejectAll": "Zavrni vse"
+    },
+    "modal": {
+      "title": "Nastavitve piškotkov",
+      "description": "Izberite, katere kategorije piškotkov želite dovoliti. Osnovni piškotki so vedno aktivni, saj so nujni za delovanje spletne strani.",
+      "essential": {
+        "title": "Nujni piškotki",
+        "badge": "Vedno aktivni",
+        "body": "Nujni za osnovno delovanje spletnega mesta, kot sta navigacija in varnost. Te funkcije ni mogoče onemogočiti."
+      },
+      "analytics": {
+        "title": "Piškotki za analitiko",
+        "body": "Pomagajte nam razumeti, kako obiskovalci uporabljajo spletno stran, tako da zberemo anonimne podatke o uporabi prek storitve Microsoft Clarity."
+      },
+      "advertising": {
+        "title": "Oglaševalski piškotki",
+        "body": "Uporablja se za prikazovanje ustreznih vsebin in merjenje učinkovitosti oglaševalskih kampanj. Trenutno ne prikazujemo oglasov, vendar ta nastavitev ureja shranjevanje podatkov, povezanih z oglaševanjem."
+      },
+      "cancel": "Prekliči",
+      "rejectAll": "Zavrni vse",
+      "savePreferences": "Shrani nastavitve"
+    }
+  },
+    "contactSection": {
+    "title": "Stopite v stik z nami.",
+    "lead": "Za vprašanja, sodelovanje ali dodatne informacije nam pošljite sporočilo prek spodnjega obrazca."
+  },
   "nav": {
     "what": "Kaj",
     "why": "Zakaj",
     "how": "Kako",
-    "partners": "Partnerji"
+    "partners": "Partnerji",
+    "contact": "Kontakt"
   },
   "hero": {
     "titleAccent": "Poučevanje z umetno Inteligenco",
@@ -46,8 +81,6 @@
     ]
   },
   "dual": {
-    "title": "Obvladovanje obeh vidikov umetne inteligence v izobraževanju.",
-    "lead": "Projekt temelji na kombiniranem pristopu, ki učitelje pripravlja na doseganje dveh različnih, a med seboj tesno povezanih ciljev.",
     "with": {
       "titleStart": "Poučevanje",
       "titleAccent": "z",
@@ -120,57 +153,101 @@
       {
         "type": "MSP",
         "name": "ACCELERAS KG",
-        "country": "Avstrija"
+        "country": "Avstrija",
+        "website": "https://www.acceleras.io",
+        "linkedin": "https://www.linkedin.com/company/accelerasaustria/",
+        "facebook": "https://www.facebook.com/acceleras.io",
+        "instagram": "https://www.instagram.com/acceleras.io/"
       },
       {
         "type": "Univerza",
         "name": "College of Business and Health Sciences",
-        "country": "Poljska"
+        "country": "Poljska",
+        "website": "https://www.wsbinoz.edu.pl",
+        "linkedin": "https://www.linkedin.com/school/wy%C5%BCsza-szko%C5%82a-biznesu-i-nauk-o-zdrowiu-w-%C5%82odzi/",
+        "facebook": "",
+        "instagram": ""
       },
       {
         "type": "Javni organ",
         "name": "Consellería de Educación, Ciencia, Universidades e Formación Profesional",
-        "country": "Španija"
+        "country": "Španija",
+        "website": "",
+        "linkedin": "",
+        "facebook": "",
+        "instagram": ""
       },
       {
         "type": "Univerza",
         "name": "Daugavpils University",
-        "country": "Latvija"
+        "country": "Latvija",
+        "website": "http://www.du.lv/",
+        "linkedin": "",
+        "facebook": "https://www.facebook.com/DaugavpilsUniversitate",
+        "instagram": ""
       },
       {
         "type": "Certifikacijski organ",
         "name": "ICEP Institute of European Certification of Personnel s.r.o.",
-        "country": "Slovaška"
+        "country": "Slovaška",
+        "website": "https://www.iceponline.com/",
+        "linkedin": "https://sk.linkedin.com/company/iceponline",
+        "facebook": "https://www.facebook.com/iceponline/",
+        "instagram": "https://www.instagram.com/icep.online"
       },
       {
         "type": "MSP",
         "name": "INSTITUT INPRO AS",
-        "country": "Češka"
+        "country": "Češka",
+        "website": "",
+        "linkedin": "",
+        "facebook": "",
+        "instagram": ""
       },
       {
         "type": "Poklicni ponudnik",
         "name": "SIA Macibu centrs \"Austrumvidzeme\"",
-        "country": "Latvija"
+        "country": "Latvija",
+        "website": "http://www.austrumvidzeme.lv/",
+        "linkedin": "https://www.linkedin.com/company/austrumvidzeme/",
+        "facebook": "https://www.facebook.com/Austrumvidzeme/",
+        "instagram": ""
       },
       {
         "type": "Univerza",
         "name": "University of Education Weingarten",
-        "country": "Nemčija"
+        "country": "Nemčija",
+        "website": "https://www.ph-weingarten.de/de",
+        "linkedin": "https://www.linkedin.com/school/p%C3%A4dagogische-hochschule-weingarten/posts/?feedView=all",
+        "facebook": "https://www.facebook.com/pages/P%C3%A4dagogische-Hochschule-Weingarten/107917349236439",
+        "instagram": "https://www.instagram.com/ph_weingarten/"
       },
       {
         "type": "Univerza",
         "name": "University of Maribor",
-        "country": "Slovenija"
+        "country": "Slovenija",
+        "website": "https://www.um.si/",
+        "linkedin": "https://www.linkedin.com/school/univerza-v-mariboru/posts/?feedView=all",
+        "facebook": "https://www.facebook.com/UniversityOfMaribor/",
+        "instagram": "https://www.instagram.com/univerza_v_mariboru/"
       },
       {
         "type": "Univerza",
         "name": "University of Vigo",
-        "country": "Španija"
+        "country": "Španija",
+        "website": "",
+        "linkedin": "",
+        "facebook": "",
+        "instagram": ""
       },
       {
         "type": "Univerza",
         "name": "University of Žilina",
-        "country": "Slovaška"
+        "country": "Slovaška",
+        "website": "https://uniza.sk/",
+        "linkedin": "https://sk.linkedin.com/school/university-of-zilina/",
+        "facebook": "https://www.facebook.com/uniza.sk",
+        "instagram": "https://www.instagram.com/zilinska.univerzita/?hl=en"
       }
     ]
   },
@@ -211,7 +288,7 @@
       "cookieSettings": "Nastavitve piškotkov"
     },
     "euFlagAlt": "Sofinancira Evropska unija",
-    "euDisclaimer": "Financira Evropska unija. Izražena stališča in mnenja so izključno stališča avtorja oziroma avtorjev in ne odražajo nujno stališč Evropske unije ali Evropske izvajalske agencije za izobraževanje in kulturo (EACEA). Niti Evropska unija niti EACEA zanje ne moreta biti odgovorni."
+    "euDisclaimer": "Financirano s strani Evropske unije. Izražena stališča in mnenja so zgolj stališča in mnenja avtorja(-ev) in ni nujno, da odražajo stališča in mnenja Evropske unije ali Evropske izvajalske agencije za izobraževanje in kulturo (EACEA). Zanje ne moreta biti odgovorna niti Evropska unija niti EACEA."
   },
   "notFound": {
     "metaTitle": "404 - Stran ni najdena | DUAL.AI.TEACHer",
