@@ -95,61 +95,71 @@ const abbreviations: Record<Lang, string> = {
 
 <script is:inline>
   (function () {
-    if (window.__languagePickerInitialized) return;
-    window.__languagePickerInitialized = true;
+    function initLanguagePickers() {
+      if (window.__languagePickerInitialized) return;
+      window.__languagePickerInitialized = true;
 
-    function getLocalizedPath(targetLang) {
-      var url = new URL(window.location.href);
-      var parts = url.pathname.split("/").filter(Boolean);
-      var supported = ["en", "sl", "sk", "cs", "de", "es", "lv", "pl"];
+      function getLocalizedPath(targetLang) {
+        var url = new URL(window.location.href);
+        var parts = url.pathname.split("/").filter(Boolean);
+        var supported = ["en", "sl", "sk", "cs", "de", "es", "lv", "pl"];
 
-      if (parts.length && supported.indexOf(parts[0]) !== -1) {
-        parts[0] = targetLang;
-      } else {
-        parts.unshift(targetLang);
+        if (parts.length && supported.indexOf(parts[0]) !== -1) {
+          parts[0] = targetLang;
+        } else {
+          parts.unshift(targetLang);
+        }
+
+        return "/" + parts.join("/") + "/" + url.search + url.hash;
       }
 
-      return "/" + parts.join("/") + "/" + url.search + url.hash;
+      function openMenu(toggle, menu) {
+        toggle.setAttribute("aria-expanded", "true");
+        menu.hidden = false;
+      }
+
+      function closeMenu(toggle, menu) {
+        toggle.setAttribute("aria-expanded", "false");
+        menu.hidden = true;
+      }
+
+      var pickers = document.querySelectorAll("[data-language-picker]");
+      if (!pickers.length) return;
+
+      pickers.forEach(function (picker) {
+        var toggle = picker.querySelector("[data-language-picker-toggle]");
+        var menu = picker.querySelector("[data-language-picker-menu]");
+        var links = picker.querySelectorAll("[data-lang-link]");
+
+        if (!toggle || !menu) return;
+
+        toggle.addEventListener("click", function () {
+          if (menu.hidden) openMenu(toggle, menu);
+          else closeMenu(toggle, menu);
+        });
+
+        document.addEventListener("click", function (event) {
+          if (!picker.contains(event.target)) closeMenu(toggle, menu);
+        });
+
+        document.addEventListener("keydown", function (event) {
+          if (event.key === "Escape") closeMenu(toggle, menu);
+        });
+
+        links.forEach(function (link) {
+          var targetLang = link.getAttribute("data-lang-link");
+          if (!targetLang) return;
+          link.setAttribute("href", getLocalizedPath(targetLang));
+        });
+      });
     }
 
-    function openMenu(toggle, menu) {
-      toggle.setAttribute("aria-expanded", "true");
-      menu.hidden = false;
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", initLanguagePickers, {
+        once: true,
+      });
+    } else {
+      initLanguagePickers();
     }
-
-    function closeMenu(toggle, menu) {
-      toggle.setAttribute("aria-expanded", "false");
-      menu.hidden = true;
-    }
-
-    var pickers = document.querySelectorAll("[data-language-picker]");
-    if (!pickers.length) return;
-
-    pickers.forEach(function (picker) {
-      var toggle = picker.querySelector("[data-language-picker-toggle]");
-      var menu = picker.querySelector("[data-language-picker-menu]");
-      var links = picker.querySelectorAll("[data-lang-link]");
-
-      if (!toggle || !menu) return;
-
-      toggle.addEventListener("click", function () {
-        if (menu.hidden) openMenu(toggle, menu);
-        else closeMenu(toggle, menu);
-      });
-
-      document.addEventListener("click", function (event) {
-        if (!picker.contains(event.target)) closeMenu(toggle, menu);
-      });
-
-      document.addEventListener("keydown", function (event) {
-        if (event.key === "Escape") closeMenu(toggle, menu);
-      });
-
-      links.forEach(function (link) {
-        var targetLang = link.getAttribute("data-lang-link");
-        if (!targetLang) return;
-        link.setAttribute("href", getLocalizedPath(targetLang));
-      });
-    });
   })();
 </script>
