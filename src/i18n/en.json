@@ -56,13 +56,13 @@
     "secondaryCta": "Partners"
   },
   "about": {
-    "eyebrow": "What",
+    "label": "What",
     "title": "Bridging the AI literacy gap in European education.",
     "lead": "A pan-European initiative designed to modernize teacher education by equipping educators with the required skills to navigate an AI-driven landscape.",
     "body": "We are building an ecosystem that provides hands-on training and a formal EU-aligned certification framework - ensuring no educator is left behind in the digital transition."
   },
   "why": {
-    "eyebrow": "Why",
+    "label": "Why",
     "title": "The urgent need for change.",
     "lead": "AI tools are reshaping education, but teachers feel unprepared. There is no standardized, EU-level framework to close this gap.",
     "items": [
@@ -123,7 +123,7 @@
     ]
   },
   "how": {
-    "eyebrow": "HOW",
+    "label": "HOW",
     "title": "How will the project achieve its goals?",
     "lead": "Through four interconnected phases over a 36-month timeline.",
     "phases": [
@@ -146,7 +146,7 @@
     ]
   },
   "aboutPartners": {
-    "eyebrow": "Consortium",
+    "label": "Consortium",
     "title": "11 Partners. One Shared Mission.",
     "lead": "A cross-sector alliance spanning universities, public institutions, SMEs, VET, and certification.",
     "partners": [
@@ -292,7 +292,7 @@
   },
   "notFound": {
     "metaTitle": "404 - Page Not Found | DUAL.AI.TEACHer",
-    "eyebrow": "Error 404",
+    "label": "Error 404",
     "title": "Page Not Found",
     "body": "The page you are looking for does not exist or may have moved.",
     "backHome": "Back to Home"

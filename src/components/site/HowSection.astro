@@ -1,7 +1,7 @@
 ---
 interface Props {
   t: {
-    eyebrow: string;
+    label: string;
     title: string;
     lead: string;
     phases: {
@@ -28,7 +28,7 @@ const { t } = Astro.props;
       <span
         class="bg-accent text-brand text-sm font-black px-4 py-1.5 rounded-full uppercase tracking-widest shadow-[0_0_15px_rgba(255,204,0,0.4)]"
        
-        >{t.eyebrow}</span
+        >{t.label}</span
       >
       <h2
         class="text-5xl md:text-6xl font-black text-white tracking-tight mt-6"

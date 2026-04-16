@@ -3,9 +3,10 @@ import { languages, type Lang } from "../../i18n";
 
 interface Props {
   lang: Lang;
+  mobile?: boolean;
 }
 
-const { lang } = Astro.props;
+const { lang, mobile = false } = Astro.props;
 
 const entries = Object.entries(languages) as [Lang, string][];
 const flags: Record<Lang, string> = {
@@ -30,10 +31,19 @@ const abbreviations: Record<Lang, string> = {
 };
 ---
 
-<div class="language-picker" data-language-picker>
+<div
+  class:list={[
+    "font-sans",
+    mobile ? "relative md:hidden" : "fixed right-8 bottom-16 z-50 hidden md:block",
+  ]}
+  data-language-picker
+>
   <button
     type="button"
-    class="language-picker__button"
+    class:list={[
+      "inline-flex min-w-0 cursor-pointer items-center gap-3 rounded-full border border-slate-300 bg-white font-bold text-gray-800 shadow-lg hover:bg-slate-50",
+      mobile ? "px-4 py-2 text-base" : "px-5 py-3 text-lg",
+    ]}
     aria-expanded="false"
     aria-haspopup="true"
     aria-label="Select language"
@@ -42,7 +52,7 @@ const abbreviations: Record<Lang, string> = {
     <img
       src={flags[lang]}
       alt=""
-      class="language-picker__flag"
+      class="h-4 w-5 shrink-0 rounded object-cover shadow-sm"
       width="18"
       height="14"
       loading="eager"
@@ -52,7 +62,10 @@ const abbreviations: Record<Lang, string> = {
   </button>
 
   <div
-    class="language-picker__menu"
+    class:list={[
+      "absolute min-w-44 max-h-64 overflow-y-auto rounded-2xl border border-slate-300 bg-white shadow-xl",
+      mobile ? "top-full left-0 mt-2" : "right-0 bottom-full mb-2.5",
+    ]}
     hidden
     data-language-picker-menu
   >
@@ -60,15 +73,15 @@ const abbreviations: Record<Lang, string> = {
       <a
         href={`/${code}/`}
         class:list={[
-          "language-picker__option",
-          code === lang && "language-picker__option--active",
+          "flex items-center gap-2.5 px-3.5 py-3 text-sm font-bold text-gray-800 no-underline hover:bg-slate-50",
+          code === lang && "bg-slate-100",
         ]}
         data-lang-link={code}
       >
         <img
           src={flags[code]}
           alt=""
-          class="language-picker__option-flag"
+          class="h-4 w-5 shrink-0 rounded-sm object-cover shadow-sm"
           width="20"
           height="15"
           loading="lazy"
@@ -82,14 +95,8 @@ const abbreviations: Record<Lang, string> = {
 
 <script is:inline>
   (function () {
-    var picker = document.querySelector("[data-language-picker]");
-    if (!picker) return;
-
-    var toggle = picker.querySelector("[data-language-picker-toggle]");
-    var menu = picker.querySelector("[data-language-picker-menu]");
-    var links = picker.querySelectorAll("[data-lang-link]");
-
-    if (!toggle || !menu) return;
+    if (window.__languagePickerInitialized) return;
+    window.__languagePickerInitialized = true;
 
     function getLocalizedPath(targetLang) {
       var url = new URL(window.location.href);
@@ -105,33 +112,44 @@ const abbreviations: Record<Lang, string> = {
       return "/" + parts.join("/") + "/" + url.search + url.hash;
     }
 
-    function openMenu() {
+    function openMenu(toggle, menu) {
       toggle.setAttribute("aria-expanded", "true");
       menu.hidden = false;
     }
 
-    function closeMenu() {
+    function closeMenu(toggle, menu) {
       toggle.setAttribute("aria-expanded", "false");
       menu.hidden = true;
     }
 
-    toggle.addEventListener("click", function () {
-      if (menu.hidden) openMenu();
-      else closeMenu();
-    });
+    var pickers = document.querySelectorAll("[data-language-picker]");
+    if (!pickers.length) return;
 
-    document.addEventListener("click", function (event) {
-      if (!picker.contains(event.target)) closeMenu();
-    });
+    pickers.forEach(function (picker) {
+      var toggle = picker.querySelector("[data-language-picker-toggle]");
+      var menu = picker.querySelector("[data-language-picker-menu]");
+      var links = picker.querySelectorAll("[data-lang-link]");
 
-    document.addEventListener("keydown", function (event) {
-      if (event.key === "Escape") closeMenu();
-    });
+      if (!toggle || !menu) return;
 
-    links.forEach(function (link) {
-      var targetLang = link.getAttribute("data-lang-link");
-      if (!targetLang) return;
-      link.setAttribute("href", getLocalizedPath(targetLang));
+      toggle.addEventListener("click", function () {
+        if (menu.hidden) openMenu(toggle, menu);
+        else closeMenu(toggle, menu);
+      });
+
+      document.addEventListener("click", function (event) {
+        if (!picker.contains(event.target)) closeMenu(toggle, menu);
+      });
+
+      document.addEventListener("keydown", function (event) {
+        if (event.key === "Escape") closeMenu(toggle, menu);
+      });
+
+      links.forEach(function (link) {
+        var targetLang = link.getAttribute("data-lang-link");
+        if (!targetLang) return;
+        link.setAttribute("href", getLocalizedPath(targetLang));
+      });
     });
   })();
 </script>

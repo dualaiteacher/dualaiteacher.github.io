@@ -56,13 +56,13 @@
     "secondaryCta": "Partnerji"
   },
   "about": {
-    "eyebrow": "Kaj",
+    "label": "Kaj",
     "title": "Zapolnjevanje vrzeli v znanju o umetni inteligenci v Evropi.",
     "lead": "Pobuda, namenjena posodobitvi izobraževanja učiteljev, ki jim bo omogočila pridobitev potrebnih veščin za uspešno delovanje v okolju, ki ga zaznamuje umetna inteligenca.",
     "body": "Gradimo ekosistem, ki ponuja praktično usposabljanje in uradni certifikacijski okvir, usklajen z EU."
   },
   "why": {
-    "eyebrow": "Zakaj",
+    "label": "Zakaj",
     "title": "Nujna potreba po spremembi.",
     "lead": "Orodja umetne inteligence spreminjajo šolstvo, učitelji pa se počutijo nepripravljeni. Ni standardiziranega okvira na ravni EU, ki bi zapolnil to vrzel.",
     "items": [
@@ -123,7 +123,7 @@
     ]
   },
   "how": {
-    "eyebrow": "KAKO",
+    "label": "KAKO",
     "title": "Kako bo projekt dosegel svoje cilje?",
     "lead": "Skozi štiri medsebojno povezane faze v 36-mesečnem časovnem okviru.",
     "phases": [
@@ -146,7 +146,7 @@
     ]
   },
   "aboutPartners": {
-    "eyebrow": "Konzorcij",
+    "label": "Konzorcij",
     "title": "11 partnerjev. Ena skupna misija.",
     "lead": "Medsektorska mreža, ki združuje univerze, javne ustanove, mala in srednja podjetja, poklicno izobraževanje in usposabljanje ter certificiranje.",
     "partners": [
@@ -292,7 +292,7 @@
   },
   "notFound": {
     "metaTitle": "404 - Stran ni najdena | DUAL.AI.TEACHer",
-    "eyebrow": "Napaka 404",
+    "label": "Napaka 404",
     "title": "Stran ni najdena",
     "body": "Stran, ki jo iščete, ne obstaja ali pa je bila premaknjena.",
     "backHome": "Nazaj na domov"
