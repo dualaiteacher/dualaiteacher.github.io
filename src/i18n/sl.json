@@ -2,10 +2,8 @@
   "meta": {
     "title": "DUAL.AI.TEACHer"
   },
-  "fundingBanner": {
-    "construction": "Spletna stran je v izdelavi. Vsebina se lahko spremeni.",
-    "euFunding": "Financira Evropska unija, ERASMUS-EDU-2025-PEX-TEACH-ACA 101249519",
-    "euFlagAlt": "Zastava EU"
+  "constructionBanner": {
+    "construction": "Spletna stran je v izdelavi. Vsebina se lahko spremeni."
   },
   "cookieConsent": {
     "banner": {

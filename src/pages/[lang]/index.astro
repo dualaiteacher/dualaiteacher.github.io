@@ -32,7 +32,7 @@ const dict = getDictionary(lang);
 
 <Layout title={dict.meta.title} lang={lang}>
   <CookieConsent t={"cookieConsent" in dict ? dict.cookieConsent : defaultCookieConsent} />
-  <ConstructionBanner t={dict.fundingBanner} />
+  <ConstructionBanner t={dict.constructionBanner} />
   <SiteNav lang={lang} t={dict.nav} />
   <HeroSection lang={lang} t={dict.hero} />
   <AboutSection t={dict.about} />

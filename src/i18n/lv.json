@@ -2,10 +2,8 @@
   "meta": {
     "title": "DUAL.AI.TEACHer"
   },
-  "fundingBanner": {
-    "construction": "Website under construction. Content is subject to change.",
-    "euFunding": "Funded by the European Union, ERASMUS-EDU-2025-PEX-TEACH-ACA 101249519",
-    "euFlagAlt": "EU flag"
+  "constructionBanner": {
+    "construction": "Website under construction. Content is subject to change."
   },
   "cookieConsent": {
     "banner": {
