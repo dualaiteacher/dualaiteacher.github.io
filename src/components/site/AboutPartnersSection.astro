@@ -1,4 +1,8 @@
 ---
+import FacebookIcon from "../../assets/icons/facebook.svg";
+import InstagramIcon from "../../assets/icons/instagram.svg";
+import LinkedInIcon from "../../assets/icons/linkedin.svg";
+
 interface Props {
   t: {
     label: string;
@@ -99,7 +103,7 @@ const { t } = Astro.props;
                   aria-label={`${partner.name} on Facebook`}
                   class="inline-flex h-8 w-8 items-center justify-center rounded-full border border-slate-200 text-brand transition-colors hover:border-brand hover:bg-accent/30"
                 >
-                  <img src="/icons/facebook.svg" alt="" class="h-4 w-4" />
+                  <FacebookIcon class="block h-4 w-4" aria-hidden="true" focusable="false" />
                 </a>
               )}
               {partner.instagram && (
@@ -109,7 +113,7 @@ const { t } = Astro.props;
                   aria-label={`${partner.name} on Instagram`}
                   class="inline-flex h-8 w-8 items-center justify-center rounded-full border border-slate-200 text-brand transition-colors hover:border-brand hover:bg-accent/30"
                 >
-                  <img src="/icons/instagram.svg" alt="" class="h-4 w-4" />
+                  <InstagramIcon class="block h-4 w-4" aria-hidden="true" focusable="false" />
                 </a>
               )}
               {partner.linkedin && (
@@ -119,7 +123,7 @@ const { t } = Astro.props;
                   aria-label={`${partner.name} on LinkedIn`}
                   class="inline-flex h-8 w-8 items-center justify-center rounded-full border border-slate-200 text-brand transition-colors hover:border-brand hover:bg-accent/30"
                 >
-                  <img src="/icons/linkedin.svg" alt="" class="h-4 w-4" />
+                  <LinkedInIcon class="block h-4 w-4" aria-hidden="true" focusable="false" />
                 </a>
               )}
             </div>

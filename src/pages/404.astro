@@ -1,9 +1,11 @@
 ---
+import { Image } from "astro:assets";
 import Layout from "../layouts/Layout.astro";
 import ConstructionBanner from "../components/site/ConstructionBanner.astro";
 import SiteFooter from "../components/site/SiteFooter.astro";
 import CookieConsent from "../components/site/CookieConsent.astro";
 import SiteScripts from "../components/site/SiteScripts.astro";
+import dualAiNavbar from "../assets/branding/dual-ai-navbar.png";
 import {
   defaultCookieConsent,
   defaultLang,
@@ -28,8 +30,8 @@ const dict = getDictionary(lang);
           href={`/${lang}/`}
           class="inline-flex items-center no-underline hover:no-underline"
         >
-          <img
-            src="/dual-ai-navbar.png"
+          <Image
+            src={dualAiNavbar}
             alt="DUAL.AI.TEACHer"
             class="h-10 sm:h-12 ml-6 w-auto"
           />

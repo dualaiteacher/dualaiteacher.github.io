@@ -1,4 +1,6 @@
 ---
+import type { ImageMetadata } from "astro";
+import { Image } from "astro:assets";
 import { type Lang } from "../../i18n";
 
 interface Props {
@@ -22,7 +24,15 @@ const { lang, t } = Astro.props;
 const currentYear = new Date().getFullYear();
 const homeHref = `/${lang}/`;
 const partnersHref = `/${lang}/partners/`;
-const euBadgeSrc = `/cofunded/${lang}.png`;
+const euBadgeImages = import.meta.glob<{ default: ImageMetadata }>(
+  "/src/assets/cofunded/*.png",
+  { eager: true }
+);
+const euBadgeImage = euBadgeImages[`/src/assets/cofunded/${lang}.png`]?.default;
+
+if (!euBadgeImage) {
+  throw new Error(`Missing cofunded image for language "${lang}".`);
+}
 ---
 
 <footer
@@ -96,8 +106,8 @@ const euBadgeSrc = `/cofunded/${lang}.png`;
       class="mt-6 flex max-w-4xl flex-col items-center justify-center gap-4 border-t border-slate-300/50 pt-8 text-sm opacity-80 sm:flex-row sm:items-center sm:gap-3"
     >
       <div class="bg-white rounded-md p-1.5 shrink-0">
-        <img
-          src={euBadgeSrc}
+        <Image
+          src={euBadgeImage}
           alt={t.euFlagAlt}
           class="h-10 w-auto"
           loading="lazy"
