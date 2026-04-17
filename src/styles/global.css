@@ -21,6 +21,10 @@
   }
 }
 
+@view-transition {
+  navigation: auto;
+}
+
 .bg-pattern-light {
   background-image: radial-gradient(var(--color-brand) 1.5px, transparent 1.5px);
   background-size: 40px 40px;

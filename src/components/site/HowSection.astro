@@ -1,3 +1,19 @@
+---
+interface Props {
+  t: {
+    label: string;
+    title: string;
+    lead: string;
+    phases: {
+      title: string;
+      body: string;
+    }[];
+  };
+}
+
+const { t } = Astro.props;
+---
+
 <section
   id="how"
   class="py-32 px-6 bg-brand text-white relative overflow-hidden"
@@ -12,19 +28,19 @@
       <span
         class="bg-accent text-brand text-sm font-black px-4 py-1.5 rounded-full uppercase tracking-widest shadow-[0_0_15px_rgba(255,204,0,0.4)]"
        
-        >HOW</span
+        >{t.label}</span
       >
       <h2
         class="text-5xl md:text-6xl font-black text-white tracking-tight mt-6"
        
       >
-        How will the project achieve its goals?
+        {t.title}
       </h2>
       <p
         class="text-2xl text-slate-50 max-w-3xl mx-auto font-medium"
        
       >
-        Through four interconnected phases over a 36-month timeline.
+        {t.lead}
       </p>
     </div>
 
@@ -34,136 +50,40 @@
       >
       </div>
 
-      <div class="relative flex items-center justify-between mb-28 w-full">
-        <div
-          class="absolute left-8 md:left-1/2 w-16 h-16 rounded-full bg-brand border-4 border-accent shadow-[0_0_25px_rgba(255,204,0,0.6)] transform -translate-x-1/2 flex items-center justify-center z-10"
-        >
-          <span class="text-accent font-black text-2xl">1</span>
-        </div>
-        <div
-          class="w-full md:w-[45%] ml-20 md:ml-0 md:mr-auto bg-white/10 backdrop-blur-md border-2 border-blue-400/30 p-10 rounded-3xl shadow-2xl relative overflow-hidden"
-        >
+      {
+        t.phases.map((phase, index) => (
           <div
-            class="absolute -right-4 -bottom-10 text-9xl font-black text-white/5 select-none pointer-events-none"
+            class:list={[
+              "relative flex items-center justify-between w-full",
+              index < t.phases.length - 1 ? "mb-28" : "",
+            ]}
           >
-            01
+            <div
+              class="absolute left-8 md:left-1/2 w-16 h-16 rounded-full bg-brand border-4 border-accent shadow-[0_0_25px_rgba(255,204,0,0.6)] transform -translate-x-1/2 flex items-center justify-center z-10"
+            >
+              <span class="text-accent font-black text-2xl">{index + 1}</span>
+            </div>
+            <div
+              class:list={[
+                "w-full md:w-[45%] ml-20 bg-white/10 backdrop-blur-md border-2 border-blue-400/30 p-10 rounded-3xl shadow-2xl relative overflow-hidden",
+                index % 2 === 0 ? "md:ml-0 md:mr-auto" : "md:ml-auto md:mr-0",
+              ]}
+            >
+              <div
+                class="absolute -right-4 -bottom-10 text-9xl font-black text-white/5 select-none pointer-events-none"
+              >
+                {String(index + 1).padStart(2, "0")}
+              </div>
+              <h3 class="text-3xl font-black text-accent mb-4">
+                {phase.title}
+              </h3>
+              <p class="text-slate-200 leading-relaxed text-lg font-medium">
+                {phase.body}
+              </p>
+            </div>
           </div>
-          <h3
-            class="text-3xl font-black text-accent mb-4"
-           
-          >
-            Phase 1 - Co-Design
-          </h3>
-          <p
-            class="text-slate-200 leading-relaxed text-lg font-medium"
-           
-          >
-            Co-designing an AI-Powered Teaching Playbook and Certification
-            Framework to define pedagogical standards and micro-credentials
-            aligned with EU frameworks.
-          </p>
-        </div>
-      </div>
-
-      <div class="relative flex items-center justify-between mb-28 w-full">
-        <div
-          class="absolute left-8 md:left-1/2 w-16 h-16 rounded-full bg-brand border-4 border-accent shadow-[0_0_25px_rgba(255,204,0,0.6)] transform -translate-x-1/2 flex items-center justify-center z-10"
-        >
-          <span class="text-accent font-black text-2xl">2</span>
-        </div>
-        <div
-          class="w-full md:w-[45%] ml-20 md:ml-auto md:mr-0 bg-white/10 backdrop-blur-md border-2 border-blue-400/30 p-10 rounded-3xl shadow-2xl relative overflow-hidden"
-        >
-          <div
-            class="absolute -right-4 -bottom-10 text-9xl font-black text-white/5 select-none pointer-events-none"
-          >
-            02
-          </div>
-          <h3
-            class="text-3xl font-black text-accent mb-4"
-           
-          >
-            Phase 2 - Platform Development
-          </h3>
-          <p
-            class="text-slate-200 leading-relaxed text-lg font-medium"
-           
-          >
-            Developing a multilingual AI Learning Platform (MOOC) featuring over <strong
-              class="text-white font-black">15 training modules</strong
-            > and <strong class="text-white font-black">50+ downloadable</strong
-            > AI-enhanced lesson plans.
-          </p>
-        </div>
-      </div>
-
-      <div class="relative flex items-center justify-between mb-28 w-full">
-        <div
-          class="absolute left-8 md:left-1/2 w-16 h-16 rounded-full bg-brand border-4 border-accent shadow-[0_0_25px_rgba(255,204,0,0.6)] transform -translate-x-1/2 flex items-center justify-center z-10"
-        >
-          <span class="text-accent font-black text-2xl">3</span>
-        </div>
-        <div
-          class="w-full md:w-[45%] ml-20 md:ml-0 md:mr-auto bg-white/10 backdrop-blur-md border-2 border-blue-400/30 p-10 rounded-3xl shadow-2xl relative overflow-hidden"
-        >
-          <div
-            class="absolute -right-4 -bottom-10 text-9xl font-black text-white/5 select-none pointer-events-none"
-          >
-            03
-          </div>
-          <h3
-            class="text-3xl font-black text-accent mb-4"
-           
-          >
-            Phase 3 - Teacher Academies
-          </h3>
-          <p
-            class="text-slate-200 leading-relaxed text-lg font-medium"
-           
-          >
-            Launching <strong class="text-white font-black"
-              >5 transnational Teacher Academies</strong
-            > to provide blended learning and cross-border mobility opportunities,
-            directly training over <strong class="text-white font-black"
-              >100 educators</strong
-            >.
-          </p>
-        </div>
-      </div>
-
-      <div class="relative flex items-center justify-between w-full">
-        <div
-          class="absolute left-8 md:left-1/2 w-16 h-16 rounded-full bg-brand border-4 border-accent shadow-[0_0_25px_rgba(255,204,0,0.6)] transform -translate-x-1/2 flex items-center justify-center z-10"
-        >
-          <span class="text-accent font-black text-2xl">4</span>
-        </div>
-        <div
-          class="w-full md:w-[45%] ml-20 md:ml-auto md:mr-0 bg-white/10 backdrop-blur-md border-2 border-blue-400/30 p-10 rounded-3xl shadow-2xl relative overflow-hidden"
-        >
-          <div
-            class="absolute -right-4 -bottom-10 text-9xl font-black text-white/5 select-none pointer-events-none"
-          >
-            04
-          </div>
-          <h3
-            class="text-3xl font-black text-accent mb-4"
-           
-          >
-            Phase 4 - Classroom Pilots
-          </h3>
-          <p
-            class="text-slate-200 leading-relaxed text-lg font-medium"
-           
-          >
-            Conducting real-world classroom pilots where trained teachers test
-            AI-enhanced lessons in <strong class="text-white font-black"
-              >50+ schools</strong
-            >, reaching over <strong class="text-white font-black"
-              >1,000 students</strong
-            > to generate evidence-based policy recommendations.
-          </p>
-        </div>
-      </div>
+        ))
+      }
     </div>
   </div>
 </section>

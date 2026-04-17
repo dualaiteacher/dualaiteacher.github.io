@@ -1,50 +1,57 @@
+---
+import type { Lang } from '../../i18n';
+
+interface Props {
+  lang: Lang;
+  t: {
+    titleAccent: string;
+    titleRest: string;
+    subtitle: string;
+    primaryCta: string;
+    secondaryCta: string;
+  };
+}
+
+const { lang, t } = Astro.props;
+const homeHref = `/${lang}/`;
+const partnersHref = `/${lang}/partners/`;
+---
+
 <section
   id="hero"
-  class="min-h-[85vh] flex flex-col items-center justify-center py-32 px-6 bg-brand text-white relative overflow-hidden"
+  class="relative min-h-[88vh] flex items-center justify-center overflow-hidden bg-brand text-white px-6 py-24"
 >
-  <div
-    class="absolute inset-0 opacity-[0.03] pointer-events-none bg-pattern-dark"
-  >
-  </div>
 
-  <div
-    class="max-w-6xl w-full mx-auto flex flex-col items-center text-center relative z-10"
-  >
+  <div class="relative z-10 mx-auto max-w-5xl text-center">
     <h1
-      class="text-5xl md:text-7xl lg:text-8xl font-black text-white tracking-tight leading-[1.05] mb-8 drop-shadow-lg"
-     
+      class="text-5xl md:text-7xl lg:text-8xl font-black tracking-tight leading-[1.02]"
     >
-      <span class="text-accent">AI-Powered</span> Teaching & <br />
-      AI Education for Future-Proof Education
+      <span class="block text-accent drop-shadow-[0_6px_14px_rgba(0,0,0,0.18)]">
+        {t.titleAccent}
+      </span>
+      <span class="block text-white drop-shadow-[0_6px_14px_rgba(0,0,0,0.16)]">
+        {t.titleRest}
+      </span>
     </h1>
 
-    <p
-      class="text-xl md:text-3xl text-slate-200 max-w-5xl mx-auto leading-relaxed mb-14 font-medium"
-     
-    >
-      The <strong class="text-white font-black">DUAL.AI.TEACHer</strong> project equips
-      educators across Europe with the skills, confidence, and certification to both
-      <em
-        class="text-accent not-italic font-bold border-b-4 border-accent/50 pb-1"
-        >teach with AI</em
-      > and <em
-        class="text-accent not-italic font-bold border-b-4 border-accent/50 pb-1"
-        >teach about AI</em
-      >.
+    <p class="mx-auto mt-6 max-w-2xl text-lg md:text-xl leading-8 text-white/85">
+      {t.subtitle}
     </p>
 
-    <!-- 
-    <div class="flex items-center justify-center w-full sm:w-auto">
-      <button
-        onclick="openSubscribeModal()"
-        class="w-full sm:w-auto inline-flex items-center justify-center px-10 py-5 text-xl font-black uppercase tracking-wide text-slate-600 bg-accent hover:bg-accent-hover rounded-full transition-all shadow-lg shadow-accent/50 cursor-pointer border-0"
-       
+    <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
+      <a
+        href={`${homeHref}#about`}
+        class="inline-flex items-center justify-center rounded-full bg-accent px-6 py-3 text-base font-bold text-brand transition hover:scale-105"
       >
-        Follow the Project
-      </button>
+        {t.primaryCta}
+      </a>
+
+      <a
+        href={partnersHref}
+        class="inline-flex items-center justify-center rounded-full border border-white/30 px-6 py-3 text-base font-semibold text-white/95 backdrop-blur-sm transition hover:bg-white/10"
+      >
+        {t.secondaryCta}
+      </a>
     </div>
-    -->
   </div>
 </section>
-
-

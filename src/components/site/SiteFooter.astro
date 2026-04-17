@@ -1,10 +1,38 @@
 ---
+import type { ImageMetadata } from "astro";
+import { Image } from "astro:assets";
+import { type Lang } from "../../i18n";
+
 interface Props {
-  sectionLinkPrefix?: string;
+  lang: Lang;
+  t: {
+    tagline: string;
+    licenseLabel: string;
+    nav: {
+      what: string;
+      why: string;
+      how: string;
+      partners: string;
+      cookieSettings: string;
+    };
+    euFlagAlt: string;
+    euDisclaimer: string;
+  };
 }
 
-const { sectionLinkPrefix = "" } = Astro.props;
+const { lang, t } = Astro.props;
 const currentYear = new Date().getFullYear();
+const homeHref = `/${lang}/`;
+const partnersHref = `/${lang}/partners/`;
+const euBadgeImages = import.meta.glob<{ default: ImageMetadata }>(
+  "/src/assets/cofunded/*.png",
+  { eager: true }
+);
+const euBadgeImage = euBadgeImages[`/src/assets/cofunded/${lang}.png`]?.default;
+
+if (!euBadgeImage) {
+  throw new Error(`Missing cofunded image for language "${lang}".`);
+}
 ---
 
 <footer
@@ -18,7 +46,7 @@ const currentYear = new Date().getFullYear();
         class="text-lg sm:text-2xl font-semibold text-slate-700 leading-relaxed m-0 max-w-3xl"
        
       >
-        AI-Powered Teaching and AI Education for Future-Proof Education
+        {t.tagline}
       </p>
       <p class="text-sm sm:text-base text-slate-600 leading-relaxed m-0 flex flex-wrap items-center justify-center gap-x-3 gap-y-1">
         <span>ERASMUS-EDU-2025-PEX-TEACH-ACA</span>
@@ -27,12 +55,12 @@ const currentYear = new Date().getFullYear();
         <span aria-hidden="true" class="text-slate-300">|</span>
         <a
           href="https://creativecommons.org/licenses/by-nc-sa/4.0/"
-          target="_blank"
+          target="_self"
           rel="noopener noreferrer"
           class="font-semibold text-brand hover:text-accent transition-colors"
          
         >
-          CC BY-NC-SA 4.0
+          {t.licenseLabel}
         </a>
       </p>
       <p class="text-sm text-slate-500 leading-relaxed m-0">
@@ -43,27 +71,27 @@ const currentYear = new Date().getFullYear();
     <ul class="flex gap-8 list-none p-0 m-0 flex-wrap justify-center">
       <li>
         <a
-          href={`${sectionLinkPrefix}#about`}
+          href={`${homeHref}#about`}
           class="text-slate-600 font-bold hover:text-accent no-underline transition-colors uppercase tracking-wide"
-         >What</a>
+         >{t.nav.what}</a>
       </li>
       <li>
         <a
-          href={`${sectionLinkPrefix}#why`}
+          href={`${homeHref}#why`}
           class="text-slate-600 font-bold hover:text-accent no-underline transition-colors uppercase tracking-wide"
-         >Why</a>
+         >{t.nav.why}</a>
       </li>
       <li>
         <a
-          href={`${sectionLinkPrefix}#how`}
+          href={`${homeHref}#how`}
           class="text-slate-600 font-bold hover:text-accent no-underline transition-colors uppercase tracking-wide"
-         >How</a>
+         >{t.nav.how}</a>
       </li>
       <li>
         <a
-          href={`${sectionLinkPrefix}#about-partners`}
+          href={partnersHref}
           class="text-slate-600 font-bold hover:text-accent no-underline transition-colors uppercase tracking-wide"
-          >Partners</a>
+          >{t.nav.partners}</a>
       </li>
       <li>
         <a
@@ -71,32 +99,24 @@ const currentYear = new Date().getFullYear();
           onclick="openCookieSettings()"
           role="button"
           tabindex="0"
-         >Cookie Settings</a>
+         >{t.nav.cookieSettings}</a>
       </li>
     </ul>
-    <p class="max-w-3xl text-xs sm:text-sm text-slate-500 leading-relaxed m-0">
-      Translations on this website are provided automatically for convenience only, and in the event of any inconsistency or ambiguity, the English-language version shall prevail as the authoritative reference.
-    </p>
     <div
-      class="flex items-center justify-center gap-3 text-sm opacity-80 mt-6 max-w-4xl border-t border-slate-300/50 pt-8"
+      class="mt-6 flex max-w-4xl flex-col items-center justify-center gap-4 border-t border-slate-300/50 pt-8 text-sm opacity-80 sm:flex-row sm:items-center sm:gap-3"
     >
       <div class="bg-white rounded-md p-1.5 shrink-0">
-        <img
-          src="/cofunded.png"
-          alt="Co-funded by the European Union"
+        <Image
+          src={euBadgeImage}
+          alt={t.euFlagAlt}
           class="h-10 w-auto"
           loading="lazy"
           decoding="async"
         />
       </div>
-      <p class="text-left leading-relaxed">
-        Funded by the European Union. Views and opinions expressed are however those
-        of the author(s) only and do not necessarily reflect those of the European
-        Union or the European Education and Culture Executive Agency (EACEA). Neither
-        the European Union nor EACEA can be held responsible for them.
+      <p class="text-center leading-relaxed sm:text-left">
+        {t.euDisclaimer}
       </p>
     </div>
   </div>
 </footer>
-
-

@@ -1,3 +1,26 @@
+---
+interface Props {
+  t: {
+    with: {
+      titleStart: string;
+      titleAccent: string;
+      titleEnd: string;
+      label: string;
+      body: string;
+    };
+    about: {
+      titleStart: string;
+      titleAccent: string;
+      titleEnd: string;
+      label: string;
+      body: string;
+    };
+  };
+}
+
+const { t } = Astro.props;
+---
+
 <section
   id="dual"
   class="py-24 md:py-32 bg-white relative border-b border-surface-3 overflow-hidden"
@@ -6,23 +29,6 @@
     class="absolute inset-0 opacity-[0.02] bg-pattern-light pointer-events-none"
   >
   </div>
-
-  <div class="max-w-[1200px] mx-auto px-6 relative z-10">
-    <div class="text-center mb-24">
-      <h2
-        class="text-5xl md:text-6xl font-black leading-tight text-brand mb-6 tracking-tight"
-       
-      >
-        Mastering both sides of AI in education.
-      </h2>
-      <p
-        class="text-2xl text-slate-600 max-w-3xl mx-auto font-medium leading-relaxed"
-       
-      >
-        The project focuses on a dual-perspective approach, preparing educators
-        for two distinct but deeply connected goals.
-      </p>
-    </div>
 
     <div
       class="relative flex flex-col md:flex-row items-stretch justify-between w-full max-w-5xl mx-auto gap-12 md:gap-0"
@@ -59,20 +65,18 @@
           class="text-4xl md:text-5xl font-black mb-6 text-brand tracking-tight"
          
         >
-          Teaching <em
+          {t.with.titleStart} <em
             class="text-accent not-italic border-b-4 border-accent pb-1"
-            >with</em
-          > AI
+            >{t.with.titleAccent}</em
+          > {t.with.titleEnd}
         </h3>
         <p
           class="text-xl text-slate-600 leading-relaxed font-medium"
          
         >
-          <strong class="text-brand font-black"
-            >AI-Enhanced Pedagogy:</strong
-          > Training teachers to actively use AI tools to design lessons, personalize
-          student learning, automate administrative tasks, and provide real-time feedback
-          - making every classroom smarter and more responsive.
+          <strong class="text-brand font-black">{t.with.label}</strong>
+          {" "}
+          {t.with.body}
         </p>
       </div>
 
@@ -108,19 +112,17 @@
           class="text-4xl md:text-5xl font-black mb-6 text-brand tracking-tight"
          
         >
-          Teaching <em
+          {t.about.titleStart} <em
             class="text-accent not-italic border-b-4 border-accent pb-1"
-            >about</em
-          > AI
+            >{t.about.titleAccent}</em
+          > {t.about.titleEnd}
         </h3>
         <p
           class="text-xl text-slate-600 leading-relaxed font-medium"
          
         >
-          <strong class="text-brand font-black">AI Literacy:</strong> Equipping
-          teachers to educate their students on how AI works, its ethical implications,
-          digital citizenship, and algorithmic thinking - building a generation of
-          informed, responsible digital citizens.
+          <strong class="text-brand font-black">{t.about.label}</strong>{" "}
+          {t.about.body}
         </p>
       </div>
     </div>

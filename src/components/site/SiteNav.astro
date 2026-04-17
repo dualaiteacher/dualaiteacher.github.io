@@ -1,15 +1,36 @@
+---
+import { Image } from "astro:assets";
+import LanguagePicker from "./LanguagePicker.astro";
+import dualAiNavbar from "../../assets/branding/dual-ai-navbar.png";
+import { type Lang } from "../../i18n";
+
+interface Props {
+  lang: Lang;
+  t: {
+    what: string;
+    why: string;
+    how: string;
+    partners: string;
+    contact: string;
+  };
+}
+
+const { lang, t } = Astro.props;
+const homeHref = `/${lang}/`;
+const partnersHref = `/${lang}/partners/`;
+const contactHref = `/${lang}/contact/`;
+---
+
 <nav
   class="sticky top-0 z-50 bg-white border-b-4 border-accent shadow-sm"
 >
-  <div
-    class="mx-auto px-4 flex items-center py-4 flex-wrap gap-3"
-  >
+  <div class="mx-auto px-4 flex items-center py-4 flex-wrap gap-3">
     <a
-      href="#"
+      href={`${homeHref}`}
       class="flex items-center no-underline hover:no-underline"
     >
-      <img
-        src="/dual-ai-navbar.png"
+      <Image
+        src={dualAiNavbar}
         alt="DUAL.AI.TEACHer"
         class="h-10 sm:h-12 ml-6 w-auto"
       />
@@ -17,33 +38,38 @@
     <ul class="hidden md:flex gap-8 list-none m-0 p-0 ml-16 flex-wrap">
       <li>
         <a
-          href="#about"
+          href={`${homeHref}#about`}
           class="text-base font-bold text-slate-600 hover:text-brand no-underline transition-colors uppercase tracking-wide"
-         >What</a>
+         >{t.what}</a>
       </li>
       <li>
         <a
-          href="#why"
+          href={`${homeHref}#why`}
           class="text-base font-bold text-slate-600 hover:text-brand no-underline transition-colors uppercase tracking-wide"
-         >Why</a>
+         >{t.why}</a>
       </li>
       <li>
         <a
-          href="#how"
+          href={`${homeHref}#how`}
           class="text-base font-bold text-slate-600 hover:text-brand no-underline transition-colors uppercase tracking-wide"
-         >How</a>
+         >{t.how}</a>
       </li>
       <li>
         <a
-          href="#about-partners"
+          href={partnersHref}
           class="text-base font-bold text-slate-600 hover:text-brand no-underline transition-colors uppercase tracking-wide"
-          >Partners</a>
+         >{t.partners}</a>
+      </li>
+      <li>
+        <a
+          href={contactHref}
+          class="text-base font-bold text-slate-600 hover:text-brand no-underline transition-colors uppercase tracking-wide"
+         >{t.contact}</a>
       </li>
     </ul>
     <button
       id="mobileMenuBtn"
       class="md:hidden ml-auto p-2 rounded-lg hover:bg-surface-2 transition-colors cursor-pointer border-0 bg-transparent text-brand"
-      aria-label="Toggle menu"
     >
       <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"
         ><path
@@ -59,32 +85,40 @@
     id="mobileMenu"
     class="hidden md:hidden border-t border-surface-3 bg-white px-6 pb-6 shadow-xl"
   >
+    <div class="pt-4">
+      <LanguagePicker lang={lang} mobile={true} />
+    </div>
     <ul class="list-none m-0 p-0 flex flex-col gap-2 pt-4">
       <li>
         <a
-          href="#about"
+          href={`${homeHref}#about`}
           class="block py-3 text-lg font-black text-brand uppercase border-b border-slate-100"
-         >What</a>
+         >{t.what}</a>
       </li>
       <li>
         <a
-          href="#why"
+          href={`${homeHref}#why`}
           class="block py-3 text-lg font-black text-brand uppercase border-b border-slate-100"
-         >Why</a>
+         >{t.why}</a>
       </li>
       <li>
         <a
-          href="#how"
+          href={`${homeHref}#how`}
           class="block py-3 text-lg font-black text-brand uppercase border-b border-slate-100"
-         >How</a>
+         >{t.how}</a>
       </li>
       <li>
         <a
-          href="#about-partners"
+          href={partnersHref}
           class="block py-3 text-lg font-black text-brand uppercase border-b border-slate-100"
-          >Partners</a>
+         >{t.partners}</a>
+      </li>
+      <li>
+        <a
+          href={contactHref}
+          class="block py-3 text-lg font-black text-brand uppercase border-b border-slate-100"
+         >{t.contact}</a>
       </li>
     </ul>
   </div>
 </nav>
-

@@ -1,0 +1,35 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import SiteNav from "../../components/site/SiteNav.astro";
+import SiteFooter from "../../components/site/SiteFooter.astro";
+import CookieConsent from "../../components/site/CookieConsent.astro";
+import SiteScripts from "../../components/site/SiteScripts.astro";
+import ContactSection from "../../components/site/ContactSection.astro";
+import {
+  defaultCookieConsent,
+  defaultContactSection,
+  defaultLang,
+  getDictionary,
+  languages,
+  type Lang,
+} from "../../i18n";
+import ConstructionBanner from "../../components/site/ConstructionBanner.astro";
+
+export function getStaticPaths() {
+  return Object.keys(languages).map((lang) => ({
+    params: { lang },
+  }));
+}
+
+const lang = (Astro.params.lang ?? defaultLang) as Lang;
+const dict = getDictionary(lang);
+---
+
+<Layout title={dict.meta.title} lang={lang}>
+  <CookieConsent t={"cookieConsent" in dict ? dict.cookieConsent : defaultCookieConsent} />
+  <ConstructionBanner t={dict.fundingBanner} />
+  <SiteNav lang={lang} t={dict.nav} />
+  <ContactSection t={"contactSection" in dict ? dict.contactSection : defaultContactSection} />
+  <SiteFooter lang={lang} t={dict.footer} />
+  <SiteScripts />
+</Layout>

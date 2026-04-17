@@ -1,0 +1,300 @@
+{
+  "meta": {
+    "title": "DUAL.AI.TEACHer"
+  },
+  "fundingBanner": {
+    "construction": "Website under construction. Content is subject to change.",
+    "euFunding": "Funded by the European Union, ERASMUS-EDU-2025-PEX-TEACH-ACA 101249519",
+    "euFlagAlt": "EU flag"
+  },
+  "cookieConsent": {
+    "banner": {
+      "title": "We value your privacy",
+      "bodyBeforeLink": "We use cookies and Microsoft Clarity to understand how our site is used and to improve your experience. You can accept all cookies, reject non-essential ones, or ",
+      "preferencesLink": "customize your preferences",
+      "bodyAfterLink": ".",
+      "acceptAll": "Accept All",
+      "rejectAll": "Reject All"
+    },
+    "modal": {
+      "title": "Cookie Preferences",
+      "description": "Choose which categories of cookies you'd like to allow. Essential cookies are always active as they are required for the site to function.",
+      "essential": {
+        "title": "Essential Cookies",
+        "badge": "Always active",
+        "body": "Required for basic site functionality such as navigation and security. These cannot be disabled."
+      },
+      "analytics": {
+        "title": "Analytics Cookies",
+        "body": "Help us understand how visitors interact with the website by collecting anonymous usage data via Microsoft Clarity."
+      },
+      "advertising": {
+        "title": "Advertising Cookies",
+        "body": "Used to deliver relevant content and measure the effectiveness of campaigns. We do not currently run ads, but this setting controls ad-related data storage."
+      },
+      "cancel": "Cancel",
+      "rejectAll": "Reject All",
+      "savePreferences": "Save Preferences"
+    }
+  },
+  "contactSection": {
+    "title": "Get in touch with us.",
+    "lead": "For questions, collaboration, or more information, send us a message using the form below."
+  },
+  "nav": {
+    "what": "What",
+    "why": "Why",
+    "how": "How",
+    "partners": "Partners",
+    "contact": "Contact"
+  },
+  "hero": {
+    "titleAccent": "AI-Powered Teaching",
+    "titleRest": "& AI Education",
+    "subtitle": "for Future-Proof Education",
+    "primaryCta": "Learn more",
+    "secondaryCta": "Partners"
+  },
+  "about": {
+    "label": "What",
+    "title": "Bridging the AI literacy gap in European education.",
+    "lead": "A pan-European initiative designed to modernize teacher education by equipping educators with the required skills to navigate an AI-driven landscape.",
+    "body": "We are building an ecosystem that provides hands-on training and a formal EU-aligned certification framework - ensuring no educator is left behind in the digital transition."
+  },
+  "why": {
+    "label": "Why",
+    "title": "The urgent need for change.",
+    "lead": "AI tools are reshaping education, but teachers feel unprepared. There is no standardized, EU-level framework to close this gap.",
+    "items": [
+      {
+        "title": "The Teachers-Technology Disconnect",
+        "body": "While AI tools like intelligent tutoring systems and generative AI are revolutionizing classrooms, teachers report feeling unprepared to integrate AI into their pedagogy."
+      },
+      {
+        "title": "No Standardized Framework",
+        "body": "There is currently no standardized, EU-level framework for training teachers on how to use AI tools responsibly, leaving a critical skills gap across European education systems."
+      },
+      {
+        "title": "Ethical & Privacy Challenges",
+        "body": "Teachers need guidance on navigating and deploying AI systems in educational environments with young learners."
+      }
+    ]
+  },
+  "dual": {
+    "with": {
+      "titleStart": "Teaching",
+      "titleAccent": "with",
+      "titleEnd": "AI",
+      "label": "AI-Enhanced Pedagogy:",
+      "body": "Training teachers to actively use AI tools to design lessons, personalize student learning, automate administrative tasks."
+    },
+    "about": {
+      "titleStart": "Teaching",
+      "titleAccent": "about",
+      "titleEnd": "AI",
+      "label": "AI Literacy:",
+      "body": "Equipping teachers to educate their students on how AI works and its ethical implications - building a generation of informed and responsible citizens."
+    }
+  },
+  "deliverables": {
+    "title": "Delivering a new standard in AI education.",
+    "lead": "Over a 3-year timeline, the project will build an entire ecosystem of resources for educators across Europe.",
+    "cards": [
+      {
+        "badge": "🏅 Micro-credentials",
+        "title": "Dual Certification Pathway",
+        "body": "A formal system where teachers earn stackable micro-credentials and a 5-year EU-recognized certification."
+      },
+      {
+        "badge": "🌐 15+ Modules",
+        "title": "Learning Platform",
+        "body": "A multilingual digital hub offering interactive training modules and curated open-access AI lesson plans."
+      },
+      {
+        "badge": "✈️ 5 Hubs",
+        "title": "Transnational Academies",
+        "body": "Five hubs across Europe funding mobility for educators to travel, workshop, and share best practices."
+      },
+      {
+        "badge": "🏫 50+ Schools",
+        "title": "Real-World Classroom Pilots",
+        "body": "Trained teachers test AI-enhanced lessons in schools to generate evidence-based insights."
+      }
+    ]
+  },
+  "how": {
+    "label": "HOW",
+    "title": "How will the project achieve its goals?",
+    "lead": "Through four interconnected phases over a 36-month timeline.",
+    "phases": [
+      {
+        "title": "Phase 1 - Co-Design",
+        "body": "Co-designing an AI-Powered Teaching Playbook and Certification Framework to define pedagogical standards and micro-credentials aligned with EU frameworks."
+      },
+      {
+        "title": "Phase 2 - Platform Development",
+        "body": "Developing a multilingual AI Learning Platform (MOOC) featuring over 15 training modules and 50+ downloadable AI-enhanced lesson plans."
+      },
+      {
+        "title": "Phase 3 - Teacher Academies",
+        "body": "Launching 5 transnational Teacher Academies to provide learning and cross-border mobility opportunities, directly training over 100 educators."
+      },
+      {
+        "title": "Phase 4 - Classroom Pilots",
+        "body": "Conducting real-world classroom pilots where trained teachers test AI-enhanced lessons in 50+ schools, reaching over 1,000 students to generate evidence-based policy recommendations."
+      }
+    ]
+  },
+  "aboutPartners": {
+    "label": "Consortium",
+    "title": "11 Partners. One Shared Mission.",
+    "lead": "A cross-sector alliance spanning universities, public institutions, SMEs, VET, and certification.",
+    "partners": [
+      {
+        "type": "SME",
+        "name": "ACCELERAS KG",
+        "country": "Austria",
+        "website": "https://www.acceleras.io",
+        "linkedin": "https://www.linkedin.com/company/accelerasaustria/",
+        "facebook": "https://www.facebook.com/acceleras.io",
+        "instagram": "https://www.instagram.com/acceleras.io/"
+      },
+      {
+        "type": "University",
+        "name": "College of Business and Health Sciences",
+        "country": "Poland",
+        "website": "https://www.wsbinoz.edu.pl",
+        "linkedin": "https://www.linkedin.com/school/wy%C5%BCsza-szko%C5%82a-biznesu-i-nauk-o-zdrowiu-w-%C5%82odzi/",
+        "facebook": "",
+        "instagram": ""
+      },
+      {
+        "type": "Public Authority",
+        "name": "Consellería de Educación, Ciencia, Universidades e Formación Profesional",
+        "country": "Spain",
+        "website": "",
+        "linkedin": "",
+        "facebook": "",
+        "instagram": ""
+      },
+      {
+        "type": "University",
+        "name": "Daugavpils University",
+        "country": "Latvia",
+        "website": "http://www.du.lv/",
+        "linkedin": "",
+        "facebook": "https://www.facebook.com/DaugavpilsUniversitate",
+        "instagram": ""
+      },
+      {
+        "type": "Certification Body",
+        "name": "ICEP Institute of European Certification of Personnel s.r.o.",
+        "country": "Slovakia",
+        "website": "https://www.iceponline.com/",
+        "linkedin": "https://sk.linkedin.com/company/iceponline",
+        "facebook": "https://www.facebook.com/iceponline/",
+        "instagram": "https://www.instagram.com/icep.online"
+      },
+      {
+        "type": "SME",
+        "name": "INSTITUT INPRO AS",
+        "country": "Czechia",
+        "website": "",
+        "linkedin": "",
+        "facebook": "",
+        "instagram": ""
+      },
+      {
+        "type": "Vocational Provider",
+        "name": "SIA Macibu centrs \"Austrumvidzeme\"",
+        "country": "Latvia",
+        "website": "http://www.austrumvidzeme.lv/",
+        "linkedin": "https://www.linkedin.com/company/austrumvidzeme/",
+        "facebook": "https://www.facebook.com/Austrumvidzeme/",
+        "instagram": ""
+      },
+      {
+        "type": "University",
+        "name": "University of Education Weingarten",
+        "country": "Germany",
+        "website": "https://www.ph-weingarten.de/de",
+        "linkedin": "https://www.linkedin.com/school/p%C3%A4dagogische-hochschule-weingarten/posts/?feedView=all",
+        "facebook": "https://www.facebook.com/pages/P%C3%A4dagogische-Hochschule-Weingarten/107917349236439",
+        "instagram": "https://www.instagram.com/ph_weingarten/"
+      },
+      {
+        "type": "University",
+        "name": "University of Maribor",
+        "country": "Slovenia",
+        "website": "https://www.um.si/",
+        "linkedin": "https://www.linkedin.com/school/univerza-v-mariboru/posts/?feedView=all",
+        "facebook": "https://www.facebook.com/UniversityOfMaribor/",
+        "instagram": "https://www.instagram.com/univerza_v_mariboru/"
+      },
+      {
+        "type": "University",
+        "name": "University of Vigo",
+        "country": "Spain",
+        "website": "",
+        "linkedin": "",
+        "facebook": "",
+        "instagram": ""
+      },
+      {
+        "type": "University",
+        "name": "University of Žilina",
+        "country": "Slovakia",
+        "website": "https://uniza.sk/",
+        "linkedin": "https://sk.linkedin.com/school/university-of-zilina/",
+        "facebook": "https://www.facebook.com/uniza.sk",
+        "instagram": "https://www.instagram.com/zilinska.univerzita/?hl=en"
+      }
+    ]
+  },
+  "audience": {
+    "title": "Empowering the entire educational ecosystem.",
+    "lead": "The project serves a broad spectrum of stakeholders across the European education landscape.",
+    "groups": [
+      {
+        "title": "Pre-Service Teachers",
+        "body": "Future educators gaining AI competencies during their initial training to enter the workforce fully prepared."
+      },
+      {
+        "title": "In-Service Teachers",
+        "body": "Practicing educators upskilling to integrate AI effectively."
+      },
+      {
+        "title": "Teacher Education",
+        "body": "Institutions modernizing curricula with specialized AI training modules."
+      },
+      {
+        "title": "Schools",
+        "body": "Institutions directly benefiting from newly implemented, AI-enhanced teaching practices."
+      },
+      {
+        "title": "Policymakers",
+        "body": "Decision-makers shaping and standardizing AI education policy."
+      }
+    ]
+  },
+  "footer": {
+    "tagline": "AI-Powered Teaching and AI Education for Future-Proof Education",
+    "licenseLabel": "CC BY-NC-SA 4.0",
+    "nav": {
+      "what": "What",
+      "why": "Why",
+      "how": "How",
+      "partners": "Partners",
+      "cookieSettings": "Cookie Settings"
+    },
+    "euFlagAlt": "Co-funded by the European Union",
+    "euDisclaimer": "Funded by the European Union. Views and opinions expressed are however those of the author(s) only and do not necessarily reflect those of the European Union or the European Education and Culture Executive Agency (EACEA). Neither the European Union nor EACEA can be held responsible for them."
+  },
+  "notFound": {
+    "metaTitle": "404 - Page Not Found | DUAL.AI.TEACHer",
+    "label": "Error 404",
+    "title": "Page Not Found",
+    "body": "The page you are looking for does not exist or may have moved.",
+    "backHome": "Back to Home"
+  }
+}

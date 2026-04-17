@@ -1,0 +1,300 @@
+{
+  "meta": {
+    "title": "DUAL.AI.TEACHer"
+  },
+  "fundingBanner": {
+    "construction": "Spletna stran je v izdelavi. Vsebina se lahko spremeni.",
+    "euFunding": "Financira Evropska unija, ERASMUS-EDU-2025-PEX-TEACH-ACA 101249519",
+    "euFlagAlt": "Zastava EU"
+  },
+  "cookieConsent": {
+    "banner": {
+      "title": "Spoštujemo vašo zasebnost",
+      "bodyBeforeLink": "Uporabljamo piškotke in Microsoft Clarity, da bi bolje razumeli, kako se naša spletna stran uporablja, in izboljšali vašo izkušnjo. Piškotke lahko sprejmete v celoti, zavrnete tiste, ki niso nujno potrebni, ali ",
+      "preferencesLink": "prilagodite svoje nastavitve",
+      "bodyAfterLink": ".",
+      "acceptAll": "Sprejmi vse",
+      "rejectAll": "Zavrni vse"
+    },
+    "modal": {
+      "title": "Nastavitve piškotkov",
+      "description": "Izberite, katere kategorije piškotkov želite dovoliti. Osnovni piškotki so vedno aktivni, saj so nujni za delovanje spletne strani.",
+      "essential": {
+        "title": "Nujni piškotki",
+        "badge": "Vedno aktivni",
+        "body": "Nujni za osnovno delovanje spletnega mesta, kot sta navigacija in varnost. Te funkcije ni mogoče onemogočiti."
+      },
+      "analytics": {
+        "title": "Piškotki za analitiko",
+        "body": "Pomagajte nam razumeti, kako obiskovalci uporabljajo spletno stran, tako da zberemo anonimne podatke o uporabi prek storitve Microsoft Clarity."
+      },
+      "advertising": {
+        "title": "Oglaševalski piškotki",
+        "body": "Uporablja se za prikazovanje ustreznih vsebin in merjenje učinkovitosti oglaševalskih kampanj. Trenutno ne prikazujemo oglasov, vendar ta nastavitev ureja shranjevanje podatkov, povezanih z oglaševanjem."
+      },
+      "cancel": "Prekliči",
+      "rejectAll": "Zavrni vse",
+      "savePreferences": "Shrani nastavitve"
+    }
+  },
+    "contactSection": {
+    "title": "Stopite v stik z nami.",
+    "lead": "Za vprašanja, sodelovanje ali dodatne informacije nam pošljite sporočilo prek spodnjega obrazca."
+  },
+  "nav": {
+    "what": "Kaj",
+    "why": "Zakaj",
+    "how": "Kako",
+    "partners": "Partnerji",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "titleAccent": "Poučevanje z umetno Inteligenco",
+    "titleRest": "in o umetni Inteligenci",
+    "subtitle": "za izobraževanje, pripravljeno na prihodnost",
+    "primaryCta": "Več informacij",
+    "secondaryCta": "Partnerji"
+  },
+  "about": {
+    "label": "Kaj",
+    "title": "Zapolnjevanje vrzeli v znanju o umetni inteligenci v Evropi.",
+    "lead": "Pobuda, namenjena posodobitvi izobraževanja učiteljev, ki jim bo omogočila pridobitev potrebnih veščin za uspešno delovanje v okolju, ki ga zaznamuje umetna inteligenca.",
+    "body": "Gradimo ekosistem, ki ponuja praktično usposabljanje in uradni certifikacijski okvir, usklajen z EU."
+  },
+  "why": {
+    "label": "Zakaj",
+    "title": "Nujna potreba po spremembi.",
+    "lead": "Orodja umetne inteligence spreminjajo šolstvo, učitelji pa se počutijo nepripravljeni. Ni standardiziranega okvira na ravni EU, ki bi zapolnil to vrzel.",
+    "items": [
+      {
+        "title": "Razkorak med učitelji in tehnologijo",
+        "body": "Medtem ko orodja umetne inteligence, revolucionirajo pouk, učitelji poročajo, da se ne počutijo pripravljeni na vključitev umetne inteligence v svojo pedagoško prakso."
+      },
+      {
+        "title": "Ni standardiziranega okvira",
+        "body": "Trenutno na ravni EU ni standardiziranega okvira za usposabljanje učiteljev o odgovorni rabi orodij umetne inteligence, kar povzroča kritično pomanjkanje znanja in veščin v evropskih izobraževalnih sistemih."
+      },
+      {
+        "title": "Etčni izzivi in izzivi na področju varstva zasebnosti",
+        "body": "Učitelji potrebujejo usmeritve pri uvajanju sistemov UI v izobraževalna okolja z mladimi učenci."
+      }
+    ]
+  },
+  "dual": {
+    "with": {
+      "titleStart": "Poučevanje",
+      "titleAccent": "z",
+      "titleEnd": "UI",
+      "label": "Pedagogika, podprta z UI:",
+      "body": "Usposabljanje učiteljev za aktivno uporabo orodij umetne inteligence pri načrtovanju pouka, prilagajanju učenja in avtomatizaciji administrativnih nalog."
+    },
+    "about": {
+      "titleStart": "Poučevanje",
+      "titleAccent": "o",
+      "titleEnd": "UI",
+      "label": "UI pismenost:",
+      "body": "Učiteljem zagotoviti znanje, da bodo lahko učence poučili o delovanju umetne inteligence in njenih etičnih posledicah – vzgojiti generacijo ozaveščenih in odgovornih državljanov"
+    }
+  },
+  "deliverables": {
+    "title": "Uvedba novega standarda v izobraževanju na področju umetne inteligence.",
+    "lead": "V obdobju treh let bo projekt vzpostavil celoten ekosistem virov za učitelje po vsej Evropi.",
+    "cards": [
+      {
+        "badge": "🏅 Mikrodokazila",
+        "title": "Kombinirana certifikacijska pot",
+        "body": "Uradni sistem, v okviru katerega učitelji pridobivajo mikrodokazila, ki se kumulirajo, ter 5-letno certifikacijo, priznano na ravni EU."
+      },
+      {
+        "badge": "🌐 15+ Modulov",
+        "title": "Učna platforma,",
+        "body": "Večjezično platforma, ki ponuja interaktivne izobraževalne module in skrbno izbrane učne načrte o umetni inteligenci."
+      },
+      {
+        "badge": "✈️ 5 Središč",
+        "title": "Mednarodne akademije",
+        "body": "Pet centrov po Evropi, ki zagotavljajo mobilnost in omogočajo sodelovanje na delavnicah za izmenjavo najboljših praks."
+      },
+      {
+        "badge": "🏫 50+ Šol",
+        "title": "Pilotne ure v praksi",
+        "body": "Usposobljeni učitelji v šolah preizkušajo pouk, podprt z umetno inteligenco, da bi pridobili na dokazih temelječe ugotovitve."
+      }
+    ]
+  },
+  "how": {
+    "label": "KAKO",
+    "title": "Kako bo projekt dosegel svoje cilje?",
+    "lead": "Skozi štiri medsebojno povezane faze v 36-mesečnem časovnem okviru.",
+    "phases": [
+      {
+        "title": "Faza 1",
+        "body": "Oblikovanje priročnika za poučevanje z uporabo umetne inteligence in okvira za certificiranje, da se opredelijo pedagoški standardi, usklajeni z okviri EU."
+      },
+      {
+        "title": "Faza 2",
+        "body": "Razvoj večjezične platforme za učenje , z več kot 15 izobraževalnih modulov in več kot 50 učnih načrtov, obogatenih z umetno inteligenco."
+      },
+      {
+        "title": "Faza 3",
+        "body": "Uvedba petih mednarodnih akademij za učitelje, ki bodo omogočale učenje in čezmejno mobilnost ter neposredno usposabljale več kot 100 pedagogov."
+      },
+      {
+        "title": "Faza 4",
+        "body": "Izvajanje pilotnih učnih ur v praksi, v okviru katerih usposobljeni učitelji preizkušajo z umetno inteligenco podprte učne ure v več kot 50 šolah, pri čemer vključujejo več kot 1.000 učencev, da bi oblikovali na dokazih temelječa priporočila za oblikovanje politik."
+      }
+    ]
+  },
+  "aboutPartners": {
+    "label": "Konzorcij",
+    "title": "11 partnerjev. Ena skupna misija.",
+    "lead": "Medsektorska mreža, ki združuje univerze, javne ustanove, mala in srednja podjetja, poklicno izobraževanje in usposabljanje ter certificiranje.",
+    "partners": [
+      {
+        "type": "MSP",
+        "name": "ACCELERAS KG",
+        "country": "Avstrija",
+        "website": "https://www.acceleras.io",
+        "linkedin": "https://www.linkedin.com/company/accelerasaustria/",
+        "facebook": "https://www.facebook.com/acceleras.io",
+        "instagram": "https://www.instagram.com/acceleras.io/"
+      },
+      {
+        "type": "Univerza",
+        "name": "College of Business and Health Sciences",
+        "country": "Poljska",
+        "website": "https://www.wsbinoz.edu.pl",
+        "linkedin": "https://www.linkedin.com/school/wy%C5%BCsza-szko%C5%82a-biznesu-i-nauk-o-zdrowiu-w-%C5%82odzi/",
+        "facebook": "",
+        "instagram": ""
+      },
+      {
+        "type": "Javni organ",
+        "name": "Consellería de Educación, Ciencia, Universidades e Formación Profesional",
+        "country": "Španija",
+        "website": "",
+        "linkedin": "",
+        "facebook": "",
+        "instagram": ""
+      },
+      {
+        "type": "Univerza",
+        "name": "Daugavpils University",
+        "country": "Latvija",
+        "website": "http://www.du.lv/",
+        "linkedin": "",
+        "facebook": "https://www.facebook.com/DaugavpilsUniversitate",
+        "instagram": ""
+      },
+      {
+        "type": "Certifikacijski organ",
+        "name": "ICEP Institute of European Certification of Personnel s.r.o.",
+        "country": "Slovaška",
+        "website": "https://www.iceponline.com/",
+        "linkedin": "https://sk.linkedin.com/company/iceponline",
+        "facebook": "https://www.facebook.com/iceponline/",
+        "instagram": "https://www.instagram.com/icep.online"
+      },
+      {
+        "type": "MSP",
+        "name": "INSTITUT INPRO AS",
+        "country": "Češka",
+        "website": "",
+        "linkedin": "",
+        "facebook": "",
+        "instagram": ""
+      },
+      {
+        "type": "Poklicni ponudnik",
+        "name": "SIA Macibu centrs \"Austrumvidzeme\"",
+        "country": "Latvija",
+        "website": "http://www.austrumvidzeme.lv/",
+        "linkedin": "https://www.linkedin.com/company/austrumvidzeme/",
+        "facebook": "https://www.facebook.com/Austrumvidzeme/",
+        "instagram": ""
+      },
+      {
+        "type": "Univerza",
+        "name": "University of Education Weingarten",
+        "country": "Nemčija",
+        "website": "https://www.ph-weingarten.de/de",
+        "linkedin": "https://www.linkedin.com/school/p%C3%A4dagogische-hochschule-weingarten/posts/?feedView=all",
+        "facebook": "https://www.facebook.com/pages/P%C3%A4dagogische-Hochschule-Weingarten/107917349236439",
+        "instagram": "https://www.instagram.com/ph_weingarten/"
+      },
+      {
+        "type": "Univerza",
+        "name": "University of Maribor",
+        "country": "Slovenija",
+        "website": "https://www.um.si/",
+        "linkedin": "https://www.linkedin.com/school/univerza-v-mariboru/posts/?feedView=all",
+        "facebook": "https://www.facebook.com/UniversityOfMaribor/",
+        "instagram": "https://www.instagram.com/univerza_v_mariboru/"
+      },
+      {
+        "type": "Univerza",
+        "name": "University of Vigo",
+        "country": "Španija",
+        "website": "",
+        "linkedin": "",
+        "facebook": "",
+        "instagram": ""
+      },
+      {
+        "type": "Univerza",
+        "name": "University of Žilina",
+        "country": "Slovaška",
+        "website": "https://uniza.sk/",
+        "linkedin": "https://sk.linkedin.com/school/university-of-zilina/",
+        "facebook": "https://www.facebook.com/uniza.sk",
+        "instagram": "https://www.instagram.com/zilinska.univerzita/?hl=en"
+      }
+    ]
+  },
+  "audience": {
+    "title": "Podpora celotnemu izobraževalnemu ekosistemu.",
+    "lead": "Projekt je namenjen širokemu krogu deležnikov v evropskem izobraževalnem prostoru.",
+    "groups": [
+      {
+        "title": "Bodoči učitelji",
+        "body": "Bodoči pedagogi že v času usposabljanjem pridobivajo znanja s področja umetne inteligence, da bi se na trg dela vključili popolnoma pripravljeni."
+      },
+      {
+        "title": "Učitelji",
+        "body": "Aktivni pedagogi, ki se dodatno izobražujejo za učinkovito vključevanje umetne inteligence."
+      },
+      {
+        "title": "Izobrazevanje uciteljev",
+        "body": "Institucije, ki posodabljajo učne načrte s specializiranimi moduli za usposabljanje na področju umetne inteligence."
+      },
+      {
+        "title": "Šole",
+        "body": "Institucije, ki imajo neposredne koristi od na novo uvedene, z umetno inteligenco podprte pedagoške prakse."
+      },
+      {
+        "title": "Oblikovalci politik",
+        "body": "Odločevalci, ki usmerjajo in standardizirajo politike izobraževanja o UI."
+      }
+    ]
+  },
+  "footer": {
+    "tagline": "Poučevanje z in o umetni inteligenci. Pripravljeni na prihodnost.",
+    "licenseLabel": "CC BY-NC-SA 4.0",
+    "nav": {
+      "what": "Kaj",
+      "why": "Zakaj",
+      "how": "Kako",
+      "partners": "Partnerji",
+      "cookieSettings": "Nastavitve piškotkov"
+    },
+    "euFlagAlt": "Sofinancira Evropska unija",
+    "euDisclaimer": "Financirano s strani Evropske unije. Izražena stališča in mnenja so zgolj stališča in mnenja avtorja(-ev) in ni nujno, da odražajo stališča in mnenja Evropske unije ali Evropske izvajalske agencije za izobraževanje in kulturo (EACEA). Zanje ne moreta biti odgovorna niti Evropska unija niti EACEA."
+  },
+  "notFound": {
+    "metaTitle": "404 - Stran ni najdena | DUAL.AI.TEACHer",
+    "label": "Napaka 404",
+    "title": "Stran ni najdena",
+    "body": "Stran, ki jo iščete, ne obstaja ali pa je bila premaknjena.",
+    "backHome": "Nazaj na domov"
+  }
+}
