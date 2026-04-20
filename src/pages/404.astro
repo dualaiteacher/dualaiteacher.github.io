@@ -22,7 +22,7 @@ const dict = getDictionary(lang);
 <Layout title={dict.notFound.metaTitle} lang={lang}>
   <CookieConsent t={"cookieConsent" in dict ? dict.cookieConsent : defaultCookieConsent} />
   <div class="min-h-screen flex flex-col">
-    <ConstructionBanner t={dict.fundingBanner} />
+    <ConstructionBanner t={dict.constructionBanner} />
 
     <header class="sticky top-0 z-50 bg-white border-b-4 border-accent shadow-sm">
       <div class="mx-auto px-4 py-4">
