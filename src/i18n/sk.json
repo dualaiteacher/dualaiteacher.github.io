@@ -3,245 +3,245 @@
     "title": "DUAL.AI.TEACHer"
   },
   "constructionBanner": {
-    "construction": "Website under construction. Content is subject to change."
+    "construction": "Webová stránka je vo výstavbe. Obsah sa môže zmeniť."
   },
   "cookieConsent": {
     "banner": {
-      "title": "We value your privacy",
-      "bodyBeforeLink": "We use cookies and Microsoft Clarity to understand how our site is used and to improve your experience. You can accept all cookies, reject non-essential ones, or ",
-      "preferencesLink": "customize your preferences",
+      "title": "Ceníme si súkromie",
+      "bodyBeforeLink": "Používame cookies a MS Clarity na lepšie pochopenie a vylepšenie nášho webu. Môžete prijať všetky, odmietnuť tie nepovinné, alebo ",
+      "preferencesLink": "upraviť svoje preferencie",
       "bodyAfterLink": ".",
-      "acceptAll": "Accept All",
-      "rejectAll": "Reject All"
+      "acceptAll": "Súhlasím",
+      "rejectAll": "Odmietnuť"
     },
     "modal": {
-      "title": "Cookie Preferences",
-      "description": "Choose which categories of cookies you'd like to allow. Essential cookies are always active as they are required for the site to function.",
+      "title": "Možnosti cookies",
+      "description": "Vyberte si, ktoré kategórie cookies chcete povoliť. Základné sú vždy aktívne, pretože sú nevyhnutné pre fungovanie stránky.",
       "essential": {
-        "title": "Essential Cookies",
-        "badge": "Always active",
-        "body": "Required for basic site functionality such as navigation and security. These cannot be disabled."
+        "title": "Základné cookies",
+        "badge": "Vždy aktívne",
+        "body": "Nutné pre základný beh webu, ako navigácia a ochrana. Nedajú sa vypnúť."
       },
       "analytics": {
-        "title": "Analytics Cookies",
-        "body": "Help us understand how visitors interact with the website by collecting anonymous usage data via Microsoft Clarity."
+        "title": "Analytické",
+        "body": "Pomáhajú chápať interakcie návštevníkov zberom anonymných dát cez MS Clarity."
       },
       "advertising": {
-        "title": "Advertising Cookies",
-        "body": "Used to deliver relevant content and measure the effectiveness of campaigns. We do not currently run ads, but this setting controls ad-related data storage."
+        "title": "Reklamné cookies",
+        "body": "Slúžia na meranie kampaní a obsahu. Hoci teraz nemáme reklamy, toto riadi ukladanie dát pre ne."
       },
-      "cancel": "Cancel",
-      "rejectAll": "Reject All",
-      "savePreferences": "Save Preferences"
+      "cancel": "Späť",
+      "rejectAll": "Odmietnuť",
+      "savePreferences": "Uložiť voľby"
     }
   },
   "contactSection": {
-    "title": "Get in touch with us.",
-    "lead": "For questions, collaboration, or more information, send us a message using the form below."
+    "title": "Kontaktujte nás.",
+    "lead": "Pre otázky, spoluprácu či viac info nám pošlite správu cez tento formulár."
   },
   "nav": {
-    "what": "What",
-    "why": "Why",
-    "how": "How",
-    "partners": "Partners",
-    "contact": "Contact"
+    "what": "Čo",
+    "why": "Prečo",
+    "how": "Ako",
+    "partners": "Partneri",
+    "contact": "Kontakt"
   },
   "hero": {
-    "titleAccent": "AI-Powered Teaching",
-    "titleRest": "& AI Education",
-    "subtitle": "for Future-Proof Education",
-    "primaryCta": "Learn more",
-    "secondaryCta": "Partners"
+    "titleAccent": "Výučba s pomocou AI",
+    "titleRest": "a AI vzdelanie",
+    "subtitle": "pre moderné vzdelávanie",
+    "primaryCta": "Viac info",
+    "secondaryCta": "Partneri"
   },
   "about": {
-    "label": "What",
-    "title": "Bridging the AI literacy gap in European education.",
-    "lead": "A pan-European initiative designed to modernize teacher education by equipping educators with the required skills to navigate an AI-driven landscape.",
-    "body": "We are building an ecosystem that provides hands-on training and a formal EU-aligned certification framework - ensuring no educator is left behind in the digital transition."
+    "label": "Čo",
+    "title": "Preklenutie medzier v AI gramotnosti v EÚ školách.",
+    "lead": "Celoúnijná snaha o modernizáciu výučby učiteľov. Dáva im zručnosti pre orientáciu vo svete, ktorý je čoraz viac poháňaný umelou inteligenciou.",
+    "body": "Budujeme systém pre praktický tréning a certifikáty podľa EÚ, aby žiadny učiteľ nezaostal počas aktuálneho prechodu do novej digitálnej éry."
   },
   "why": {
-    "label": "Why",
-    "title": "The urgent need for change.",
-    "lead": "AI tools are reshaping education, but teachers feel unprepared. There is no standardized, EU-level framework to close this gap.",
+    "label": "Cieľ",
+    "title": "Naliehavá potreba zmeny.",
+    "lead": "Nástroje AI menia školy, no učitelia sa cítia nepripravení. Chýba štandardný rámec EÚ, ktorý by túto veľkú medzeru vyplnil.",
     "items": [
       {
-        "title": "The Teachers-Technology Disconnect",
-        "body": "While AI tools like intelligent tutoring systems and generative AI are revolutionizing classrooms, teachers report feeling unprepared to integrate AI into their pedagogy."
+        "title": "Rozpor medzi učiteľom a technikou",
+        "body": "Kým nástroje umelej inteligencie prinášajú revolúciu do tried, učitelia hlásia, že nie sú pripravení zaviesť AI do svojej dennej pedagogickej praxe."
       },
       {
-        "title": "No Standardized Framework",
-        "body": "There is currently no standardized, EU-level framework for training teachers on how to use AI tools responsibly, leaving a critical skills gap across European education systems."
+        "title": "Chýba štandardný rámec",
+        "body": "V súčasnosti neexistuje štandardný rámec EÚ pre nácvik zodpovedného použitia AI nástrojov. To vedie k vážnej medzere v zručnostiach vo vzdelávaní."
       },
       {
-        "title": "Ethical & Privacy Challenges",
-        "body": "Teachers need guidance on navigating and deploying AI systems in educational environments with young learners."
+        "title": "Etika a ochrana súkromia",
+        "body": "Učitelia potrebujú rady pre prácu s AI a jej nasadenie vo vzdelávacom prostredí pri práci s mladými žiakmi."
       }
     ]
   },
   "dual": {
     "with": {
-      "titleStart": "Teaching",
-      "titleAccent": "with",
+      "titleStart": "Výučba",
+      "titleAccent": "s",
       "titleEnd": "AI",
-      "label": "AI-Enhanced Pedagogy:",
-      "body": "Training teachers to actively use AI tools to design lessons, personalize student learning, automate administrative tasks."
+      "label": "AI v pedagogike:",
+      "body": "Výcvik učiteľov pre aktívne využitie AI na tvorbu hodín, osobný prístup k žiakom a automatizáciu bežných admin. úloh."
     },
     "about": {
-      "titleStart": "Teaching",
-      "titleAccent": "about",
+      "titleStart": "Výučba",
+      "titleAccent": "o",
       "titleEnd": "AI",
-      "label": "AI Literacy:",
-      "body": "Equipping teachers to educate their students on how AI works and its ethical implications - building a generation of informed and responsible citizens."
+      "label": "Znalosť AI:",
+      "body": "Príprava učiteľov na výučbu o fungovaní AI a jej etike, čím budujú generáciu plne informovaných a tiež veľmi zodpovedných mladých európskych občanov."
     }
   },
   "deliverables": {
-    "title": "Delivering a new standard in AI education.",
-    "lead": "Over a 3-year timeline, the project will build an entire ecosystem of resources for educators across Europe.",
+    "title": "Nový štandard pre AI vzdelávanie v EÚ.",
+    "lead": "Za 3 roky projekt vybuduje ucelený systém užitočných zdrojov pre všetkých pedagógov naprieč celou Európou.",
     "cards": [
       {
-        "badge": "🏅 Micro-credentials",
-        "title": "Dual Certification Pathway",
-        "body": "A formal system where teachers earn stackable micro-credentials and a 5-year EU-recognized certification."
+        "badge": "🏅 Mikrocertifikáty",
+        "title": "Duálna cesta certifikácie",
+        "body": "Formálny systém, kde učitelia získajú zbierateľné mikrocertifikáty a 5-ročný certifikát s platnosťou."
       },
       {
-        "badge": "🌐 15+ Modules",
-        "title": "Learning Platform",
-        "body": "A multilingual digital hub offering interactive training modules and curated open-access AI lesson plans."
+        "badge": "🌐 15+ modulov",
+        "title": "Vzdelávací portál",
+        "body": "Viacjazyčný web s interaktívnymi modulmi a plánmi hodín pre AI s otvoreným prístupom pre všetky školy."
       },
       {
-        "badge": "✈️ 5 Hubs",
-        "title": "Transnational Academies",
-        "body": "Five hubs across Europe funding mobility for educators to travel, workshop, and share best practices."
+        "badge": "✈️ 5 uzlov",
+        "title": "Nadnárodné akadémie",
+        "body": "Päť centier v Európe platí cesty učiteľom, aby cestovali na workshopy a zdieľali osvedčené postupy."
       },
       {
-        "badge": "🏫 50+ Schools",
-        "title": "Real-World Classroom Pilots",
-        "body": "Trained teachers test AI-enhanced lessons in schools to generate evidence-based insights."
+        "badge": "🏫 50+ škôl",
+        "title": "Reálne pilotné testy tried",
+        "body": "Vyškolení učitelia testujú hodiny s AI priamo v školách na získanie reálnych poznatkov."
       }
     ]
   },
   "how": {
-    "label": "HOW",
-    "title": "How will the project achieve its goals?",
-    "lead": "Through four interconnected phases over a 36-month timeline.",
+    "label": "AKO",
+    "title": "Ako tento projekt dosiahne svoje ciele?",
+    "lead": "Cez štyri prepojené fázy v priebehu nasledujúcich 36 mesiacov.",
     "phases": [
       {
-        "title": "Phase 1 - Co-Design",
-        "body": "Co-designing an AI-Powered Teaching Playbook and Certification Framework to define pedagogical standards and micro-credentials aligned with EU frameworks."
+        "title": "Fáza 1 - Tvorba",
+        "body": "Návrh príručky pre výučbu s AI a certifikačného rámca. Definuje štandardy pedagogiky a mikrocertifikáty priamo v súlade so všetkými platnými EÚ rámcami."
       },
       {
-        "title": "Phase 2 - Platform Development",
-        "body": "Developing a multilingual AI Learning Platform (MOOC) featuring over 15 training modules and 50+ downloadable AI-enhanced lesson plans."
+        "title": "Fáza 2 - Vývoj platformy",
+        "body": "Tvorba viacjazyčnej učiacej platformy (MOOC) s viac ako 15 modulmi a 50+ stiahnuteľnými plánmi AI hodín pre lepšie denné využitie učiva."
       },
       {
-        "title": "Phase 3 - Teacher Academies",
-        "body": "Launching 5 transnational Teacher Academies to provide learning and cross-border mobility opportunities, directly training over 100 educators."
+        "title": "Fáza 3 - Učiteľské akadémie",
+        "body": "Spustenie 5 nadnárodných akadémií učiteľov. Poskytnú šance pre učenie i cezhraničnú mobilitu s priamym tréningom viac ako 100 rôznych pedagógov."
       },
       {
-        "title": "Phase 4 - Classroom Pilots",
-        "body": "Conducting real-world classroom pilots where trained teachers test AI-enhanced lessons in 50+ schools, reaching over 1,000 students to generate evidence-based policy recommendations."
+        "title": "Fáza 4 - Testy v triedach",
+        "body": "Reálne pilotné testy v triedach. Skúsení učitelia otestujú AI hodiny v 50+ školách. Oslovia nad 1 000 študentov a tvoria dátové odporúčania pre politiky do blízkej vzdelávacej praxe."
       }
     ]
   },
   "aboutPartners": {
-    "label": "Consortium",
-    "title": "11 Partners. One Shared Mission.",
-    "lead": "A cross-sector alliance spanning universities, public institutions, SMEs, VET, and certification.",
+    "label": "Konzorcium",
+    "title": "11 partnerov. Jedna misia spolu.",
+    "lead": "Multisektorová aliancia univerzít, inštitúcií, malých firiem, OVP a odborných certifikácií v EÚ.",
     "partners": [
       {
-        "type": "SME",
+        "type": "MSP",
         "name": "ACCELERAS KG",
-        "country": "Austria",
+        "country": "Rakúsko",
         "website": "https://www.acceleras.io",
         "linkedin": "https://www.linkedin.com/company/accelerasaustria/",
         "facebook": "https://www.facebook.com/acceleras.io",
         "instagram": "https://www.instagram.com/acceleras.io/"
       },
       {
-        "type": "University",
+        "type": "Univerzita",
         "name": "College of Business and Health Sciences",
-        "country": "Poland",
+        "country": "Poľsko",
         "website": "https://www.wsbinoz.edu.pl",
         "linkedin": "https://www.linkedin.com/school/wy%C5%BCsza-szko%C5%82a-biznesu-i-nauk-o-zdrowiu-w-%C5%82odzi/",
         "facebook": "",
         "instagram": ""
       },
       {
-        "type": "Public Authority",
+        "type": "Verejný úrad",
         "name": "Consellería de Educación, Ciencia, Universidades e Formación Profesional",
-        "country": "Spain",
+        "country": "Špan.",
         "website": "",
         "linkedin": "",
         "facebook": "",
         "instagram": ""
       },
       {
-        "type": "University",
+        "type": "Univerzita",
         "name": "Daugavpils University",
-        "country": "Latvia",
+        "country": "Lotyš.",
         "website": "http://www.du.lv/",
         "linkedin": "",
         "facebook": "https://www.facebook.com/DaugavpilsUniversitate",
         "instagram": ""
       },
       {
-        "type": "Certification Body",
+        "type": "Certifikačný orgán",
         "name": "ICEP Institute of European Certification of Personnel s.r.o.",
-        "country": "Slovakia",
+        "country": "SR",
         "website": "https://www.iceponline.com/",
         "linkedin": "https://sk.linkedin.com/company/iceponline",
         "facebook": "https://www.facebook.com/iceponline/",
         "instagram": "https://www.instagram.com/icep.online"
       },
       {
-        "type": "SME",
+        "type": "MSP",
         "name": "INSTITUT INPRO AS",
-        "country": "Czechia",
+        "country": "Česko",
         "website": "",
         "linkedin": "",
         "facebook": "",
         "instagram": ""
       },
       {
-        "type": "Vocational Provider",
+        "type": "Poskytovateľ OVP",
         "name": "SIA Macibu centrs \"Austrumvidzeme\"",
-        "country": "Latvia",
+        "country": "Lotyš.",
         "website": "http://www.austrumvidzeme.lv/",
         "linkedin": "https://www.linkedin.com/company/austrumvidzeme/",
         "facebook": "https://www.facebook.com/Austrumvidzeme/",
         "instagram": ""
       },
       {
-        "type": "University",
+        "type": "Univerzita",
         "name": "University of Education Weingarten",
-        "country": "Germany",
+        "country": "Nemecko",
         "website": "https://www.ph-weingarten.de/de",
         "linkedin": "https://www.linkedin.com/school/p%C3%A4dagogische-hochschule-weingarten/posts/?feedView=all",
         "facebook": "https://www.facebook.com/pages/P%C3%A4dagogische-Hochschule-Weingarten/107917349236439",
         "instagram": "https://www.instagram.com/ph_weingarten/"
       },
       {
-        "type": "University",
+        "type": "Univerzita",
         "name": "University of Maribor",
-        "country": "Slovenia",
+        "country": "Slovins.",
         "website": "https://www.um.si/",
         "linkedin": "https://www.linkedin.com/school/univerza-v-mariboru/posts/?feedView=all",
         "facebook": "https://www.facebook.com/UniversityOfMaribor/",
         "instagram": "https://www.instagram.com/univerza_v_mariboru/"
       },
       {
-        "type": "University",
+        "type": "Univerzita",
         "name": "University of Vigo",
-        "country": "Spain",
+        "country": "Špan.",
         "website": "",
         "linkedin": "",
         "facebook": "",
         "instagram": ""
       },
       {
-        "type": "University",
+        "type": "Univerzita",
         "name": "University of Žilina",
-        "country": "Slovakia",
+        "country": "SR",
         "website": "https://uniza.sk/",
         "linkedin": "https://sk.linkedin.com/school/university-of-zilina/",
         "facebook": "https://www.facebook.com/uniza.sk",
@@ -250,49 +250,49 @@
     ]
   },
   "audience": {
-    "title": "Empowering the entire educational ecosystem.",
-    "lead": "The project serves a broad spectrum of stakeholders across the European education landscape.",
+    "title": "Posilnenie celého vzdelávacieho ekosystému.",
+    "lead": "Náš projekt slúži širokému okruhu rôznych subjektov naprieč európskym prostredím vzdelávania.",
     "groups": [
       {
-        "title": "Pre-Service Teachers",
-        "body": "Future educators gaining AI competencies during their initial training to enter the workforce fully prepared."
+        "title": "Budúci učitelia",
+        "body": "Budúci pedagógovia získavajú AI zručnosti už počas prípravy, aby do praxe vstúpili už úplne pripravení na to."
       },
       {
-        "title": "In-Service Teachers",
-        "body": "Practicing educators upskilling to integrate AI effectively."
+        "title": "Učitelia v praxi",
+        "body": "Učitelia si zvyšujú kvalifikáciu pre účinné zapojenie AI do."
       },
       {
-        "title": "Teacher Education",
-        "body": "Institutions modernizing curricula with specialized AI training modules."
+        "title": "Príprava učiteľov",
+        "body": "Školy, ktoré modernizujú osnovy o špeciálne AI moduly na výučbu v praxi."
       },
       {
-        "title": "Schools",
-        "body": "Institutions directly benefiting from newly implemented, AI-enhanced teaching practices."
+        "title": "Školy",
+        "body": "Školy, ktoré priamo ťažia z novo zavedených a inovatívnych metód výučby obohatenej o AI."
       },
       {
-        "title": "Policymakers",
-        "body": "Decision-makers shaping and standardizing AI education policy."
+        "title": "Tvorcovia",
+        "body": "Lídri, ktorí formujú a štandardizujú európsku AI politiku do."
       }
     ]
   },
   "footer": {
-    "tagline": "AI-Powered Teaching and AI Education for Future-Proof Education",
+    "tagline": "Výučba a AI vzdelanie pre moderné vzdelávanie do novej éry. :)",
     "licenseLabel": "CC BY-NC-SA 4.0",
     "nav": {
-      "what": "What",
-      "why": "Why",
-      "how": "How",
-      "partners": "Partners",
-      "cookieSettings": "Cookie Settings"
+      "what": "Čo",
+      "why": "Prečo",
+      "how": "Ako",
+      "partners": "Partneri",
+      "cookieSettings": "Voľby cookies"
     },
-    "euFlagAlt": "Co-funded by the European Union",
-    "euDisclaimer": "Funded by the European Union. Views and opinions expressed are however those of the author(s) only and do not necessarily reflect those of the European Union or the European Education and Culture Executive Agency (EACEA). Neither the European Union nor EACEA can be held responsible for them."
+    "euFlagAlt": "Spolufinancované EÚ",
+    "euDisclaimer": "Financované EÚ. Názory a postoje sú len autorove a nemusia odrážať názory EÚ ani Európskej výkonnej agentúry pre vzdelávanie a kultúru (EACEA). EÚ ani EACEA nenesú žiadnu zodpovednosť za tento konkrétny obsah, ktorý je tu zverejnený a ktorý môže byť predmetom rôznych diskusií či pohľadov."
   },
   "notFound": {
-    "metaTitle": "404 - Page Not Found | DUAL.AI.TEACHer",
-    "label": "Error 404",
-    "title": "Page Not Found",
-    "body": "The page you are looking for does not exist or may have moved.",
-    "backHome": "Back to Home"
+    "metaTitle": "404 - Nenájdené | DUAL.AI.TEACHer",
+    "label": "Chyba 404",
+    "title": "Nenájdené",
+    "body": "Stránka, ktorú hľadáte, neexistuje alebo bola asi presunutá sem.",
+    "backHome": "Návrat domov"
   }
 }
