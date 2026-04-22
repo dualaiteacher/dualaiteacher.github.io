@@ -3,245 +3,245 @@
     "title": "DUAL.AI.TEACHer"
   },
   "constructionBanner": {
-    "construction": "Website under construction. Content is subject to change."
+    "construction": "Website wird überarbeitet. Inhalte können sich ändern."
   },
   "cookieConsent": {
     "banner": {
-      "title": "We value your privacy",
-      "bodyBeforeLink": "We use cookies and Microsoft Clarity to understand how our site is used and to improve your experience. You can accept all cookies, reject non-essential ones, or ",
-      "preferencesLink": "customize your preferences",
+      "title": "Ihre Privatsphäre ist uns wichtig",
+      "bodyBeforeLink": "Wir verwenden Cookies und Microsoft Clarity, um zu verstehen wie unsere Website genutzt wird und Ihr Nutzungserlebnis zu verbessern. Sie können alle Cookies akzeptieren oder nicht erforderliche Cookies ablehnen",
+      "preferencesLink": "Einstellungen anpassen",
       "bodyAfterLink": ".",
-      "acceptAll": "Accept All",
-      "rejectAll": "Reject All"
+      "acceptAll": "Alle akzeptieren",
+      "rejectAll": "Alle ablehnen"
     },
     "modal": {
-      "title": "Cookie Preferences",
-      "description": "Choose which categories of cookies you'd like to allow. Essential cookies are always active as they are required for the site to function.",
+      "title": "Cookie–Präferenz",
+      "description": "Wählen Sie aus, welche Kategorien von Cookies Sie zulassen möchten.",
       "essential": {
-        "title": "Essential Cookies",
-        "badge": "Always active",
-        "body": "Required for basic site functionality such as navigation and security. These cannot be disabled."
+        "title": "Erforderliche Cookies",
+        "badge": "Immer aktiv",
+        "body": "Erforderlich für grundlegende Funktionen der Website, wie Navigation und Sicherheit. Diese können nicht deaktiviert werden."
       },
       "analytics": {
-        "title": "Analytics Cookies",
-        "body": "Help us understand how visitors interact with the website by collecting anonymous usage data via Microsoft Clarity."
+        "title": "Analyse–Cookies",
+        "body": "Helfen Sie uns zu verstehen, wie Besucher mit der Website interagieren, indem anonyme Nutzungsdaten über Microsoft Clarity erfasst werden."
       },
       "advertising": {
-        "title": "Advertising Cookies",
-        "body": "Used to deliver relevant content and measure the effectiveness of campaigns. We do not currently run ads, but this setting controls ad-related data storage."
+        "title": "Werbe–Cookies",
+        "body": "Werden verwendet, um relevante Inhalte bereitzustellen und die Wirksamkeit von Kampagnen zu messen. Derzeit schalten wir keine Werbung, aber diese Einstellung steuert die Speicherung von werbebezogenen Daten."
       },
-      "cancel": "Cancel",
-      "rejectAll": "Reject All",
-      "savePreferences": "Save Preferences"
+      "cancel": "Abbrechen",
+      "rejectAll": "Alle ablehnen",
+      "savePreferences": "Einstellungen speichern"
     }
   },
   "contactSection": {
-    "title": "Get in touch with us.",
-    "lead": "For questions, collaboration, or more information, send us a message using the form below."
+    "title": "Kontaktieren Sie uns.",
+    "lead": "Bei Fragen, für eine Zusammenarbeit oder weitere Informationen senden Sie uns eine Nachricht über das untenstehende Formular."
   },
   "nav": {
-    "what": "What",
-    "why": "Why",
-    "how": "How",
-    "partners": "Partners",
-    "contact": "Contact"
+    "what": "Was",
+    "why": "Warum",
+    "how": "Wie",
+    "partners": "Partner",
+    "contact": "Kontakt"
   },
   "hero": {
-    "titleAccent": "AI-Powered Teaching",
-    "titleRest": "& AI Education",
-    "subtitle": "for Future-Proof Education",
-    "primaryCta": "Learn more",
-    "secondaryCta": "Partners"
+    "titleAccent": "KI–gestützter Unterricht",
+    "titleRest": "& KI–Bildung",
+    "subtitle": "für zukunftssichere Bildung",
+    "primaryCta": "Mehr erfahren",
+    "secondaryCta": "Partner"
   },
   "about": {
-    "label": "What",
-    "title": "Bridging the AI literacy gap in European education.",
-    "lead": "A pan-European initiative designed to modernize teacher education by equipping educators with the required skills to navigate an AI-driven landscape.",
-    "body": "We are building an ecosystem that provides hands-on training and a formal EU-aligned certification framework - ensuring no educator is left behind in the digital transition."
+    "label": "Was",
+    "title": "Überbrückung der KI–Kompetenzlücke in der europäischen Bildung.",
+    "lead": "Eine paneuropäische Initiative zur Modernisierung der Lehrkräftebildung, die Lehrkräfte mit den notwendigen Kompetenzen ausstattet, um sich in einer KI–geprägten Bildungslandschaft sicher zu bewegen.",
+    "body": "Wir entwickeln ein Ökosystem, das praxisnahe Fortbildungen und einen formalen, EU–konformen Zertifizierungsrahmen bietet – damit im digitalen Wandel keine Lehrkraft zurückgelassen wird."
   },
   "why": {
-    "label": "Why",
-    "title": "The urgent need for change.",
-    "lead": "AI tools are reshaping education, but teachers feel unprepared. There is no standardized, EU-level framework to close this gap.",
+    "label": "Warum",
+    "title": "Die dringende Notwendigkeit von Veränderungen.",
+    "lead": "KI–Tools verändern die Bildungslandschaft, doch viele Lehrkräfte fühlen sich unzureichend vorbereitet. Es fehlt ein standardisierter Rahmen auf EU–Ebene, um diese Lücke zu schließen.",
     "items": [
       {
-        "title": "The Teachers-Technology Disconnect",
-        "body": "While AI tools like intelligent tutoring systems and generative AI are revolutionizing classrooms, teachers report feeling unprepared to integrate AI into their pedagogy."
+        "title": "Die Kluft zwischen Lehrkräften und Technologie",
+        "body": "Während KI–Tools wie intelligente Tutorensysteme und generative KI den Unterricht revolutionieren, berichten Lehrkräfte, dass sie sich nicht ausreichend darauf vorbereitet fühlen, KI in ihre pädagogische Praxis zu integrieren."
       },
       {
-        "title": "No Standardized Framework",
-        "body": "There is currently no standardized, EU-level framework for training teachers on how to use AI tools responsibly, leaving a critical skills gap across European education systems."
+        "title": "Kein standardisierter Rahmen",
+        "body": "Derzeit gibt es keinen standardisierten Rahmen auf EU–Ebene, der Lehrkräfte im verantwortungsvollen Einsatz von KI schult, wodurch eine erhebliche Kompetenzlücke in den europäischen Bildungssystemen entsteht."
       },
       {
-        "title": "Ethical & Privacy Challenges",
-        "body": "Teachers need guidance on navigating and deploying AI systems in educational environments with young learners."
+        "title": "Ethische und datenschutzrechtliche Herausforderungen",
+        "body": "Lehrkräfte benötigen Unterstützung beim Einsatz und der Integration von KI–Systemen in Bildungsumgebungen mit jungen Lernenden."
       }
     ]
   },
   "dual": {
     "with": {
-      "titleStart": "Teaching",
-      "titleAccent": "with",
-      "titleEnd": "AI",
-      "label": "AI-Enhanced Pedagogy:",
-      "body": "Training teachers to actively use AI tools to design lessons, personalize student learning, automate administrative tasks."
+      "titleStart": "Lehren",
+      "titleAccent": "mit",
+      "titleEnd": "KI",
+      "label": "KI–gestützte Pädagogik:",
+      "body": "Lehrkräfte dabei unterstützen, KI–Tools aktiv zu nutzen, um Unterricht zu gestalten, das Lernen der Schülerinnen und Schüler individuell anzupassen und administrative Aufgaben zu automatisieren."
     },
     "about": {
-      "titleStart": "Teaching",
-      "titleAccent": "about",
-      "titleEnd": "AI",
-      "label": "AI Literacy:",
-      "body": "Equipping teachers to educate their students on how AI works and its ethical implications - building a generation of informed and responsible citizens."
+      "titleStart": "Lehren",
+      "titleAccent": "über",
+      "titleEnd": "KI",
+      "label": "KI–Kompetenz:",
+      "body": "Lehrkräfte befähigen, ihre Lernenden darüber aufzuklären, wie KI funktioniert und welche ethischen Auswirkungen sie hat – mit dem Ziel, eine Generation informierter und verantwortungsvoller Bürgerinnen und Bürger zu fördern."
     }
   },
   "deliverables": {
-    "title": "Delivering a new standard in AI education.",
-    "lead": "Over a 3-year timeline, the project will build an entire ecosystem of resources for educators across Europe.",
+    "title": "Einen neuen Standard in der KI–Bildung setzen.",
+    "lead": "Über einen Zeitraum von drei Jahren wird im Rahmen des Projekts ein umfassendes Ökosystem an Ressourcen für Lehrkräfte in ganz Europa aufgebaut.",
     "cards": [
       {
-        "badge": "🏅 Micro-credentials",
-        "title": "Dual Certification Pathway",
-        "body": "A formal system where teachers earn stackable micro-credentials and a 5-year EU-recognized certification."
+        "badge": "🏅 Micro–Credentials",
+        "title": "Dualer Zertifizierungspfad",
+        "body": "Ein formales System, in dem Lehrkräfte aufeinander aufbauende Micro–Credentials und eine EU–weit anerkannte Zertifizierung mit fünf Jahren Gültigkeit erlangen können."
       },
       {
-        "badge": "🌐 15+ Modules",
-        "title": "Learning Platform",
-        "body": "A multilingual digital hub offering interactive training modules and curated open-access AI lesson plans."
+        "badge": "🌐 15+ Module",
+        "title": "Lernplattform",
+        "body": "Eine mehrsprachige digitale Plattform mit interaktiven Lernmodulen und frei zugänglichen KI–Unterrichtsmaterialien."
       },
       {
-        "badge": "✈️ 5 Hubs",
-        "title": "Transnational Academies",
-        "body": "Five hubs across Europe funding mobility for educators to travel, workshop, and share best practices."
+        "badge": "✈️ 5 Standorte",
+        "title": "Transnationale Akademien",
+        "body": "Fünf Standorte in ganz Europa fördern die Mobilität von Lehrkräften und ermöglichen Reisen, Workshops sowie den Austausch bewährter Praktiken."
       },
       {
-        "badge": "🏫 50+ Schools",
-        "title": "Real-World Classroom Pilots",
-        "body": "Trained teachers test AI-enhanced lessons in schools to generate evidence-based insights."
+        "badge": "🏫 50+ Schulen",
+        "title": "Praxisnahe Unterrichtspilotprojekte",
+        "body": "Geschulte Lehrkräfte erproben KI–gestützte Unterrichtskonzepte in Schulen, um evidenzbasierte Erkenntnisse zu gewinnen."
       }
     ]
   },
   "how": {
-    "label": "HOW",
-    "title": "How will the project achieve its goals?",
-    "lead": "Through four interconnected phases over a 36-month timeline.",
+    "label": "WIE",
+    "title": "Wie wird das Projekt seine Ziele erreichen?",
+    "lead": "Durch vier miteinander verknüpfte Phasen über einen Zeitraum von 36 Monaten.",
     "phases": [
       {
-        "title": "Phase 1 - Co-Design",
-        "body": "Co-designing an AI-Powered Teaching Playbook and Certification Framework to define pedagogical standards and micro-credentials aligned with EU frameworks."
+        "title": "Phase 1 – Co–Design",
+        "body": "Gemeinsame Entwicklung eines KI–gestützten Teaching Playbooks und eines Zertifizierungsrahmens zur Festlegung pädagogischer Standards und Micro–Credentials im Einklang mit EU–Rahmenwerken."
       },
       {
-        "title": "Phase 2 - Platform Development",
-        "body": "Developing a multilingual AI Learning Platform (MOOC) featuring over 15 training modules and 50+ downloadable AI-enhanced lesson plans."
+        "title": "Phase 2 – Plattformentwicklung",
+        "body": "Entwicklung einer mehrsprachigen KI–Lernplattform (MOOC) mit über 15 Trainingsmodulen und mehr als 50 herunterladbaren KI–gestützten Unterrichtsmaterialien."
       },
       {
-        "title": "Phase 3 - Teacher Academies",
-        "body": "Launching 5 transnational Teacher Academies to provide learning and cross-border mobility opportunities, directly training over 100 educators."
+        "title": "Phase 3 – Teacher Academies",
+        "body": "Start von 5 länderübergreifenden Teacher Academies zur Bereitstellung von Lern– und grenzüberschreitenden Mobilitätsangeboten, durch die über 100 Lehrkräfte direkt geschult werden."
       },
       {
-        "title": "Phase 4 - Classroom Pilots",
-        "body": "Conducting real-world classroom pilots where trained teachers test AI-enhanced lessons in 50+ schools, reaching over 1,000 students to generate evidence-based policy recommendations."
+        "title": "Phase 4 – Unterrichtspilotprojekte",
+        "body": "Durchführung praxisnaher Unterrichtspilotprojekte, in denen geschulte Lehrkräfte KI–gestützte Unterrichtskonzepte in über 50 Schulen erproben und mehr als 1.000 Lernende erreichen, um evidenzbasierte Handlungsempfehlungen für die Bildungspolitik zu entwickeln."
       }
     ]
   },
   "aboutPartners": {
-    "label": "Consortium",
-    "title": "11 Partners. One Shared Mission.",
-    "lead": "A cross-sector alliance spanning universities, public institutions, SMEs, VET, and certification.",
+    "label": "Konsortium",
+    "title": "11 Partner. Eine gemeinsame Mission.",
+    "lead": "Eine sektorübergreifende Allianz aus Hochschulen, öffentlichen Institutionen, KMU, der beruflichen Bildung und Zertifizierungsstellen.",
     "partners": [
       {
-        "type": "SME",
+        "type": "KMU",
         "name": "ACCELERAS KG",
-        "country": "Austria",
+        "country": "Österreich",
         "website": "https://www.acceleras.io",
         "linkedin": "https://www.linkedin.com/company/accelerasaustria/",
         "facebook": "https://www.facebook.com/acceleras.io",
         "instagram": "https://www.instagram.com/acceleras.io/"
       },
       {
-        "type": "University",
+        "type": "Hochschule",
         "name": "College of Business and Health Sciences",
-        "country": "Poland",
+        "country": "Polen",
         "website": "https://www.wsbinoz.edu.pl",
         "linkedin": "https://www.linkedin.com/school/wy%C5%BCsza-szko%C5%82a-biznesu-i-nauk-o-zdrowiu-w-%C5%82odzi/",
         "facebook": "",
         "instagram": ""
       },
       {
-        "type": "Public Authority",
+        "type": "Öffentliche Behörde",
         "name": "Consellería de Educación, Ciencia, Universidades e Formación Profesional",
-        "country": "Spain",
+        "country": "Spanien",
         "website": "",
         "linkedin": "",
         "facebook": "",
         "instagram": ""
       },
       {
-        "type": "University",
+        "type": "Hochschule",
         "name": "Daugavpils University",
-        "country": "Latvia",
+        "country": "Lettland",
         "website": "http://www.du.lv/",
         "linkedin": "",
         "facebook": "https://www.facebook.com/DaugavpilsUniversitate",
         "instagram": ""
       },
       {
-        "type": "Certification Body",
+        "type": "Zertifizierungsstelle",
         "name": "ICEP Institute of European Certification of Personnel s.r.o.",
-        "country": "Slovakia",
+        "country": "Slowakei",
         "website": "https://www.iceponline.com/",
         "linkedin": "https://sk.linkedin.com/company/iceponline",
         "facebook": "https://www.facebook.com/iceponline/",
         "instagram": "https://www.instagram.com/icep.online"
       },
       {
-        "type": "SME",
+        "type": "KMU",
         "name": "INSTITUT INPRO AS",
-        "country": "Czechia",
+        "country": "Tschechien",
         "website": "",
         "linkedin": "",
         "facebook": "",
         "instagram": ""
       },
       {
-        "type": "Vocational Provider",
+        "type": "Anbieter beruflicher Bildung",
         "name": "SIA Macibu centrs \"Austrumvidzeme\"",
-        "country": "Latvia",
+        "country": "Lettland",
         "website": "http://www.austrumvidzeme.lv/",
         "linkedin": "https://www.linkedin.com/company/austrumvidzeme/",
         "facebook": "https://www.facebook.com/Austrumvidzeme/",
         "instagram": ""
       },
       {
-        "type": "University",
-        "name": "University of Education Weingarten",
-        "country": "Germany",
+        "type": "Hochschule",
+        "name": "Pädagogische Hochschule Weingarten",
+        "country": "Deutschland",
         "website": "https://www.ph-weingarten.de/de",
         "linkedin": "https://www.linkedin.com/school/p%C3%A4dagogische-hochschule-weingarten/posts/?feedView=all",
         "facebook": "https://www.facebook.com/pages/P%C3%A4dagogische-Hochschule-Weingarten/107917349236439",
         "instagram": "https://www.instagram.com/ph_weingarten/"
       },
       {
-        "type": "University",
+        "type": "Hochschule",
         "name": "University of Maribor",
-        "country": "Slovenia",
+        "country": "Slowenien",
         "website": "https://www.um.si/",
         "linkedin": "https://www.linkedin.com/school/univerza-v-mariboru/posts/?feedView=all",
         "facebook": "https://www.facebook.com/UniversityOfMaribor/",
         "instagram": "https://www.instagram.com/univerza_v_mariboru/"
       },
       {
-        "type": "University",
+        "type": "Hochschule",
         "name": "University of Vigo",
-        "country": "Spain",
+        "country": "Spanien",
         "website": "",
         "linkedin": "",
         "facebook": "",
         "instagram": ""
       },
       {
-        "type": "University",
+        "type": "Hochschule",
         "name": "University of Žilina",
-        "country": "Slovakia",
+        "country": "Slowakei",
         "website": "https://uniza.sk/",
         "linkedin": "https://sk.linkedin.com/school/university-of-zilina/",
         "facebook": "https://www.facebook.com/uniza.sk",
@@ -250,49 +250,49 @@
     ]
   },
   "audience": {
-    "title": "Empowering the entire educational ecosystem.",
-    "lead": "The project serves a broad spectrum of stakeholders across the European education landscape.",
+    "title": "Stärkung des gesamten Bildungsökosystems.",
+    "lead": "Das Projekt richtet sich an ein breites Spektrum von Interessengruppen in der europäischen Bildungslandschaft.",
     "groups": [
       {
-        "title": "Pre-Service Teachers",
-        "body": "Future educators gaining AI competencies during their initial training to enter the workforce fully prepared."
+        "title": "Lehramtsstudierende",
+        "body": "Angehende Lehrkräfte erwerben bereits in ihrer Ausbildung KI–Kompetenzen, um optimal auf den Berufseinstieg vorbereitet zu sein."
       },
       {
-        "title": "In-Service Teachers",
-        "body": "Practicing educators upskilling to integrate AI effectively."
+        "title": "Lehrkräfte im Dienst",
+        "body": "Aktive Lehrkräfte erweitern ihre Kompetenzen, um KI effektiv in ihren Unterricht zu integrieren."
       },
       {
-        "title": "Teacher Education",
-        "body": "Institutions modernizing curricula with specialized AI training modules."
+        "title": "Lehrkräftebildung",
+        "body": "Institutionen modernisieren ihre Curricula durch spezialisierte KI–Trainingsmodule."
       },
       {
-        "title": "Schools",
-        "body": "Institutions directly benefiting from newly implemented, AI-enhanced teaching practices."
+        "title": "Schulen",
+        "body": "Schulen profitieren direkt von neu eingeführten KI–gestützten Unterrichtspraktiken."
       },
       {
-        "title": "Policymakers",
-        "body": "Decision-makers shaping and standardizing AI education policy."
+        "title": "Politische Entscheidungsträger",
+        "body": "Entscheidungsträger, die die KI–Bildungspolitik gestalten und standardisieren."
       }
     ]
   },
   "footer": {
-    "tagline": "AI-Powered Teaching and AI Education for Future-Proof Education",
+    "tagline": "KI–gestützter Unterricht und KI–Bildung für zukunftssichere Bildung",
     "licenseLabel": "CC BY-NC-SA 4.0",
     "nav": {
-      "what": "What",
-      "why": "Why",
-      "how": "How",
-      "partners": "Partners",
-      "cookieSettings": "Cookie Settings"
+      "what": "Was",
+      "why": "Warum",
+      "how": "Wie",
+      "partners": "Partner",
+      "cookieSettings": "Cookie–Einstellungen"
     },
-    "euFlagAlt": "Co-funded by the European Union",
-    "euDisclaimer": "Funded by the European Union. Views and opinions expressed are however those of the author(s) only and do not necessarily reflect those of the European Union or the European Education and Culture Executive Agency (EACEA). Neither the European Union nor EACEA can be held responsible for them."
+    "euFlagAlt": "Kofinanziert von der Europäischen Union",
+    "euDisclaimer": "Finanziert von der Europäischen Union. Die geäußerten Ansichten und Meinungen sind jedoch ausschließlich die der Autorinnen und Autoren und spiegeln nicht notwendigerweise die der Europäischen Union oder der Exekutivagentur für Bildung und Kultur (EACEA) wider. Weder die Europäische Union noch die EACEA können dafür verantwortlich gemacht werden."
   },
   "notFound": {
-    "metaTitle": "404 - Page Not Found | DUAL.AI.TEACHer",
-    "label": "Error 404",
-    "title": "Page Not Found",
-    "body": "The page you are looking for does not exist or may have moved.",
-    "backHome": "Back to Home"
+    "metaTitle": "404 – Seite nicht gefunden | DUAL.AI.TEACHer",
+    "label": "Fehler 404",
+    "title": "Seite nicht gefunden",
+    "body": "Die von Ihnen gesuchte Seite existiert nicht oder wurde möglicherweise verschoben.",
+    "backHome": "Zurück zur Startseite"
   }
 }
