@@ -3,150 +3,150 @@
     "title": "DUAL.AI.TEACHer"
   },
   "constructionBanner": {
-    "construction": "Website under construction. Content is subject to change."
+    "construction": "Strona internetowa w trakcie budowy. Jej wygląd i zawartość mogą ulec zmianie."
   },
   "cookieConsent": {
     "banner": {
-      "title": "We value your privacy",
-      "bodyBeforeLink": "We use cookies and Microsoft Clarity to understand how our site is used and to improve your experience. You can accept all cookies, reject non-essential ones, or ",
-      "preferencesLink": "customize your preferences",
+      "title": "Szanujemy Twoją prywatność",
+      "bodyBeforeLink": "Korzystamy z plików cookie oraz narzędzia Microsoft Clarity, aby dowiedzieć się, w jaki sposób użytkownicy korzystają z naszej strony, i aby poprawić jej działanie. Możesz zaakceptować wszystkie pliki cookie, odrzucić te, które nie są niezbędne,",
+      "preferencesLink": "club ustawić własne parametry.",
       "bodyAfterLink": ".",
-      "acceptAll": "Accept All",
-      "rejectAll": "Reject All"
+      "acceptAll": "Zaakceptuj pliki cookie",
+      "rejectAll": "Odrzuć pliki cookie"
     },
     "modal": {
-      "title": "Cookie Preferences",
-      "description": "Choose which categories of cookies you'd like to allow. Essential cookies are always active as they are required for the site to function.",
+      "title": "Ustawienia plików cookie",
+      "description": "Wybierz, którym kategoriom plików cookie chcesz zezwolić. Niezbędne pliki cookie są zawsze aktywne, ponieważ są one niezbędne do prawidłowego działania strony",
       "essential": {
-        "title": "Essential Cookies",
-        "badge": "Always active",
-        "body": "Required for basic site functionality such as navigation and security. These cannot be disabled."
+        "title": "Niezbędne pliki cookie",
+        "badge": "Zawsze aktywne",
+        "body": "Są one niezbędne do podstawowego działania strony, np. do nawigacji i zapewnienia bezpieczeństwa. Nie można ich wyłączyć."
       },
       "analytics": {
-        "title": "Analytics Cookies",
-        "body": "Help us understand how visitors interact with the website by collecting anonymous usage data via Microsoft Clarity."
+        "title": "Pliki cookie służące do analizy danych",
+        "body": "HPomóż nam zrozumieć, w jaki sposób użytkownicy korzystają z naszej strony internetowej, udostępniając anonimowe dane dotyczące użytkowania za pośrednictwem usługi Microsoft Clarity."
       },
       "advertising": {
-        "title": "Advertising Cookies",
-        "body": "Used to deliver relevant content and measure the effectiveness of campaigns. We do not currently run ads, but this setting controls ad-related data storage."
+        "title": "Pliki cookie związane z reklamami",
+        "body": "Służy do dostarczania odpowiednich treści i mierzenia skuteczności kampanii. Obecnie nie wyświetlamy reklam, ale to ustawienie reguluje przechowywanie danych związanych z reklamami."
       },
-      "cancel": "Cancel",
-      "rejectAll": "Reject All",
-      "savePreferences": "Save Preferences"
+      "cancel": "Anuluj",
+      "rejectAll": "Odrzuć pliki cookie",
+      "savePreferences": "Zaakceptuj ustawienia"
     }
   },
   "contactSection": {
-    "title": "Get in touch with us.",
-    "lead": "For questions, collaboration, or more information, send us a message using the form below."
+    "title": "Skontaktuj się z nami.",
+    "lead": "Jeśli masz pytania, chcesz nawiązać współpracę lub uzyskać więcej informacji, wyślij nam wiadomość, korzystając z poniższego formularza."
   },
   "nav": {
-    "what": "What",
-    "why": "Why",
-    "how": "How",
-    "partners": "Partners",
-    "contact": "Contact"
+    "what": "O czym",
+    "why": "Dlaczego",
+    "how": "Co robimy",
+    "partners": "Partnerzy",
+    "contact": "Kontakt"
   },
   "hero": {
-    "titleAccent": "AI-Powered Teaching",
-    "titleRest": "& AI Education",
-    "subtitle": "for Future-Proof Education",
-    "primaryCta": "Learn more",
-    "secondaryCta": "Partners"
+    "titleAccent": "Nauczanie oparte na AI",
+    "titleRest": "i edukacja z wykorzystaniem AI",
+    "subtitle": "na miarę edukacji przyszłości",
+    "primaryCta": "Dowiedz się więcej",
+    "secondaryCta": "Partnerzy"
   },
   "about": {
-    "label": "What",
-    "title": "Bridging the AI literacy gap in European education.",
-    "lead": "A pan-European initiative designed to modernize teacher education by equipping educators with the required skills to navigate an AI-driven landscape.",
-    "body": "We are building an ecosystem that provides hands-on training and a formal EU-aligned certification framework - ensuring no educator is left behind in the digital transition."
+    "label": "O czym",
+    "title": "Niwelowanie luk w wiedzy na temat sztucznej inteligencji w szkolnictwie europejskim..",
+    "lead": "Europejska inicjatywa mająca na celu unowocześnienie systemu kształcenia nauczycieli poprzez wyposażenie pedagogów w umiejętności niezbędne do poruszania się w środowisku opartym na AI.",
+    "body": "Tworzymy ekosystem zapewniający praktyczne szkolenia oraz formalne ramy certyfikacyjne zgodne z wytycznymi UE – dbając o to, by żaden pedagog nie został pominięty w procesie transformacji cyfrowej."
   },
   "why": {
-    "label": "Why",
-    "title": "The urgent need for change.",
-    "lead": "AI tools are reshaping education, but teachers feel unprepared. There is no standardized, EU-level framework to close this gap.",
+    "label": "Dlaczego",
+    "title": "Pilna potrzeba zmian.",
+    "lead": "Narzędzia oparte na AI zmieniają oblicze edukacji, lecz nauczyciele uważają, że nie są na to odpowiednio przygotowani. Nie istnieją żadne ujednolicone ramy na poziomie UE, które pozwoliłyby wypełnić tę lukę.",
     "items": [
       {
-        "title": "The Teachers-Technology Disconnect",
-        "body": "While AI tools like intelligent tutoring systems and generative AI are revolutionizing classrooms, teachers report feeling unprepared to integrate AI into their pedagogy."
+        "title": "Rozbieżność w postrzeganiu technologii przez nauczycieli",
+        "body": "Podczas gdy narzędzia oparte na sztucznej inteligencji, takie jak inteligentne systemy tutoringowe i generatywna sztuczna inteligencja, rewolucjonizują proces nauczania, nauczyciele przyznają, że nie czują się przygotowani do włączenia sztucznej inteligencji w swoją praktykę pedagogiczną."
       },
       {
-        "title": "No Standardized Framework",
-        "body": "There is currently no standardized, EU-level framework for training teachers on how to use AI tools responsibly, leaving a critical skills gap across European education systems."
+        "title": "Brak ujednoliconych ram",
+        "body": "Obecnie nie istnieją żadne ujednolicone ramy na szczeblu UE dotyczące szkolenia nauczycieli w zakresie odpowiedzialnego korzystania z narzędzi sztucznej inteligencji, co powoduje poważne luki w umiejętnościach w Europejskich systemach edukacyjnych."
       },
       {
-        "title": "Ethical & Privacy Challenges",
-        "body": "Teachers need guidance on navigating and deploying AI systems in educational environments with young learners."
+        "title": "Wyzwania związane z etyką i ochroną prywatności",
+        "body": "Nauczyciele potrzebują wskazówek dotyczących korzystania z i wdrażania rozwiązań AI w środowiskach edukacyjnych, zwłaszcza podczas pracy z młodymi uczniami."
       }
     ]
   },
   "dual": {
     "with": {
-      "titleStart": "Teaching",
-      "titleAccent": "with",
+      "titleStart": "Nauczanie",
+      "titleAccent": "z wykorzystaniem",
       "titleEnd": "AI",
-      "label": "AI-Enhanced Pedagogy:",
-      "body": "Training teachers to actively use AI tools to design lessons, personalize student learning, automate administrative tasks."
+      "label": " pedagogika oparta na AI:",
+      "body": "Szkolenie nauczycieli w zakresie aktywnego wykorzystywania narzędzi sztucznej inteligencji do projektowania lekcji, indywidualizacji kształcenia uczniów oraz automatyzacji zadań administracyjnych."
     },
     "about": {
-      "titleStart": "Teaching",
-      "titleAccent": "about",
+      "titleStart": "Edukacja",
+      "titleAccent": "na temat",
       "titleEnd": "AI",
-      "label": "AI Literacy:",
-      "body": "Equipping teachers to educate their students on how AI works and its ethical implications - building a generation of informed and responsible citizens."
+      "label": "Praktyczna znajomość AI",
+      "body": "Wyposażenie nauczycieli w narzędzia niezbędne do przekazywania uczniom wiedzy na temat działania sztucznej inteligencji oraz związanych z nią kwestii etycznych – kształtowanie pokolenia świadomych i odpowiedzialnych obywateli."
     }
   },
   "deliverables": {
-    "title": "Delivering a new standard in AI education.",
-    "lead": "Over a 3-year timeline, the project will build an entire ecosystem of resources for educators across Europe.",
+    "title": "Stworzenie nowego standardu w dziedzinie edukacji w zakresie sztucznej inteligencji.",
+    "lead": "W ciągu trzech lat w ramach projektu powstanie kompletny zestaw zasobów przeznaczonych dla nauczycieli z całej Europy.",
     "cards": [
       {
-        "badge": "🏅 Micro-credentials",
-        "title": "Dual Certification Pathway",
-        "body": "A formal system where teachers earn stackable micro-credentials and a 5-year EU-recognized certification."
+        "badge": "🏅 Micropoświadczenia",
+        "title": "Model podwójnej certyfikacji",
+        "body": "Sformalizowany system, w ramach którego nauczyciele zdobywają modułowe mikrokwalifikacje oraz 5-letni certyfikat uznawany w całej Unii Europejskiej.."
       },
       {
-        "badge": "🌐 15+ Modules",
-        "title": "Learning Platform",
-        "body": "A multilingual digital hub offering interactive training modules and curated open-access AI lesson plans."
+        "badge": "🌐 15+ Modułów",
+        "title": "Platforma edukacyjna",
+        "body": "Wielojęzyczna platforma cyfrowa oferująca interaktywne moduły szkoleniowe oraz wybrane, ogólnodostępne scenariusze lekcji oparte na sztucznej inteligencji."
       },
       {
-        "badge": "✈️ 5 Hubs",
-        "title": "Transnational Academies",
-        "body": "Five hubs across Europe funding mobility for educators to travel, workshop, and share best practices."
+        "badge": "✈️ 5 Hub'ów",
+        "title": "Akademie nauczycielskie",
+        "body": "Pięć ośrodków w całej Europie dofinansowuje podróże nauczycieli, organizację warsztatów i wymianę najlepszych praktyk."
       },
       {
-        "badge": "🏫 50+ Schools",
-        "title": "Real-World Classroom Pilots",
-        "body": "Trained teachers test AI-enhanced lessons in schools to generate evidence-based insights."
+        "badge": "🏫 50+ Szkół",
+        "title": "Badania pilotażowe w klasach",
+        "body": "Wykwalifikowani nauczyciele przetestują ulepszone przez AI zajęcia w szkołach, aby pozyskać dane bazujące na faktach"
       }
     ]
   },
   "how": {
-    "label": "HOW",
-    "title": "How will the project achieve its goals?",
-    "lead": "Through four interconnected phases over a 36-month timeline.",
+    "label": "Co robimy",
+    "title": "W jaki sposób projekt osiągnie swoje cele?",
+    "lead": "Poprzez cztery powiązane ze sobą etapy w ramach 36-miesięcznego harmonogramu.",
     "phases": [
       {
-        "title": "Phase 1 - Co-Design",
-        "body": "Co-designing an AI-Powered Teaching Playbook and Certification Framework to define pedagogical standards and micro-credentials aligned with EU frameworks."
+        "title": "Etap 1 – Wspólne projektowanie",
+        "body": " Wspólne opracowanie podręcznika dydaktycznego opartego na sztucznej inteligencji oraz system certyfikacji w celu określenia standardów pedagogicznych i mikrokwalifikacji zgodnych z ramami UE."
       },
       {
-        "title": "Phase 2 - Platform Development",
-        "body": "Developing a multilingual AI Learning Platform (MOOC) featuring over 15 training modules and 50+ downloadable AI-enhanced lesson plans."
+        "title": "Etap 2 - Opracowanie platformy”",
+        "body": "Rozwój wielojęzycznej platformy edukacyjnej poświęconej sztucznej inteligencji (MOOC), zawierającej ponad 15 modułów szkoleniowych i ponad 50 scenariuszy lekcji wykorzystujących AI."
       },
       {
-        "title": "Phase 3 - Teacher Academies",
-        "body": "Launching 5 transnational Teacher Academies to provide learning and cross-border mobility opportunities, directly training over 100 educators."
+        "title": "Etap 3 - Akademie nauczycielskie",
+        "body": "Uruchomienie 5 międzynarodowych akademii nauczycielskich w celu zapewnienia możliwości kształcenia i mobilności transgranicznej oraz bezpośredniego przeszkolenia ponad 100 pedagogów."
       },
       {
-        "title": "Phase 4 - Classroom Pilots",
-        "body": "Conducting real-world classroom pilots where trained teachers test AI-enhanced lessons in 50+ schools, reaching over 1,000 students to generate evidence-based policy recommendations."
+        "title": "Etap 4 - Pilotażowe zajęcia w szkołach",
+        "body": "Realizacja pilotażowych zajęć w klasach, w ramach których przeszkoleni nauczyciele przetestują lekcje wzbogacone o AI w ponad 50 szkołach, obejmujących ponad 1000 uczniów, aby następnie opracować praktyczne zalecenia dotyczące nowych rozwiązań."
       }
     ]
   },
   "aboutPartners": {
-    "label": "Consortium",
-    "title": "11 Partners. One Shared Mission.",
-    "lead": "A cross-sector alliance spanning universities, public institutions, SMEs, VET, and certification.",
+    "label": "Partnerstwo",
+    "title": "11 Partnerów. Jedna wspólna misja.",
+    "lead": "Międzysektorowy sojusz obejmujący uczelnie wyższe, instytucje publiczne, małe i średnie przedsiębiorstwa, sektor kształcenia i szkolenia zawodowego oraz podmioty zajmujące się certyfikacją.",
     "partners": [
       {
         "type": "SME",
@@ -158,36 +158,36 @@
         "instagram": "https://www.instagram.com/acceleras.io/"
       },
       {
-        "type": "University",
-        "name": "College of Business and Health Sciences",
-        "country": "Poland",
+        "type": "Uniwersytet",
+        "name": "Wyższa Szkoła Biznesu i Nauk o Zdrowiu",
+        "country": "Polska",
         "website": "https://www.wsbinoz.edu.pl",
         "linkedin": "https://www.linkedin.com/school/wy%C5%BCsza-szko%C5%82a-biznesu-i-nauk-o-zdrowiu-w-%C5%82odzi/",
         "facebook": "",
         "instagram": ""
       },
       {
-        "type": "Public Authority",
+        "type": "Podmiot publiczny",
         "name": "Consellería de Educación, Ciencia, Universidades e Formación Profesional",
-        "country": "Spain",
+        "country": "Hiszpania",
         "website": "",
         "linkedin": "",
         "facebook": "",
         "instagram": ""
       },
       {
-        "type": "University",
+        "type": "Uniwersytet",
         "name": "Daugavpils University",
-        "country": "Latvia",
+        "country": "Łotwa",
         "website": "http://www.du.lv/",
         "linkedin": "",
         "facebook": "https://www.facebook.com/DaugavpilsUniversitate",
         "instagram": ""
       },
       {
-        "type": "Certification Body",
+        "type": "Instytucja certyfikująca",
         "name": "ICEP Institute of European Certification of Personnel s.r.o.",
-        "country": "Slovakia",
+        "country": "Słowacja",
         "website": "https://www.iceponline.com/",
         "linkedin": "https://sk.linkedin.com/company/iceponline",
         "facebook": "https://www.facebook.com/iceponline/",
@@ -196,52 +196,52 @@
       {
         "type": "SME",
         "name": "INSTITUT INPRO AS",
-        "country": "Czechia",
+        "country": "Czechy",
         "website": "",
         "linkedin": "",
         "facebook": "",
         "instagram": ""
       },
       {
-        "type": "Vocational Provider",
+        "type": "Instytucja kształcenia zawodowego",
         "name": "SIA Macibu centrs \"Austrumvidzeme\"",
-        "country": "Latvia",
+        "country": "Łotwa",
         "website": "http://www.austrumvidzeme.lv/",
         "linkedin": "https://www.linkedin.com/company/austrumvidzeme/",
         "facebook": "https://www.facebook.com/Austrumvidzeme/",
         "instagram": ""
       },
       {
-        "type": "University",
+        "type": "Uniwersytet",
         "name": "University of Education Weingarten",
-        "country": "Germany",
+        "country": "Niemcy",
         "website": "https://www.ph-weingarten.de/de",
         "linkedin": "https://www.linkedin.com/school/p%C3%A4dagogische-hochschule-weingarten/posts/?feedView=all",
         "facebook": "https://www.facebook.com/pages/P%C3%A4dagogische-Hochschule-Weingarten/107917349236439",
         "instagram": "https://www.instagram.com/ph_weingarten/"
       },
       {
-        "type": "University",
+        "type": "Uniwersytet",
         "name": "University of Maribor",
-        "country": "Slovenia",
+        "country": "Słowenia",
         "website": "https://www.um.si/",
         "linkedin": "https://www.linkedin.com/school/univerza-v-mariboru/posts/?feedView=all",
         "facebook": "https://www.facebook.com/UniversityOfMaribor/",
         "instagram": "https://www.instagram.com/univerza_v_mariboru/"
       },
       {
-        "type": "University",
+        "type": "Uniwersytet",
         "name": "University of Vigo",
-        "country": "Spain",
+        "country": "Hiszpania",
         "website": "",
         "linkedin": "",
         "facebook": "",
         "instagram": ""
       },
       {
-        "type": "University",
+        "type": "Uniwersytet",
         "name": "University of Žilina",
-        "country": "Slovakia",
+        "country": "Słowacja",
         "website": "https://uniza.sk/",
         "linkedin": "https://sk.linkedin.com/school/university-of-zilina/",
         "facebook": "https://www.facebook.com/uniza.sk",
@@ -250,49 +250,49 @@
     ]
   },
   "audience": {
-    "title": "Empowering the entire educational ecosystem.",
-    "lead": "The project serves a broad spectrum of stakeholders across the European education landscape.",
+    "title": "Wspieranie całego ekosystemu edukacyjnego.",
+    "lead": "Projekt jest skierowany do szerokiego grona interesariuszy z europejskiego sektora edukacji.",
     "groups": [
       {
-        "title": "Pre-Service Teachers",
-        "body": "Future educators gaining AI competencies during their initial training to enter the workforce fully prepared."
+        "title": "Przyszli nauczyciele",
+        "body": "„Przyszli pedagodzy zdobywają kompetencje w zakresie sztucznej inteligencji podczas kształcenia wstępnego, aby wkroczyć na rynek pracy w pełni przygotowani"
       },
       {
-        "title": "In-Service Teachers",
-        "body": "Practicing educators upskilling to integrate AI effectively."
+        "title": "Aktywni zawodowo nauczyciel",
+        "body": "Praktykujący pedagodzy podnoszący swoje kwalifikacje w celu skutecznego wdrażania sztucznej inteligencji."
       },
       {
-        "title": "Teacher Education",
-        "body": "Institutions modernizing curricula with specialized AI training modules."
+        "title": "Kształcenie nauczycieli",
+        "body": "„Instytucje aktualizujące programy nauczania o specjalistyczne moduły szkoleniowe z zakresu sztucznej inteligencji."
       },
       {
-        "title": "Schools",
-        "body": "Institutions directly benefiting from newly implemented, AI-enhanced teaching practices."
+        "title": "Szkoły",
+        "body": "„Instytucje czerpiące bezpośrednie korzyści z nowo wdrożonych, wzbogaconych o sztuczną inteligencję praktyk nauczania"
       },
       {
-        "title": "Policymakers",
-        "body": "Decision-makers shaping and standardizing AI education policy."
+        "title": "Decydenci",
+        "body": "Decydenci kształtujący i standaryzujący politykę edukacyjną w zakresie AI."
       }
     ]
   },
   "footer": {
-    "tagline": "AI-Powered Teaching and AI Education for Future-Proof Education",
+    "tagline": "Nauczanie oparte na AI i edukacja z wykorzystaniem AI na miarę edukacji przyszłości",
     "licenseLabel": "CC BY-NC-SA 4.0",
     "nav": {
-      "what": "What",
-      "why": "Why",
-      "how": "How",
+      "what": "O czym",
+      "why": "Dlaczego",
+      "how": "Co robimy",
       "partners": "Partners",
-      "cookieSettings": "Cookie Settings"
+      "cookieSettings": "Ustawienia plików cookie"
     },
-    "euFlagAlt": "Co-funded by the European Union",
-    "euDisclaimer": "Funded by the European Union. Views and opinions expressed are however those of the author(s) only and do not necessarily reflect those of the European Union or the European Education and Culture Executive Agency (EACEA). Neither the European Union nor EACEA can be held responsible for them."
+    "euFlagAlt": "Współfinansowane przez Unię Europejską",
+    "euDisclaimer": "Sfinansowane ze środków UE. Wyrażone poglądy i opinie są jedynie opiniami autora lub autorów i niekoniecznie odzwierciedlają poglądy i opinie Unii Europejskiej lub Europejskiej Agencji Wykonawczej ds. Edukacji i Kultury (EACEA). Unia Europejska ani EACEA nie ponoszą za nie odpowiedzialności."
   },
   "notFound": {
-    "metaTitle": "404 - Page Not Found | DUAL.AI.TEACHer",
-    "label": "Error 404",
-    "title": "Page Not Found",
-    "body": "The page you are looking for does not exist or may have moved.",
-    "backHome": "Back to Home"
+    "metaTitle": "404 - Nie znaleziono strony | DUAL.AI.TEACHer",
+    "label": "Błąd 404",
+    "title": "Nie znaleziono strony",
+    "body": "TStrona, której szukasz, nie istnieje lub mogła zostać przeniesiona.",
+    "backHome": "Powrót do strony głównej"
   }
 }
