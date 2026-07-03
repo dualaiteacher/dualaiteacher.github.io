@@ -38,6 +38,8 @@ export type CookieConsentTranslation = typeof en.cookieConsent;
 export const defaultCookieConsent: CookieConsentTranslation = en.cookieConsent;
 export type ContactSectionTranslation = typeof en.contactSection;
 export const defaultContactSection: ContactSectionTranslation = en.contactSection;
+export type NewsSectionTranslation = typeof en.newsSection;
+export const defaultNewsSection: NewsSectionTranslation = en.newsSection;
 
 export function isLang(value: string): value is Lang {
   return value in languages;

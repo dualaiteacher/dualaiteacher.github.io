@@ -20,6 +20,7 @@ interface Props {
     why: string;
     how: string;
     partners: string;
+    news: string;
     contact: string;
   };
 }
@@ -27,6 +28,7 @@ interface Props {
 const { lang, t } = Astro.props;
 const homeHref = `/${lang}/`;
 const partnersHref = `/${lang}/partners/`;
+const newsHref = `/${lang}/news/`;
 const contactHref = `/${lang}/contact/`;
 ---
 
@@ -68,6 +70,12 @@ const contactHref = `/${lang}/contact/`;
           href={partnersHref}
           class="text-base font-bold text-slate-600 hover:text-brand no-underline transition-colors uppercase tracking-wide"
          >{t.partners}</a>
+      </li>
+      <li>
+        <a
+          href={newsHref}
+          class="text-base font-bold text-slate-600 hover:text-brand no-underline transition-colors uppercase tracking-wide"
+         >{t.news}</a>
       </li>
       <li>
         <a
@@ -132,6 +140,12 @@ const contactHref = `/${lang}/contact/`;
           href={partnersHref}
           class="block py-3 text-lg font-black text-brand uppercase border-b border-slate-100"
          >{t.partners}</a>
+      </li>
+      <li>
+        <a
+          href={newsHref}
+          class="block py-3 text-lg font-black text-brand uppercase border-b border-slate-100"
+         >{t.news}</a>
       </li>
       <li>
         <a

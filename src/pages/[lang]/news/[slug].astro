@@ -1,0 +1,103 @@
+---
+import { Image } from "astro:assets";
+import { render } from "astro:content";
+import Layout from "../../../layouts/Layout.astro";
+import SiteNav from "../../../components/site/SiteNav.astro";
+import SiteFooter from "../../../components/site/SiteFooter.astro";
+import CookieConsent from "../../../components/site/CookieConsent.astro";
+import SiteScripts from "../../../components/site/SiteScripts.astro";
+import ConstructionBanner from "../../../components/site/ConstructionBanner.astro";
+import FacebookIcon from "../../../assets/icons/facebook.svg";
+import InstagramIcon from "../../../assets/icons/instagram.svg";
+import LinkedInIcon from "../../../assets/icons/linkedin.svg";
+import { getNewsPosts, resolveVariant, formatNewsDate, type NewsEntry } from "../../../lib/news";
+import {
+  defaultCookieConsent,
+  defaultLang,
+  defaultNewsSection,
+  getDictionary,
+  languages,
+  type Lang,
+} from "../../../i18n";
+
+export async function getStaticPaths() {
+  const posts = await getNewsPosts();
+  return Object.keys(languages).flatMap((langKey) =>
+    posts.map((post) => ({
+      params: { lang: langKey, slug: post.slug },
+      props: { entry: resolveVariant(post, langKey as Lang) },
+    }))
+  );
+}
+
+interface Props {
+  entry: NewsEntry;
+}
+
+const lang = (Astro.params.lang ?? defaultLang) as Lang;
+const dict = getDictionary(lang);
+const tNews = "newsSection" in dict ? dict.newsSection : defaultNewsSection;
+
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+
+const socialIconLinks = [
+  { href: entry.data.socialLinks.linkedin, label: "LinkedIn", Icon: LinkedInIcon },
+  { href: entry.data.socialLinks.instagram, label: "Instagram", Icon: InstagramIcon },
+  { href: entry.data.socialLinks.facebook, label: "Facebook", Icon: FacebookIcon },
+].filter((link) => link.href);
+---
+
+<Layout title={`${entry.data.title} | ${dict.meta.title}`} lang={lang}>
+  <CookieConsent t={"cookieConsent" in dict ? dict.cookieConsent : defaultCookieConsent} />
+  <ConstructionBanner t={dict.constructionBanner} />
+  <SiteNav lang={lang} t={dict.nav} />
+  <section class="py-16 md:py-24 bg-surface-2 border-b-4 border-brand/20">
+    <article class="max-w-4xl mx-auto px-6">
+      <a
+        href={`/${lang}/news/`}
+        class="inline-block text-sm font-black uppercase tracking-wide text-slate-600 hover:text-brand no-underline transition-colors"
+      >
+        ← {tNews.backToNews}
+      </a>
+      {entry.data.cover && (
+        <Image
+          src={entry.data.cover}
+          alt={entry.data.coverAlt ?? entry.data.title}
+          class="w-full aspect-video object-cover rounded-2xl shadow-md mt-6"
+        />
+      )}
+      <time
+        datetime={entry.data.pubDate.toISOString()}
+        class="block text-sm font-bold uppercase tracking-wider text-slate-600/80 mt-8"
+      >
+        {formatNewsDate(entry.data.pubDate, lang)}
+      </time>
+      <h1 class="text-[clamp(2.2rem,7vw,4.2rem)] font-black leading-tight text-brand tracking-tight mt-3">
+        {entry.data.title}
+      </h1>
+      <div class="w-16 h-1.5 rounded-full bg-accent mt-5"></div>
+      <div class="news-prose mt-8">
+        <Content />
+      </div>
+      {socialIconLinks.length > 0 && (
+        <div class="flex items-center gap-3 mt-10 pt-8 border-t border-surface-3">
+          <span class="text-sm font-black uppercase tracking-wide text-slate-600">
+            {tNews.followUs}
+          </span>
+          {socialIconLinks.map(({ href, label, Icon }) => (
+            <a
+              href={href}
+              aria-label={label}
+              class="inline-flex h-10 w-10 items-center justify-center rounded-full border border-slate-200 text-brand transition-colors hover:border-brand hover:bg-accent/30"
+            >
+              <Icon class="block h-5 w-5" aria-hidden="true" focusable="false" />
+            </a>
+          ))}
+        </div>
+      )}
+    </article>
+  </section>
+  <SiteFooter lang={lang} t={dict.footer} />
+  <SiteScripts />
+</Layout>
