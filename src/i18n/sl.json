@@ -39,6 +39,10 @@
     "title": "Stopite v stik z nami.",
     "lead": "Za vprašanja, sodelovanje ali dodatne informacije nam pošljite sporočilo prek spodnjega obrazca."
   },
+  "subscribe": {
+    "title": "Ostanite obveščeni.",
+    "lead": "Naročite se na naše e-novice za novosti o projektu, nove vire in vpoglede o umetni inteligenci v izobraževanju."
+  },
   "nav": {
     "what": "Kaj",
     "why": "Zakaj",
@@ -50,7 +54,7 @@
     "titleAccent": "Poučevanje z umetno Inteligenco",
     "titleRest": "in o umetni Inteligenci",
     "subtitle": "za izobraževanje, pripravljeno na prihodnost",
-    "primaryCta": "Več informacij",
+    "primaryCta": "Naroči se na novice",
     "secondaryCta": "Partnerji"
   },
   "about": {
@@ -283,6 +287,7 @@
       "why": "Zakaj",
       "how": "Kako",
       "partners": "Partnerji",
+      "privacy": "Politika zasebnosti",
       "cookieSettings": "Nastavitve piškotkov"
     },
     "euFlagAlt": "Sofinancira Evropska unija",
