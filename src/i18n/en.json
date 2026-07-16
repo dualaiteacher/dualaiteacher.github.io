@@ -39,6 +39,12 @@
     "title": "Get in touch with us.",
     "lead": "For questions, collaboration, or more information, send us a message using the form below."
   },
+  "downloadsSection": {
+    "label": "Media Kit",
+    "title": "Downloadable assets.",
+    "lead": "Dissemination materials for press and partners.",
+    "emptyState": "No files available in this category yet."
+  },
   "nav": {
     "what": "What",
     "why": "Why",
@@ -294,6 +300,7 @@
       "how": "How",
       "partners": "Partners",
       "news": "News",
+      "downloads": "Downloads",
       "cookieSettings": "Cookie Settings"
     },
     "euFlagAlt": "Co-funded by the European Union",

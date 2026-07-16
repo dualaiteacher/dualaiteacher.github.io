@@ -39,6 +39,12 @@
     "title": "Stopite v stik z nami.",
     "lead": "Za vprašanja, sodelovanje ali dodatne informacije nam pošljite sporočilo prek spodnjega obrazca."
   },
+  "downloadsSection": {
+    "label": "Gradiva",
+    "title": "Gradiva za prenos.",
+    "lead": "Diseminacijska gradiva za medije in partnerje.",
+    "emptyState": "V tej kategoriji trenutno ni datotek."
+  },
   "nav": {
     "what": "Kaj",
     "why": "Zakaj",
@@ -294,6 +300,7 @@
       "how": "Kako",
       "partners": "Partnerji",
       "news": "Novice",
+      "downloads": "Prenosi",
       "cookieSettings": "Nastavitve piškotkov"
     },
     "euFlagAlt": "Sofinancira Evropska unija",

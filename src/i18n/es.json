@@ -39,12 +39,28 @@
     "title": "Ponte en contacto con nosotros.",
     "lead": "Para preguntas, colaboraciones o más información, envíanos un mensaje mediante el formulario de abajo."
   },
+  "downloadsSection": {
+    "label": "Kit de prensa",
+    "title": "Recursos descargables.",
+    "lead": "Materiales de difusión para prensa y socios.",
+    "emptyState": "Aún no hay archivos disponibles en esta categoría."
+  },
   "nav": {
     "what": "Qué",
     "why": "Por qué",
     "how": "Cómo",
     "partners": "Socios",
+    "news": "Noticias",
     "contact": "Contacto"
+  },
+  "newsSection": {
+    "label": "Noticias",
+    "title": "Noticias y novedades del proyecto.",
+    "lead": "Sigue los últimos hitos, eventos y resultados del proyecto DUAL.AI.TEACHer.",
+    "readMore": "Leer más",
+    "backToNews": "Volver a noticias",
+    "followUs": "Compartir y seguir",
+    "empty": "Aún no hay noticias — vuelve pronto."
   },
   "hero": {
     "titleAccent": "Enseñanza impulsada por IA",
@@ -283,6 +299,8 @@
       "why": "Por qué",
       "how": "Cómo",
       "partners": "Socios",
+      "news": "Noticias",
+      "downloads": "Descargas",
       "cookieSettings": "Configuración de cookies"
     },
     "euFlagAlt": "Cofinanciado por la Unión Europea",

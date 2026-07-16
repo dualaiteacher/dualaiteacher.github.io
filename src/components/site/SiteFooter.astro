@@ -14,6 +14,7 @@ interface Props {
       how: string;
       partners: string;
       news: string;
+      downloads: string;
       cookieSettings: string;
     };
     euFlagAlt: string;
@@ -26,6 +27,7 @@ const currentYear = new Date().getFullYear();
 const homeHref = `/${lang}/`;
 const partnersHref = `/${lang}/partners/`;
 const newsHref = `/${lang}/news/`;
+const downloadsHref = `/${lang}/downloads/`;
 const euBadgeImages = import.meta.glob<{ default: ImageMetadata }>(
   "/src/assets/cofunded/*.png",
   { eager: true }
@@ -100,6 +102,12 @@ if (!euBadgeImage) {
           href={newsHref}
           class="text-slate-600 font-bold hover:text-accent no-underline transition-colors uppercase tracking-wide"
           >{t.nav.news}</a>
+      </li>
+      <li>
+        <a
+          href={downloadsHref}
+          class="text-slate-600 font-bold hover:text-accent no-underline transition-colors uppercase tracking-wide"
+          >{t.nav.downloads}</a>
       </li>
       <li>
         <a
