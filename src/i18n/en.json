@@ -39,6 +39,12 @@
     "title": "Get in touch with us.",
     "lead": "For questions, collaboration, or more information, send us a message using the form below."
   },
+  "downloadsSection": {
+    "label": "Media Kit",
+    "title": "Downloadable assets.",
+    "lead": "Dissemination materials for press and partners.",
+    "emptyState": "No files available in this category yet."
+  },
   "subscribe": {
     "title": "Stay in the loop.",
     "lead": "Subscribe to our newsletter for updates on the project, new resources, and AI-in-education insights."
@@ -59,8 +65,9 @@
       {
         "heading": "2. Data Controller",
         "paragraphs": [
-          "The Data Controller is [DATA CONTROLLER — coordinating partner name and address]. For any question regarding this policy or the processing of your personal data, you can contact us at [CONTACT EMAIL].",
-          "Personal data may also be communicated to the other DUAL.AI.TEACHer project partners, who act as autonomous data controllers for their own processing activities within the project."
+          "The Data Controller is Wyższa Szkoła Biznesu i Nauk o Zdrowiu w Łodzi (University of Business and Health Sciences in Łódź), ul. Piotrkowska 278, 90-361 Łódź, Poland, acting as coordinator of the DUAL.AI.TEACHer project. For any question regarding this policy or the processing of your personal data, you can contact us at dualaiteacherproject@gmail.com.",
+          "The coordinator has appointed a Data Protection Officer (DPO), responsible for overseeing consent procedures, data minimisation and compliance with this privacy policy. The DPO can be contacted at dualaiteacherproject@gmail.com.",
+          "The digital platform's technical infrastructure is operated by the University of Maribor on behalf of the Data Controller. Personal data may also be communicated to the other DUAL.AI.TEACHer project partners, who act as autonomous data controllers for their own processing activities within the project."
         ]
       },
       {
@@ -70,7 +77,7 @@
         ],
         "items": [
           "Technical operation of the website — ensuring the correct and secure functioning of the site, including the prevention of fraudulent or abusive activity. Legal basis: performance of a task carried out in the public interest within the framework of the project and our legitimate interest in operating a secure website (Article 6(1)(e)–(f) GDPR).",
-          "Newsletter — sending you updates on the project's activities and results via our newsletter provider MailerLite, only if you subscribe. Legal basis: your consent (Article 6(1)(a) GDPR), which you can withdraw at any time using the unsubscribe link included in every newsletter or by writing to [CONTACT EMAIL].",
+          "Newsletter — sending you updates on the project's activities and results via our newsletter provider MailerLite, only if you subscribe. Legal basis: your consent (Article 6(1)(a) GDPR), which you can withdraw at any time using the unsubscribe link included in every newsletter or by writing to dualaiteacherproject@gmail.com.",
           "Usage analytics — understanding how visitors use the website through Microsoft Clarity, only if you accept analytics cookies in the cookie banner. Legal basis: your consent (Article 6(1)(a) GDPR), which you can withdraw at any time via the \"Cookie Settings\" link in the footer.",
           "Contact requests — answering enquiries you submit through the contact form embedded on this website (provided by Google Forms). Legal basis: our legitimate interest in responding to your request (Article 6(1)(f) GDPR)."
         ]
@@ -101,7 +108,7 @@
         "heading": "6. Data retention",
         "items": [
           "Web navigation data: kept only for the duration of your browsing session, subject to the hosting provider's technical logs.",
-          "Newsletter data: kept until you unsubscribe or, at the latest, [X years after the end of the project].",
+          "Newsletter data: kept until you unsubscribe or, at the latest, 5 years after the end of the project.",
           "Analytics data: retained by Microsoft Clarity in accordance with Microsoft's retention policy.",
           "Cookie consent choice: stored in your browser for 365 days."
         ]
@@ -127,7 +134,7 @@
           "withdraw your consent at any time, without affecting the lawfulness of processing carried out before the withdrawal."
         ],
         "paragraphsAfter": [
-          "You can exercise these rights by contacting [CONTACT EMAIL]. You also have the right to lodge a complaint with your national data protection authority; the list of EU supervisory authorities is available on the website of the European Data Protection Board at https://edpb.europa.eu/about-edpb/about-edpb/members_en."
+          "You can exercise these rights by contacting dualaiteacherproject@gmail.com. You also have the right to lodge a complaint with your national data protection authority; the list of EU supervisory authorities is available on the website of the European Data Protection Board at https://edpb.europa.eu/about-edpb/about-edpb/members_en."
         ]
       },
       {
@@ -389,6 +396,7 @@
       "why": "Why",
       "how": "How",
       "partners": "Partners",
+      "downloads": "Downloads",
       "privacy": "Privacy Policy",
       "cookieSettings": "Cookie Settings"
     },

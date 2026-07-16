@@ -6,6 +6,7 @@ import es from "./es.json";
 import lv from "./lv.json";
 import pl from "./pl.json";
 import sk from "./sk.json";
+import gl from "./gl.json";
 
 export const languages = {
   en: "English",
@@ -16,6 +17,7 @@ export const languages = {
   lv: "Latviešu",
   pl: "Polski",
   sk: "Slovenčina",
+  gl: "Galego",
 } as const;
 
 export type Lang = keyof typeof languages;
@@ -31,6 +33,7 @@ const dictionaries = {
   lv,
   pl,
   sk,
+  gl,
 } as const;
 
 export type Dictionary = (typeof dictionaries)[Lang];

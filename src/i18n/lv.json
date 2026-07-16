@@ -3,245 +3,251 @@
     "title": "DUAL.AI.TEACHer"
   },
   "constructionBanner": {
-    "construction": "Website under construction. Content is subject to change."
+    "construction": "Tīmekļa vietne tiek izstrādāta. Saturs var mainīties."
   },
   "cookieConsent": {
     "banner": {
-      "title": "We value your privacy",
-      "bodyBeforeLink": "We use cookies and Microsoft Clarity to understand how our site is used and to improve your experience. You can accept all cookies, reject non-essential ones, or ",
-      "preferencesLink": "customize your preferences",
+      "title": "Mēs respektējam jūsu privātumu",
+      "bodyBeforeLink": "Mēs izmantojam sīkdatnes un Microsoft Clarity, lai izprastu, kā tiek izmantota mūsu vietne, un uzlabotu jūsu lietošanas pieredzi. Jūs varat pieņemt visas sīkdatnes, noraidīt nevajadzīgās vai",
+      "preferencesLink": "pielāgot savas iestatījumu izvēles",
       "bodyAfterLink": ".",
-      "acceptAll": "Accept All",
-      "rejectAll": "Reject All"
+      "acceptAll": "Pieņemt visas",
+      "rejectAll": "Noraidīt visas"
     },
     "modal": {
-      "title": "Cookie Preferences",
-      "description": "Choose which categories of cookies you'd like to allow. Essential cookies are always active as they are required for the site to function.",
+      "title": "Sīkdatņu iestatījumi",
+      "description": "Izvēlieties, kuras sīkdatņu kategorijas vēlaties atļaut. Nepieciešamās sīkdatnes vienmēr ir aktīvas, jo tās ir nepieciešamas vietnes darbībai.",
       "essential": {
-        "title": "Essential Cookies",
-        "badge": "Always active",
-        "body": "Required for basic site functionality such as navigation and security. These cannot be disabled."
+        "title": "Obligāti nepieciešamās sīkdatnes",
+        "badge": "Vienmēr aktīvas",
+        "body": "Nepieciešamas vietnes pamatfunkciju nodrošināšanai, piemēram, navigācijai un drošībai. Tās nevar atspējot."
       },
       "analytics": {
-        "title": "Analytics Cookies",
-        "body": "Help us understand how visitors interact with the website by collecting anonymous usage data via Microsoft Clarity."
+        "title": "Statistikas sīkdatnes",
+        "body": "Palīdziet mums izprast, kā apmeklētāji izmanto šo tīmekļa vietni, sniedzot anonīmus lietošanas datus ar Microsoft Clarity palīdzību."
       },
       "advertising": {
-        "title": "Advertising Cookies",
-        "body": "Used to deliver relevant content and measure the effectiveness of campaigns. We do not currently run ads, but this setting controls ad-related data storage."
+        "title": "Mārketinga sīkdatnes",
+        "body": "Tiek izmantotas, lai nodrošinātu atbilstošu saturu un novērtētu kampaņu efektivitāti. Pašlaik mēs nerādām reklāmas, taču šis iestatījums regulē ar reklāmām saistīto datu uzglabāšanu."
       },
-      "cancel": "Cancel",
-      "rejectAll": "Reject All",
-      "savePreferences": "Save Preferences"
+      "cancel": "Atcelt",
+      "rejectAll": "Noraidīt visas",
+      "savePreferences": "Saglabāt izvēli"
     }
   },
   "contactSection": {
-    "title": "Get in touch with us.",
-    "lead": "For questions, collaboration, or more information, send us a message using the form below."
+    "title": "Sazinieties ar mums.",
+    "lead": "Ja Jums ir jautājumi, vēlaties sadarboties vai saņemt papildu informāciju, lūdzu, nosūtiet mums ziņu, izmantojot zemāk esošo veidlapu."
+  },
+  "downloadsSection": {
+    "label": "Mediju komplekts",
+    "title": "Lejupielādējami materiāli.",
+    "lead": "Izplatīšanas materiāli presei un partneriem.",
+    "emptyState": "Šajā kategorijā vēl nav pieejamu failu."
   },
   "nav": {
-    "what": "What",
-    "why": "Why",
-    "how": "How",
-    "partners": "Partners",
-    "contact": "Contact"
+    "what": "Kas",
+    "why": "Kāpēc",
+    "how": "Kā",
+    "partners": "Partneri",
+    "contact": "Saziņai"
   },
   "hero": {
-    "titleAccent": "AI-Powered Teaching",
-    "titleRest": "& AI Education",
-    "subtitle": "for Future-Proof Education",
-    "primaryCta": "Learn more",
-    "secondaryCta": "Partners"
+    "titleAccent": "MI balstīta mācīšanās",
+    "titleRest": "un MI izmantošana izglītībā,",
+    "subtitle": "lai nodrošinātu nākotnes prasībām atbilstošu izglītību",
+    "primaryCta": "Uzzināt vairāk",
+    "secondaryCta": "Partneri"
   },
   "about": {
-    "label": "What",
-    "title": "Bridging the AI literacy gap in European education.",
-    "lead": "A pan-European initiative designed to modernize teacher education by equipping educators with the required skills to navigate an AI-driven landscape.",
-    "body": "We are building an ecosystem that provides hands-on training and a formal EU-aligned certification framework - ensuring no educator is left behind in the digital transition."
+    "label": "Kas",
+    "title": "MI izglītības līmeņa atšķirību mazināšana Eiropas izglītības sistēmā.",
+    "lead": "Visaptveroša Eiropas mēroga iniciatīva, kuras mērķis ir modernizēt pasniedzēju izglītību, nodrošinot pasniedzējus ar nepieciešamajām prasmēm, lai orientētos mākslīgā intelekta vadītā vidē.",
+    "body": "Mēs veidojam ekosistēmu, kas nodrošina praktiskas apmācības un oficiālu, ES standartiem atbilstošu sertifikācijas sistēmu, tādējādi nodrošinot, ka digitālās pārejas procesā netiek atstāts novārtā neviens pasniedzējs."
   },
   "why": {
-    "label": "Why",
-    "title": "The urgent need for change.",
-    "lead": "AI tools are reshaping education, but teachers feel unprepared. There is no standardized, EU-level framework to close this gap.",
+    "label": "Kāpēc",
+    "title": "Nepieciešamība steidzami ieviest pārmaiņas.",
+    "lead": "Mākslīgā intelekta rīki maina izglītības sistēmu, taču pasniedzēji jūtas nepietiekami sagatavoti. Nav vienotas ES līmeņa sistēmas, kas palīdzētu mazināt šo plaisu.",
     "items": [
       {
-        "title": "The Teachers-Technology Disconnect",
-        "body": "While AI tools like intelligent tutoring systems and generative AI are revolutionizing classrooms, teachers report feeling unprepared to integrate AI into their pedagogy."
+        "title": "Pasniedzēju un tehnoloģiju nošķirtība",
+        "body": "Lai gan tādi mākslīgā intelekta rīki kā viedās apmācības sistēmas un ģeneratīvais mākslīgais intelekts radikāli maina mācību procesu klasēs, pasniedzēji atzīst, ka nejūtas gatavi integrēt mākslīgo intelektu savā pedagoģiskajā darbā."
       },
       {
-        "title": "No Standardized Framework",
-        "body": "There is currently no standardized, EU-level framework for training teachers on how to use AI tools responsibly, leaving a critical skills gap across European education systems."
+        "title": "Nav standartizēta ietvara",
+        "body": "Pašlaik nav vienota ES līmeņa ietvara, kas nodrošinātu pasniedzēju apmācību par to, kā atbildīgi izmantot mākslīgā intelekta rīkus, tādējādi Eiropas izglītības sistēmās pastāv būtisks prasmju trūkums."
       },
       {
-        "title": "Ethical & Privacy Challenges",
-        "body": "Teachers need guidance on navigating and deploying AI systems in educational environments with young learners."
+        "title": "Izaicinājumi ētikas un privātuma jomā",
+        "body": "Pasniedzējiem ir nepieciešamas norādes par to, kā orientēties mākslīgajā intelektā un kā ieviest tā sistēmas izglītības vidē, kurā mācās jaunieši."
       }
     ]
   },
   "dual": {
     "with": {
-      "titleStart": "Teaching",
-      "titleAccent": "with",
-      "titleEnd": "AI",
-      "label": "AI-Enhanced Pedagogy:",
-      "body": "Training teachers to actively use AI tools to design lessons, personalize student learning, automate administrative tasks."
+      "titleStart": "Mācīšana",
+      "titleAccent": "izmantojot",
+      "titleEnd": "MI",
+      "label": "Ar mākslīgo intelektu uzlabota pedagoģija:",
+      "body": "Pasniedzēju apmācība, lai viņi aktīvi izmantotu mākslīgā intelekta rīkus stundu plānošanai, mācību procesa individualizēšanai un administratīvo uzdevumu automatizēšanai."
     },
     "about": {
-      "titleStart": "Teaching",
-      "titleAccent": "about",
-      "titleEnd": "AI",
-      "label": "AI Literacy:",
-      "body": "Equipping teachers to educate their students on how AI works and its ethical implications - building a generation of informed and responsible citizens."
+      "titleStart": "Mācīšana",
+      "titleAccent": "par",
+      "titleEnd": "MI",
+      "label": "Prasme izmantot mākslīgo intelektu:",
+      "body": "Pasniedzēju apmācība, lai viņi varētu izglītot savus apmācāmos par to, kā darbojas mākslīgais intelekts, un par tā ētiskajām sekām, tādējādi veidojot informētu un atbildīgu pilsoņu paaudzi."
     }
   },
   "deliverables": {
-    "title": "Delivering a new standard in AI education.",
-    "lead": "Over a 3-year timeline, the project will build an entire ecosystem of resources for educators across Europe.",
+    "title": "Jauna standarta ieviešana apmācībās par MI.",
+    "lead": "Trīs gadu laikā projekta ietvaros tiks izveidota visaptveroša resursu ekosistēma izglītības darbiniekiem visā Eiropā.",
     "cards": [
       {
-        "badge": "🏅 Micro-credentials",
-        "title": "Dual Certification Pathway",
-        "body": "A formal system where teachers earn stackable micro-credentials and a 5-year EU-recognized certification."
+        "badge": "🏅 Mikrosertifikāti",
+        "title": "Divkāršās sertifikācijas programma",
+        "body": "Formāla sistēma, kurā pedagogi iegūst savstarpēji apvienojamus mikrosertifikātus un piecu gadu ES atzītu sertifikātu."
       },
       {
-        "badge": "🌐 15+ Modules",
-        "title": "Learning Platform",
-        "body": "A multilingual digital hub offering interactive training modules and curated open-access AI lesson plans."
+        "badge": "🌐 15+ moduļi",
+        "title": "Mācību platforma",
+        "body": "Daudzvalodu digitālais centrs, kas piedāvā interaktīvus apmācību moduļus un atlasītus, brīvi pieejamus mākslīgā intelekta stundu plānus."
       },
       {
-        "badge": "✈️ 5 Hubs",
-        "title": "Transnational Academies",
-        "body": "Five hubs across Europe funding mobility for educators to travel, workshop, and share best practices."
+        "badge": "✈️ 5 centri",
+        "title": "Starptautiskas akadēmijas",
+        "body": "Eiropā ir pieci centri, kas finansē pasniedzēju mobilitāti, lai viņi varētu ceļot, vadīt seminārus un dalīties ar pieredzi."
       },
       {
-        "badge": "🏫 50+ Schools",
-        "title": "Real-World Classroom Pilots",
-        "body": "Trained teachers test AI-enhanced lessons in schools to generate evidence-based insights."
+        "badge": "🏫 50+ skolas",
+        "title": "Izmēģinājumi reālos apstākļos klasē",
+        "body": "Profesionāli sagatavoti pasniedzēji skolās izmēģina ar mākslīgo intelektu uzlabotas nodarbības, lai iegūtu uz pierādījumiem balstītus secinājumus."
       }
     ]
   },
   "how": {
-    "label": "HOW",
-    "title": "How will the project achieve its goals?",
-    "lead": "Through four interconnected phases over a 36-month timeline.",
+    "label": "KĀ",
+    "title": "Kā projekts sasniegs tā mērķus?",
+    "lead": "Četros savstarpēji saistītos posmos 36 mēnešu ilgā periodā.",
     "phases": [
       {
-        "title": "Phase 1 - Co-Design",
-        "body": "Co-designing an AI-Powered Teaching Playbook and Certification Framework to define pedagogical standards and micro-credentials aligned with EU frameworks."
+        "title": "1. fāze: kopizstrāde",
+        "body": "Kopīgi izstrādāt mākslīgā intelekta veicinātu mācību rokasgrāmatu un sertifikācijas sistēmu, lai noteiktu pedagoģiskos standartus un mikrosertifikātus, kas atbilst ES sistēmām."
       },
       {
-        "title": "Phase 2 - Platform Development",
-        "body": "Developing a multilingual AI Learning Platform (MOOC) featuring over 15 training modules and 50+ downloadable AI-enhanced lesson plans."
+        "title": "2. fāze: platformas izstrāde",
+        "body": "Daudzvalodu mākslīgā intelekta mācību platformas (MOOC) izstrāde, kurā iekļauti vairāk nekā 15 apmācību moduļi un vairāk nekā 50 lejupielādējami, ar mākslīgo intelektu uzlaboti stundu plāni."
       },
       {
-        "title": "Phase 3 - Teacher Academies",
-        "body": "Launching 5 transnational Teacher Academies to provide learning and cross-border mobility opportunities, directly training over 100 educators."
+        "title": "3. fāze: pasniedzēju akadēmijas",
+        "body": "Tiks izveidotas 5 starpvalstu pasniedzēju akadēmijas, lai nodrošinātu mācību un pārrobežu mobilitātes iespējas, nodrošinot tiešu apmācību vairāk nekā 100 pasniedzējiem."
       },
       {
-        "title": "Phase 4 - Classroom Pilots",
-        "body": "Conducting real-world classroom pilots where trained teachers test AI-enhanced lessons in 50+ schools, reaching over 1,000 students to generate evidence-based policy recommendations."
+        "title": "4. fāze: Izmēģinājuma nodarbības",
+        "body": "Reālu pilotprojektu īstenošana klasēs, kur apmācīti pasniedzēji izmēģina ar mākslīgo intelektu uzlabotas nodarbības vairāk nekā 50 skolās, iesaistot vairāk nekā 1000 apmācāmo, lai izstrādātu uz pierādījumiem balstītus politikas ieteikumus."
       }
     ]
   },
   "aboutPartners": {
-    "label": "Consortium",
-    "title": "11 Partners. One Shared Mission.",
-    "lead": "A cross-sector alliance spanning universities, public institutions, SMEs, VET, and certification.",
+    "label": "Konsorcijs",
+    "title": "11 partneri. Viena misija.",
+    "lead": "Starpnozaru alianse, kas apvieno universitātes, valsts iestādes, mazos un vidējos uzņēmumus (MVU), profesionālās izglītības un apmācības iestādes un sertifikācijas iestādes.",
     "partners": [
       {
-        "type": "SME",
+        "type": "MVU",
         "name": "ACCELERAS KG",
-        "country": "Austria",
+        "country": "Austrija",
         "website": "https://www.acceleras.io",
         "linkedin": "https://www.linkedin.com/company/accelerasaustria/",
         "facebook": "https://www.facebook.com/acceleras.io",
         "instagram": "https://www.instagram.com/acceleras.io/"
       },
       {
-        "type": "University",
-        "name": "College of Business and Health Sciences",
-        "country": "Poland",
+        "type": "Universitāte",
+        "name": "Uzņēmējdarbības un veselības zinātņu koledža",
+        "country": "Polija",
         "website": "https://www.wsbinoz.edu.pl",
         "linkedin": "https://www.linkedin.com/school/wy%C5%BCsza-szko%C5%82a-biznesu-i-nauk-o-zdrowiu-w-%C5%82odzi/",
-        "facebook": "https://www.facebook.com/wsbinoz",
-        "instagram": "https://www.instagram.com/wsbinoz.edu.pl/"
+        "facebook": "",
+        "instagram": ""
       },
       {
-        "type": "Public Authority",
-        "name": "Consellería de Educación, Ciencia, Universidades e Formación Profesional",
-        "country": "Spain",
-        "website": "https://edu.xunta.gal/",
+        "type": "Valsts iestāde",
+        "name": "Izglītības, zinātnes, augstskolu un profesionālās izglītības departaments",
+        "country": "Spānija",
+        "website": "",
         "linkedin": "",
-        "facebook": "https://www.facebook.com/profile.php?id=100069381392220",
-        "instagram": "https://www.instagram.com/edu.xunta/"
+        "facebook": "",
+        "instagram": ""
       },
       {
-        "type": "University",
-        "name": "Daugavpils University",
-        "country": "Latvia",
+        "type": "Universitāte",
+        "name": "Daugavpils Universitāte",
+        "country": "Latvija",
         "website": "http://www.du.lv/",
         "linkedin": "",
         "facebook": "https://www.facebook.com/DaugavpilsUniversitate",
         "instagram": ""
       },
       {
-        "type": "Certification Body",
-        "name": "ICEP Institute of European Certification of Personnel s.r.o.",
-        "country": "Slovakia",
+        "type": "Sertifikācijas iestāde",
+        "name": "ICEP Eiropas Personāla sertifikācijas institūts s.r.o.",
+        "country": "Slovākija",
         "website": "https://www.iceponline.com/",
         "linkedin": "https://sk.linkedin.com/company/iceponline",
         "facebook": "https://www.facebook.com/iceponline/",
         "instagram": "https://www.instagram.com/icep.online"
       },
       {
-        "type": "SME",
+        "type": "MVU",
         "name": "INSTITUT INPRO AS",
-        "country": "Czechia",
+        "country": "Čehija",
         "website": "",
         "linkedin": "",
         "facebook": "",
         "instagram": ""
       },
       {
-        "type": "Vocational Provider",
-        "name": "SIA Macibu centrs \"Austrumvidzeme\"",
-        "country": "Latvia",
+        "type": "Profesionālās izglītības iestāde",
+        "name": "SIA Mācību centrs \"Austrumvidzeme\"",
+        "country": "Latvija",
         "website": "http://www.austrumvidzeme.lv/",
         "linkedin": "https://www.linkedin.com/company/austrumvidzeme/",
         "facebook": "https://www.facebook.com/Austrumvidzeme/",
         "instagram": ""
       },
       {
-        "type": "University",
-        "name": "University of Education Weingarten",
-        "country": "Germany",
+        "type": "Universitāte",
+        "name": "Veingartenas Izglītības universitāte",
+        "country": "Vācija",
         "website": "https://www.ph-weingarten.de/de",
         "linkedin": "https://www.linkedin.com/school/p%C3%A4dagogische-hochschule-weingarten/posts/?feedView=all",
         "facebook": "https://www.facebook.com/pages/P%C3%A4dagogische-Hochschule-Weingarten/107917349236439",
         "instagram": "https://www.instagram.com/ph_weingarten/"
       },
       {
-        "type": "University",
-        "name": "University of Maribor",
-        "country": "Slovenia",
+        "type": "Universitāte",
+        "name": "Mariboras Universitāte",
+        "country": "Slovēnija",
         "website": "https://www.um.si/",
         "linkedin": "https://www.linkedin.com/school/univerza-v-mariboru/posts/?feedView=all",
         "facebook": "https://www.facebook.com/UniversityOfMaribor/",
         "instagram": "https://www.instagram.com/univerza_v_mariboru/"
       },
       {
-        "type": "University",
-        "name": "University of Vigo",
-        "country": "Spain",
+        "type": "Universitāte",
+        "name": "Vigo Universitāte",
+        "country": "Spānija",
         "website": "",
         "linkedin": "",
         "facebook": "",
         "instagram": ""
       },
       {
-        "type": "University",
-        "name": "University of Žilina",
-        "country": "Slovakia",
+        "type": "Universitāte",
+        "name": "Žilinas Universitāte",
+        "country": "Slovākija",
         "website": "https://uniza.sk/",
         "linkedin": "https://sk.linkedin.com/school/university-of-zilina/",
         "facebook": "https://www.facebook.com/uniza.sk",
@@ -250,49 +256,50 @@
     ]
   },
   "audience": {
-    "title": "Empowering the entire educational ecosystem.",
-    "lead": "The project serves a broad spectrum of stakeholders across the European education landscape.",
+    "title": "Visas izglītības vides stiprināšana.",
+    "lead": "Projekts ir paredzēts plašam ieinteresēto personu lokam visā Eiropas izglītības vidē.",
     "groups": [
       {
-        "title": "Pre-Service Teachers",
-        "body": "Future educators gaining AI competencies during their initial training to enter the workforce fully prepared."
+        "title": "Topošie pasniedzēji",
+        "body": "Nākamie pasniedzēji apgūst mākslīgā intelekta prasmes sākotnējās apmācības laikā, lai darba tirgū ienāktu pilnībā sagatavoti."
       },
       {
-        "title": "In-Service Teachers",
-        "body": "Practicing educators upskilling to integrate AI effectively."
+        "title": "Strādājošie pasniedzēji",
+        "body": "Praktizējoši pasniedzēji, kas pilnveido savas prasmes, lai darbā spētu efektīvi integrēt mākslīgo intelektu."
       },
       {
-        "title": "Teacher Education",
-        "body": "Institutions modernizing curricula with specialized AI training modules."
+        "title": "Pasniedzēju izglītība",
+        "body": "Izglītības iestādes, kas modernizē mācību programmas, iekļaujot tajās specializētus mākslīgā intelekta apmācību moduļus."
       },
       {
-        "title": "Schools",
-        "body": "Institutions directly benefiting from newly implemented, AI-enhanced teaching practices."
+        "title": "Skolas",
+        "body": "Iestādes, kas gūst tiešu labumu no nesen ieviestajām, ar mākslīgo intelektu uzlabotajām mācību metodēm."
       },
       {
-        "title": "Policymakers",
-        "body": "Decision-makers shaping and standardizing AI education policy."
+        "title": "Politikas veidotāji",
+        "body": "Lēmumu pieņēmēji, kas veido un standartizē politikas par mākslīgo intelektu izglītībā."
       }
     ]
   },
   "footer": {
-    "tagline": "AI-Powered Teaching and AI Education for Future-Proof Education",
+    "tagline": "MI balstīta mācīšanās un MI izmantošana izglītībā, lai nodrošinātu nākotnes prasībām atbilstošu izglītību",
     "licenseLabel": "CC BY-NC-SA 4.0",
     "nav": {
-      "what": "What",
-      "why": "Why",
-      "how": "How",
-      "partners": "Partners",
-      "cookieSettings": "Cookie Settings"
+      "what": "Ko",
+      "why": "Kāpēc",
+      "how": "Kā",
+      "partners": "Partneri",      
+      "downloads": "Downloads",
+      "cookieSettings": "Sīkdatņu iestatījumi"
     },
-    "euFlagAlt": "Co-funded by the European Union",
-    "euDisclaimer": "Funded by the European Union. Views and opinions expressed are however those of the author(s) only and do not necessarily reflect those of the European Union or the European Education and Culture Executive Agency (EACEA). Neither the European Union nor EACEA can be held responsible for them."
+    "euFlagAlt": "Līdzfinansē Eiropas Savienība",
+    "euDisclaimer": "Eiropas Savienības finansēts. Paustie viedokļi un uzskati atspoguļo autora(-u) personīgos uzskatus un ne vienmēr sakrīt ar Eiropas Savienības vai Eiropas Izglītības un Kultūras izpildaģentūras (EACEA) viedokli. Ne Eiropas Savienība, ne EACEA nenes atbildību par paustajiem uzskatiem."
   },
   "notFound": {
-    "metaTitle": "404 - Page Not Found | DUAL.AI.TEACHer",
-    "label": "Error 404",
-    "title": "Page Not Found",
-    "body": "The page you are looking for does not exist or may have moved.",
-    "backHome": "Back to Home"
+    "metaTitle": "404 - Lapa nav atrasta | DUAL.AI.TEACHer",
+    "label": "Kļūda 404",
+    "title": "Lapa nav atrasta",
+    "body": "Meklētā lapa nepastāv vai var būt pārvietota.",
+    "backHome": "Atpakaļ uz sākumlapu"
   }
 }

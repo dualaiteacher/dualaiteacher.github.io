@@ -39,6 +39,12 @@
     "title": "Kontaktujte nás.",
     "lead": "Pre otázky, spoluprácu či viac info nám pošlite správu cez tento formulár."
   },
+  "downloadsSection": {
+    "label": "Media Kit",
+    "title": "Downloadable assets.",
+    "lead": "Dissemination materials for press and partners.",
+    "emptyState": "No files available in this category yet."
+  },
   "nav": {
     "what": "Čo",
     "why": "Prečo",
@@ -283,6 +289,7 @@
       "why": "Prečo",
       "how": "Ako",
       "partners": "Partneri",
+      "downloads": "Downloads",
       "cookieSettings": "Voľby cookies"
     },
     "euFlagAlt": "Spolufinancované EÚ",

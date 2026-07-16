@@ -23,6 +23,7 @@ const flags: Record<Lang, SvgComponent> = {
   pl: flagComponents["/src/assets/flags/pl.svg"].default,
   sl: flagComponents["/src/assets/flags/si.svg"].default,
   sk: flagComponents["/src/assets/flags/sk.svg"].default,
+  gl: flagComponents["/src/assets/flags/gl.svg"].default,
 };
 const abbreviations: Record<Lang, string> = {
   en: "EN",
@@ -33,6 +34,7 @@ const abbreviations: Record<Lang, string> = {
   es: "ES",
   lv: "LV",
   pl: "PL",
+  gl: "GL",
 };
 const CurrentFlag = flags[lang];
 ---
@@ -104,7 +106,7 @@ const CurrentFlag = flags[lang];
       function getLocalizedPath(targetLang) {
         var url = new URL(window.location.href);
         var parts = url.pathname.split("/").filter(Boolean);
-        var supported = ["en", "sl", "sk", "cs", "de", "es", "lv", "pl"];
+        var supported = ["en", "sl", "sk", "cs", "de", "es", "lv", "pl", "gl"];
 
         if (parts.length && supported.indexOf(parts[0]) !== -1) {
           parts[0] = targetLang;

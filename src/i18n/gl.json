@@ -1,0 +1,305 @@
+{
+  "meta": {
+    "title": "DUAL.AI.TEACHer"
+  },
+  "constructionBanner": {
+    "construction": "Sitio web en construción. O contido está suxeito a mudanzas."
+  },
+  "cookieConsent": {
+    "banner": {
+      "title": "Valoramos a túa privacidade",
+      "bodyBeforeLink": "Usamos cookies e Microsoft Clarity para comprender como se utiliza o noso sitio e mellorar a túa experiencia. Podes aceptar todas as cookies, rexeitar as no esenciais ou ",
+      "preferencesLink": "personalizar as túas preferencias",
+      "bodyAfterLink": ".",
+      "acceptAll": "Aceptar todas",
+      "rejectAll": "Rexeitar todas"
+    },
+    "modal": {
+      "title": "Preferencias de cookies",
+      "description": "Elixe que categorías de cookies che gustaría permitir. As cookies esenciais están sempre activas, xa que son necesarias para o funcionamento do sitio.",
+      "essential": {
+        "title": "Cookies esenciais",
+        "badge": "Sempre activas",
+        "body": "Necesarias para funcións básicas do sitio, como a navegación e a seguridade. Non se poden desactivar."
+      },
+      "analytics": {
+        "title": "Cookies analíticas",
+        "body": "Axúdannos a comprender como interactúan as persoas visitantes co sitio web mediante a recompilación de datos de uso anónimos a través de Microsoft Clarity."
+      },
+      "advertising": {
+        "title": "Cookies publicitarias",
+        "body": "Empréganse para ofrecer contido relevante e medir a eficacia das campañas. Actualmente non mostramos anuncios, mais esta opción controla a almacenaxe de datos relacionados coa publicidade."
+      },
+      "cancel": "Cancelar",
+      "rejectAll": "Rexeitar todas",
+      "savePreferences": "Gardar preferencias"
+    }
+  },
+  "contactSection": {
+    "title": "Ponte en contacto connosco.",
+    "lead": "Para preguntas, colaboracións ou máis información, envíanos unha mensaxe mediante o formulario de abaixo."
+  },
+  "downloadsSection": {
+    "label": "Kit de prensa",
+    "title": "Recursos descargables.",
+    "lead": "Materiais de difusión para prensa e socios.",
+    "emptyState": "Aínda non hai ficheiros dispoñibles nesta categoría."
+  },
+  "nav": {
+    "what": "Que",
+    "why": "Por que",
+    "how": "Como",
+    "partners": "Socios",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "titleAccent": "Ensinanza impulsada por IA",
+    "titleRest": "e educación en IA",
+    "subtitle": "para unha educación preparada para o futuro",
+    "primaryCta": "Máis información",
+    "secondaryCta": "Socios"
+  },
+  "about": {
+    "label": "Que",
+    "title": "Reducindo a fenda de alfabetización en IA na educación europea.",
+    "lead": "Unha iniciativa paneuropea deseñada para modernizar a formación docente dotando o profesorado das competencias necesarias para se desenvolver nun entorno impulsado pola IA.",
+    "body": "Estamos construíndo un ecosistema que proporciona formación práctica e un marco formal de certificación aliñado coa UE, garantindo que ningunha persoa docente quede atrás na transición dixital."
+  },
+  "why": {
+    "label": "Por que",
+    "title": "A necesidade urxente de cambio.",
+    "lead": "As ferramentas de IA están transformando a educación, mais o profesorado non se sinte preparado. Non existe un marco estandarizado a nivel da UE para cerrar esta fenda.",
+    "items": [
+      {
+        "title": "A desconexión entre o profesorado e a tecnoloxía",
+        "body": "Mentres as ferramentas de IA como os sistemas de titoría intelixente e a IA xerativa están revolucionando as aulas, o profesorado afirma non sentirse preparado para integrar a IA na súa pedagoxía."
+      },
+      {
+        "title": "Non existe un marco estandarizado",
+        "body": "Actualmente non existe un marco estandarizado a nivel da UE para formar o profesorado no uso responsable de herramientas de IA, o que deixa una fenda crítica de competencias nos sistemas educativos europeos."
+      },
+      {
+        "title": "Retos éticos e de privacidade",
+        "body": "O profesorado necesita orientación para navegar e implementar sistemas de IA en entornos educativos con estudantes novos."
+      }
+    ]
+  },
+  "dual": {
+    "with": {
+      "titleStart": "Ensinar",
+      "titleAccent": "con",
+      "titleEnd": "IA",
+      "label": "Pedagoxía mellorada con IA:",
+      "body": "Formar o profesorado para utilizar activamente ferramentas de IA co fin de deseñar leccións, personalizar a aprendizaxe do alumnado e automatizar tarefas administrativas."
+    },
+    "about": {
+      "titleStart": "Ensinar",
+      "titleAccent": "sobre",
+      "titleEnd": "IA",
+      "label": "Alfabetización en IA:",
+      "body": "Capacitar o profesorado para lle ensinar ao seu alumnado como funciona a IA e cales son as súas implicacións éticas, construíndo unha xeración de cidadáns e cidadás informadas e responsables."
+    }
+  },
+  "deliverables": {
+    "title": "Establecendo un novo estándar na educación en IA.",
+    "lead": "Ao longo de 3 anos, o proxecto construirá un ecosistema completo de recursos para educadores de toda Europa.",
+    "cards": [
+      {
+        "badge": "🏅 Microcredenciais",
+        "title": "Itinerario dual de certificación",
+        "body": "Un sistema formal en que o profesorado obtén microcredenciais acumulables e unha certificación recoñecida pola UE cunha validez de 5 anos."
+      },
+      {
+        "badge": "🌐 15+ módulos",
+        "title": "Plataforma de aprendizaxe",
+        "body": "Un hub dixital multilingüe que ofrece módulos de formación interactivos e plans de lección sobre IA de acceso aberto cuidadosamente seleccionados."
+      },
+      {
+        "badge": "✈️ 5 centros",
+        "title": "Academias transnacionais",
+        "body": "Cinco centros en toda Europa que financian a mobilidade do profesorado para viaxar, participar en obradoiros e compartir boas prácticas."
+      },
+      {
+        "badge": "🏫 50+ centros educativos",
+        "title": "Pilotos en aulas reais",
+        "body": "Docentes formados poñen a proba leccións melloradas con IA en centros educativos para xerar evidencias baseadas na práctica."
+      }
+    ]
+  },
+  "how": {
+    "label": "COMO",
+    "title": "Como acadará o proxecto os seus obxectivos?",
+    "lead": "A través de catro fases interconectadas ao longo de 36 meses.",
+    "phases": [
+      {
+        "title": "Fase 1 - Codeseño",
+        "body": "Codeseño dunha guía de ensino impulsada por IA e dun marco de certificación para definir estándares pedagóxicos e microcredenciais aliñados cos marcos da UE."
+      },
+      {
+        "title": "Fase 2 - Desenvolvemento da plataforma",
+        "body": "Desenvolvemento dunha plataforma multilingüe de aprendizaxe en IA (MOOC) con máis de 15 módulos de formación e máis de 50 plans de lección mellorados con IA descargables."
+      },
+      {
+        "title": "Fase 3 - Academias de profesorado",
+        "body": "Lanzamento de 5 academias transnacionais de profesorado para ofrecer oportunidades de aprendizaxe e mobilidade transfronteiriza, formando directamente máis de 100 docentes."
+      },
+      {
+        "title": "Fase 4 - Pilotos na aula",
+        "body": "Realización de pilotaxes nas aulas reales en que persoas docentes formadas proban leccións melloradas con IA en máis de 50 centros educativos, chegando a máis de 1.000 estudantes para xerar recomendacións de políticas baseadas en evidencias."
+      }
+    ]
+  },
+  "aboutPartners": {
+    "label": "Consorcio",
+    "title": "11 socios. Unha misión compartida.",
+    "lead": "Unha alianza intersectorial que congrega universidades, institucións públicas, pemes, formación profesional e certificación.",
+    "partners": [
+      {
+        "type": "PEME",
+        "name": "ACCELERAS KG",
+        "country": "Austria",
+        "website": "https://www.acceleras.io",
+        "linkedin": "https://www.linkedin.com/company/accelerasaustria/",
+        "facebook": "https://www.facebook.com/acceleras.io",
+        "instagram": "https://www.instagram.com/acceleras.io/"
+      },
+      {
+        "type": "Universidade",
+        "name": "College of Business and Health Sciences",
+        "country": "Polonia",
+        "website": "https://www.wsbinoz.edu.pl",
+        "linkedin": "https://www.linkedin.com/school/wy%C5%BCsza-szko%C5%82a-biznesu-i-nauk-o-zdrowiu-w-%C5%82odzi/",
+        "facebook": "",
+        "instagram": ""
+      },
+      {
+        "type": "Autoridade pública",
+        "name": "Consellería de Educación, Ciencia, Universidades e Formación Profesional",
+        "country": "España",
+        "website": "",
+        "linkedin": "",
+        "facebook": "",
+        "instagram": ""
+      },
+      {
+        "type": "Universidade",
+        "name": "Daugavpils University",
+        "country": "Letonia",
+        "website": "http://www.du.lv/",
+        "linkedin": "",
+        "facebook": "https://www.facebook.com/DaugavpilsUniversitate",
+        "instagram": ""
+      },
+      {
+        "type": "Entidade certificadora",
+        "name": "ICEP Institute of European Certification of Personnel s.r.o.",
+        "country": "Eslovaquia",
+        "website": "https://www.iceponline.com/",
+        "linkedin": "https://sk.linkedin.com/company/iceponline",
+        "facebook": "https://www.facebook.com/iceponline/",
+        "instagram": "https://www.instagram.com/icep.online"
+      },
+      {
+        "type": "PEME",
+        "name": "INSTITUT INPRO AS",
+        "country": "Chequia",
+        "website": "",
+        "linkedin": "",
+        "facebook": "",
+        "instagram": ""
+      },
+      {
+        "type": "Provedor de formación profesional",
+        "name": "SIA Macibu centrs \"Austrumvidzeme\"",
+        "country": "Letonia",
+        "website": "http://www.austrumvidzeme.lv/",
+        "linkedin": "https://www.linkedin.com/company/austrumvidzeme/",
+        "facebook": "https://www.facebook.com/Austrumvidzeme/",
+        "instagram": ""
+      },
+      {
+        "type": "Universidade",
+        "name": "University of Education Weingarten",
+        "country": "Alemaña",
+        "website": "https://www.ph-weingarten.de/de",
+        "linkedin": "https://www.linkedin.com/school/p%C3%A4dagogische-hochschule-weingarten/posts/?feedView=all",
+        "facebook": "https://www.facebook.com/pages/P%C3%A4dagogische-Hochschule-Weingarten/107917349236439",
+        "instagram": "https://www.instagram.com/ph_weingarten/"
+      },
+      {
+        "type": "Universidade",
+        "name": "University of Maribor",
+        "country": "Eslovenia",
+        "website": "https://www.um.si/",
+        "linkedin": "https://www.linkedin.com/school/univerza-v-mariboru/posts/?feedView=all",
+        "facebook": "https://www.facebook.com/UniversityOfMaribor/",
+        "instagram": "https://www.instagram.com/univerza_v_mariboru/"
+      },
+      {
+        "type": "Universidade",
+        "name": "Universidade de Vigo",
+        "country": "España",
+        "website": "",
+        "linkedin": "",
+        "facebook": "",
+        "instagram": ""
+      },
+      {
+        "type": "Universidade",
+        "name": "University of Žilina",
+        "country": "Eslovaquia",
+        "website": "https://uniza.sk/",
+        "linkedin": "https://sk.linkedin.com/school/university-of-zilina/",
+        "facebook": "https://www.facebook.com/uniza.sk",
+        "instagram": "https://www.instagram.com/zilinska.univerzita/?hl=en"
+      }
+    ]
+  },
+  "audience": {
+    "title": "Impulsando todo o ecosistema educativo.",
+    "lead": "O proxecto atende un amplo espectro de axentes do panorama educativo europeo.",
+    "groups": [
+      {
+        "title": "Docentes en formación inicial",
+        "body": "Futuros docentes que adquiren competencias en IA durante a súa formación inicial para se incorporar no mercado laboral plenamente preparados."
+      },
+      {
+        "title": "Docentes en activo",
+        "body": "Profesionais da educación que actualizan as súas competencias para integrar a IA de forma eficaz."
+      },
+      {
+        "title": "Formación do profesorado",
+        "body": "Institucións que modernizan os currículos con módulos especializados de formación en IA."
+      },
+      {
+        "title": "Centros educativos",
+        "body": "Institucións que se benefician directamente de prácticas docentes melloradas con IA recén implantadas."
+      },
+      {
+        "title": "Responsables políticos",
+        "body": "Persoas responsables de deseñar e estandarizar políticas de educación en IA."
+      }
+    ]
+  },
+  "footer": {
+    "tagline": "Ensino impulsado por IA e educación en IA para unha educación preparada para o futuro",
+    "licenseLabel": "CC BY-NC-SA 4.0",
+    "nav": {
+      "what": "Que",
+      "why": "Por que",
+      "how": "Como",
+      "partners": "Socios",
+      "downloads": "Descargas",
+      "cookieSettings": "Configuración de cookies"
+    },
+    "euFlagAlt": "Cofinanciado pola Unión Europea",
+    "euDisclaimer": "Financiado pola Unión Europea. Porén, os puntos de vista e opinións expresadas son unicamente os da persoa autora ou autoras e non reflicten necesariamente os da Unión Europea nin os da Axencia Executiva Europea de Educación e Cultura (EACEA). Nin a Unión Europea nin a EACEA poden ser consideradas responsables deles."
+  },
+  "notFound": {
+    "metaTitle": "404 - Páxina non atopada | DUAL.AI.TEACHer",
+    "label": "Erro 404",
+    "title": "Páxina non atopada",
+    "body": "A páxina que estás a procurar non existe ou puido moverse.",
+    "backHome": "Volver ao inicio"
+  }
+}

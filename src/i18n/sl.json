@@ -39,6 +39,12 @@
     "title": "Stopite v stik z nami.",
     "lead": "Za vprašanja, sodelovanje ali dodatne informacije nam pošljite sporočilo prek spodnjega obrazca."
   },
+  "downloadsSection": {
+    "label": "Gradiva",
+    "title": "Gradiva za prenos.",
+    "lead": "Diseminacijska gradiva za medije in partnerje.",
+    "emptyState": "V tej kategoriji trenutno ni datotek."
+  },
   "subscribe": {
     "title": "Ostanite obveščeni.",
     "lead": "Naročite se na naše e-novice za novosti o projektu, nove vire in vpoglede o umetni inteligenci v izobraževanju."
@@ -287,6 +293,7 @@
       "why": "Zakaj",
       "how": "Kako",
       "partners": "Partnerji",
+      "downloads": "Prenosi",
       "privacy": "Politika zasebnosti",
       "cookieSettings": "Nastavitve piškotkov"
     },
