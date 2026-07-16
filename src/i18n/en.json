@@ -321,10 +321,10 @@
         "type": "SME",
         "name": "INSTITUT INPRO AS",
         "country": "Czechia",
-        "website": "",
-        "linkedin": "",
-        "facebook": "",
-        "instagram": ""
+        "website": "https://www.i2000.cz/",
+        "linkedin": "https://www.linkedin.com/company/institut-inpro-a-s-/",
+        "facebook": "https://www.facebook.com/WeareINPRO",
+        "instagram": "https://www.instagram.com/institutinpro/"
       },
       {
         "type": "Vocational Provider",
@@ -357,10 +357,10 @@
         "type": "University",
         "name": "University of Vigo",
         "country": "Spain",
-        "website": "",
-        "linkedin": "",
-        "facebook": "",
-        "instagram": ""
+        "website": "https://www.uvigo.gal/en",
+        "linkedin": "https://www.linkedin.com/school/uvigo/",
+        "facebook": "https://www.facebook.com/uvigo",
+        "instagram": "https://www.instagram.com/universidadedevigo/"
       },
       {
         "type": "University",

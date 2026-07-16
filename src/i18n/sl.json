@@ -218,10 +218,10 @@
         "type": "MSP",
         "name": "INSTITUT INPRO AS",
         "country": "Češka",
-        "website": "",
-        "linkedin": "",
-        "facebook": "",
-        "instagram": ""
+        "website": "https://www.i2000.cz/",
+        "linkedin": "https://www.linkedin.com/company/institut-inpro-a-s-/",
+        "facebook": "https://www.facebook.com/WeareINPRO",
+        "instagram": "https://www.instagram.com/institutinpro/"
       },
       {
         "type": "Poklicni ponudnik",
@@ -254,10 +254,10 @@
         "type": "Univerza",
         "name": "University of Vigo",
         "country": "Španija",
-        "website": "",
-        "linkedin": "",
-        "facebook": "",
-        "instagram": ""
+        "website": "https://www.uvigo.gal/en",
+        "linkedin": "https://www.linkedin.com/school/uvigo/",
+        "facebook": "https://www.facebook.com/uvigo",
+        "instagram": "https://www.instagram.com/universidadedevigo/"
       },
       {
         "type": "Univerza",
