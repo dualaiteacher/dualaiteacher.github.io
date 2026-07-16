@@ -1,23 +1,25 @@
 ---
 title: "Projekt DUAL.AI.TEACHer se je uradno začel"
-excerpt: "Enajst partnerjev iz vse Evrope se je sestalo ob zagonu projekta DUAL.AI.TEACHer in začrtalo pot za poučevanje z umetno inteligenco in o njej v evropskih šolah."
-pubDate: 2026-06-15
-cover: "./meeting.jpg"
+excerpt: "Enajst partnerjev iz vse Evrope se je sestalo na uvodnem srečanju v Łódźu na Poljskem in začrtalo pot za poučevanje z umetno inteligenco in o njej v evropskih šolah."
+pubDate: 2026-03-01
+cover: "./kick_off_image.jpg"
 coverAlt: "Predstavniki partnerjev na uvodnem srečanju projekta DUAL.AI.TEACHer"
 socialLinks:
-  linkedin: "https://www.linkedin.com/company/dualaiteacher/"
+  facebook: "https://www.facebook.com/photo?fbid=122098976817277079"
 ---
 
-Projekt DUAL.AI.TEACHer se je uradno začel! Predstavniki vseh enajstih partnerskih organizacij so se zbrali na uvodnem srečanju in uskladili poslanstvo projekta: opremiti evropske učitelje z veščinami za poučevanje **z** umetno inteligenco in **o** njej.
+Projekt DUAL.AI.TEACHer se je uradno začel! Naš evropski konzorcij se je nedavno zbral v Łódźu na Poljskem na prvem projektnem srečanju. V organizaciji našega koordinatorja WSBINOZ smo povezali enajst partnerskih organizacij iz vse Evrope, da postavimo temelje naši povsem novi učiteljski akademiji Erasmus+.
 
 ## Kaj se je zgodilo na uvodnem srečanju
 
-V dveh dneh je konzorcij:
+V dveh izjemno produktivnih dneh je konzorcij:
 
-- pregledal štiri faze projekta, od sooblikovanja priročnika za poučevanje z umetno inteligenco do pilotnih preizkusov v razredih,
-- uskladil načrt za večjezično učno platformo z več kot 15 izobraževalnimi moduli,
-- načrtoval prve korake do petih transnacionalnih učiteljskih akademij.
+- uskladil skupno vizijo, upravljanje in načrt dela za naslednjih 36 mesecev,
+- začel razprave o naših prvih dejavnostih: pregledu praks, obogatenih z umetno inteligenco, in sooblikovanju priročnika »AI-Powered Teaching Playbook«,
+- začrtal strategijo za vzpostavitev mednarodnega izobraževalnega ekosistema, ki bo učiteljem omogočil samozavestno poučevanje **z** umetno inteligenco in **o** njej.
+
+Bil je odličen začetek, poln navdihujočih idej in čezmejnega sodelovanja. Pripravljeni smo oblikovati prihodnost umetne inteligence v evropskih učilnicah!
 
 ## Kaj sledi
 
-V prihodnjih mesecih bodo partnerji začeli sooblikovati certifikacijski okvir in prva izobraževalna gradiva. Spremljajte to stran in naše družbene kanale za redne novice o napredku projekta.
+Spremljajte to stran in naše družbene kanale, da boste na tekočem z našo potjo, prihajajočimi prostodostopnimi izobraževalnimi viri in priložnostmi za usposabljanje.
