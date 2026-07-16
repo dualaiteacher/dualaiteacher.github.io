@@ -5,12 +5,14 @@ import dualAiNavbar from "../../assets/branding/dual-ai-navbar.png";
 import FacebookIcon from "../../assets/icons/facebook.svg";
 import InstagramIcon from "../../assets/icons/instagram.svg";
 import LinkedInIcon from "../../assets/icons/linkedin.svg";
+import YouTubeIcon from "../../assets/icons/youtube.svg";
 import { type Lang } from "../../i18n";
 
 const socialLinks = [
   { href: "https://www.linkedin.com/company/dualaiteacher/", label: "LinkedIn", Icon: LinkedInIcon },
   { href: "https://www.instagram.com/dualaiteacher/", label: "Instagram", Icon: InstagramIcon },
   { href: "https://www.facebook.com/dualaiteacher/", label: "Facebook", Icon: FacebookIcon },
+  { href: "https://www.youtube.com/@dualaiteacher", label: "YouTube", Icon: YouTubeIcon }
 ];
 
 interface Props {
@@ -22,6 +24,7 @@ interface Props {
     partners: string;
     news: string;
     contact: string;
+    newsletter: string;
   };
 }
 
@@ -30,6 +33,7 @@ const homeHref = `/${lang}/`;
 const partnersHref = `/${lang}/partners/`;
 const newsHref = `/${lang}/news/`;
 const contactHref = `/${lang}/contact/`;
+const subscribeHref = `/${lang}/subscribe/`;
 ---
 
 <nav
@@ -84,16 +88,23 @@ const contactHref = `/${lang}/contact/`;
          >{t.contact}</a>
       </li>
     </ul>
-    <div class="hidden lg:flex items-center gap-2 ml-auto">
+    <div class="hidden lg:flex items-center gap-3 ml-auto">
+            <a
+        href={subscribeHref}
+        class="inline-flex items-center justify-center rounded-full bg-accent px-5 py-2.5 text-sm font-bold text-amber-950 no-underline transition hover:scale-105"
+      >
+        {t.newsletter}
+      </a>
       {socialLinks.map(({ href, label, Icon }) => (
         <a
           href={href}
           aria-label={label}
-          class="inline-flex h-10 w-10 items-center justify-center rounded-full border border-slate-200 text-brand transition-colors hover:border-brand hover:bg-accent/30"
+          class="inline-flex h-10 w-10 items-center justify-center text-brand transition-transform duration-200 hover:-translate-y-0.5 hover:scale-110 hover:text-accent"
         >
-          <Icon class="block h-5 w-5" aria-hidden="true" focusable="false" />
+          <Icon class="block h-6 w-6" aria-hidden="true" focusable="false" />
         </a>
       ))}
+
     </div>
     <button
       id="mobileMenuBtn"
@@ -154,14 +165,20 @@ const contactHref = `/${lang}/contact/`;
          >{t.contact}</a>
       </li>
     </ul>
-    <div class="flex items-center gap-2 pt-4">
+    <a
+      href={subscribeHref}
+      class="mt-4 inline-flex w-full items-center justify-center rounded-full bg-accent px-6 py-3 text-base font-bold text-amber-950 no-underline transition hover:scale-[1.02]"
+    >
+      {t.newsletter}
+    </a>
+    <div class="flex items-center gap-3 pt-4">
       {socialLinks.map(({ href, label, Icon }) => (
         <a
           href={href}
           aria-label={label}
-          class="inline-flex h-10 w-10 items-center justify-center rounded-full border border-slate-200 text-brand transition-colors hover:border-brand hover:bg-accent/30"
+          class="inline-flex h-10 w-10 items-center justify-center text-brand transition-transform duration-200 hover:-translate-y-0.5 hover:scale-110 hover:text-accent"
         >
-          <Icon class="block h-5 w-5" aria-hidden="true" focusable="false" />
+          <Icon class="block h-6 w-6" aria-hidden="true" focusable="false" />
         </a>
       ))}
     </div>
