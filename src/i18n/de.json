@@ -41,16 +41,26 @@
   },
   "downloadsSection": {
     "label": "Media Kit",
-    "title": "Downloadable assets.",
-    "lead": "Dissemination materials for press and partners.",
-    "emptyState": "No files available in this category yet."
+    "title": "Materialien zum Herunterladen.",
+    "lead": "Verbreitungsmaterialien für Presse und Partner.",
+    "emptyState": "In dieser Kategorie sind noch keine Dateien verfügbar."
   },
   "nav": {
     "what": "Was",
     "why": "Warum",
     "how": "Wie",
     "partners": "Partner",
+    "news": "Neuigkeiten",
     "contact": "Kontakt"
+  },
+  "newsSection": {
+    "label": "Neuigkeiten",
+    "title": "Projektneuigkeiten und Updates.",
+    "lead": "Verfolgen Sie die neuesten Meilensteine, Veranstaltungen und Ergebnisse des Projekts DUAL.AI.TEACHer.",
+    "readMore": "Weiterlesen",
+    "backToNews": "Zurück zu den Neuigkeiten",
+    "followUs": "Teilen & folgen",
+    "empty": "Noch keine Neuigkeiten — schauen Sie bald wieder vorbei."
   },
   "hero": {
     "titleAccent": "KI–gestützter Unterricht",
@@ -289,8 +299,8 @@
       "why": "Warum",
       "how": "Wie",
       "partners": "Partner",
+      "news": "Neuigkeiten",
       "downloads": "Downloads",
-      "privacy": "Datenschutzerklärung",
       "cookieSettings": "Cookie–Einstellungen"
     },
     "euFlagAlt": "Kofinanziert von der Europäischen Union",

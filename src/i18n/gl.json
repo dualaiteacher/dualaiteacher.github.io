@@ -50,7 +50,17 @@
     "why": "Por que",
     "how": "Como",
     "partners": "Socios",
+    "news": "Novas",
     "contact": "Contacto"
+  },
+  "newsSection": {
+    "label": "Novas",
+    "title": "Novas e actualizacións do proxecto.",
+    "lead": "Segue os últimos fitos, eventos e resultados do proxecto DUAL.AI.TEACHer.",
+    "readMore": "Ler máis",
+    "backToNews": "Volver ás novas",
+    "followUs": "Compartir e seguir",
+    "empty": "Aínda non hai novas — volve pronto."
   },
   "hero": {
     "titleAccent": "Ensinanza impulsada por IA",
@@ -289,8 +299,8 @@
       "why": "Por que",
       "how": "Como",
       "partners": "Socios",
+      "news": "Novas",
       "downloads": "Descargas",
-      "privacy": "Política de privacidade",
       "cookieSettings": "Configuración de cookies"
     },
     "euFlagAlt": "Cofinanciado pola Unión Europea",

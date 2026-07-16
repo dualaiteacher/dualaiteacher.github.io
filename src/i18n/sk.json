@@ -40,17 +40,27 @@
     "lead": "Pre otázky, spoluprácu či viac info nám pošlite správu cez tento formulár."
   },
   "downloadsSection": {
-    "label": "Media Kit",
-    "title": "Downloadable assets.",
-    "lead": "Dissemination materials for press and partners.",
-    "emptyState": "No files available in this category yet."
+    "label": "Mediálny kit",
+    "title": "Materiály na stiahnutie.",
+    "lead": "Propagačné materiály pre médiá a partnerov.",
+    "emptyState": "V tejto kategórii zatiaľ nie sú k dispozícii žiadne súbory."
   },
   "nav": {
     "what": "Čo",
     "why": "Prečo",
     "how": "Ako",
     "partners": "Partneri",
+    "news": "Novinky",
     "contact": "Kontakt"
+  },
+  "newsSection": {
+    "label": "Novinky",
+    "title": "Novinky a aktuality projektu.",
+    "lead": "Sledujte najnovšie míľniky, udalosti a výsledky projektu DUAL.AI.TEACHer.",
+    "readMore": "Čítať viac",
+    "backToNews": "Späť na novinky",
+    "followUs": "Zdieľať a sledovať",
+    "empty": "Zatiaľ žiadne novinky — vráťte sa čoskoro."
   },
   "hero": {
     "titleAccent": "Výučba s pomocou AI",
@@ -289,8 +299,8 @@
       "why": "Prečo",
       "how": "Ako",
       "partners": "Partneri",
-      "downloads": "Downloads",
-      "privacy": "Zásady ochrany osobných údajov",
+      "news": "Novinky",
+      "downloads": "Na stiahnutie",
       "cookieSettings": "Voľby cookies"
     },
     "euFlagAlt": "Spolufinancované EÚ",

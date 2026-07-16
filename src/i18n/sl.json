@@ -54,13 +54,23 @@
     "why": "Zakaj",
     "how": "Kako",
     "partners": "Partnerji",
+    "news": "Novice",
     "contact": "Kontakt"
+  },
+  "newsSection": {
+    "label": "Novice",
+    "title": "Novice in obvestila o projektu.",
+    "lead": "Spremljajte najnovejše mejnike, dogodke in rezultate projekta DUAL.AI.TEACHer.",
+    "readMore": "Preberi več",
+    "backToNews": "Nazaj na novice",
+    "followUs": "Deli in spremljaj",
+    "empty": "Novic še ni — preverite kmalu."
   },
   "hero": {
     "titleAccent": "Poučevanje z umetno Inteligenco",
     "titleRest": "in o umetni Inteligenci",
     "subtitle": "za izobraževanje, pripravljeno na prihodnost",
-    "primaryCta": "Naroči se na novice",
+    "primaryCta": "Novičnik",
     "secondaryCta": "Partnerji"
   },
   "about": {
@@ -293,6 +303,7 @@
       "why": "Zakaj",
       "how": "Kako",
       "partners": "Partnerji",
+      "news": "Novice",
       "downloads": "Prenosi",
       "privacy": "Politika zasebnosti",
       "cookieSettings": "Nastavitve piškotkov"

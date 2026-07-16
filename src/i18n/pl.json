@@ -40,17 +40,27 @@
     "lead": "Jeśli masz pytania, chcesz nawiązać współpracę lub uzyskać więcej informacji, wyślij nam wiadomość, korzystając z poniższego formularza."
   },
   "downloadsSection": {
-    "label": "Media Kit",
-    "title": "Downloadable assets.",
-    "lead": "Dissemination materials for press and partners.",
-    "emptyState": "No files available in this category yet."
+    "label": "Materiały dla mediów",
+    "title": "Materiały do pobrania.",
+    "lead": "Materiały informacyjne dla prasy i partnerów.",
+    "emptyState": "Brak plików w tej kategorii."
   },
   "nav": {
     "what": "O czym",
     "why": "Dlaczego",
     "how": "Co robimy",
     "partners": "Partnerzy",
+    "news": "Aktualności",
     "contact": "Kontakt"
+  },
+  "newsSection": {
+    "label": "Aktualności",
+    "title": "Aktualności i nowości projektu.",
+    "lead": "Śledź najnowsze kamienie milowe, wydarzenia i wyniki projektu DUAL.AI.TEACHer.",
+    "readMore": "Czytaj więcej",
+    "backToNews": "Powrót do aktualności",
+    "followUs": "Udostępnij i obserwuj",
+    "empty": "Brak aktualności — zajrzyj wkrótce."
   },
   "hero": {
     "titleAccent": "Nauczanie oparte na AI",
@@ -288,9 +298,9 @@
       "what": "O czym",
       "why": "Dlaczego",
       "how": "Co robimy",
-      "partners": "Partners",
-      "downloads": "Downloads",
-      "privacy": "Polityka prywatności",
+      "partners": "Partnerzy",
+      "news": "Aktualności",
+      "downloads": "Do pobrania",
       "cookieSettings": "Ustawienia plików cookie"
     },
     "euFlagAlt": "Współfinansowane przez Unię Europejską",

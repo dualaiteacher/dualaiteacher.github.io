@@ -50,7 +50,17 @@
     "why": "Kāpēc",
     "how": "Kā",
     "partners": "Partneri",
+    "news": "Jaunumi",
     "contact": "Saziņai"
+  },
+  "newsSection": {
+    "label": "Jaunumi",
+    "title": "Projekta jaunumi un aktualitātes.",
+    "lead": "Sekojiet līdzi jaunākajiem projekta DUAL.AI.TEACHer atskaites punktiem, notikumiem un rezultātiem.",
+    "readMore": "Lasīt vairāk",
+    "backToNews": "Atpakaļ uz jaunumiem",
+    "followUs": "Dalīties un sekot",
+    "empty": "Pagaidām nav jaunumu — apmeklējiet drīzumā."
   },
   "hero": {
     "titleAccent": "MI balstīta mācīšanās",
@@ -288,9 +298,9 @@
       "what": "Ko",
       "why": "Kāpēc",
       "how": "Kā",
-      "partners": "Partneri",      
-      "downloads": "Downloads",
-      "privacy": "Privātuma politika",
+      "partners": "Partneri",
+      "news": "Jaunumi",
+      "downloads": "Lejupielādes",
       "cookieSettings": "Sīkdatņu iestatījumi"
     },
     "euFlagAlt": "Līdzfinansē Eiropas Savienība",

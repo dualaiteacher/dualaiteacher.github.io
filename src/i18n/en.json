@@ -157,13 +157,23 @@
     "why": "Why",
     "how": "How",
     "partners": "Partners",
+    "news": "News",
     "contact": "Contact"
+  },
+  "newsSection": {
+    "label": "News",
+    "title": "Project news and updates.",
+    "lead": "Follow the latest milestones, events, and results from the DUAL.AI.TEACHer project.",
+    "readMore": "Read more",
+    "backToNews": "Back to news",
+    "followUs": "Share & follow",
+    "empty": "No news yet — check back soon."
   },
   "hero": {
     "titleAccent": "AI-Powered Teaching",
     "titleRest": "& AI Education",
     "subtitle": "for Future-Proof Education",
-    "primaryCta": "Subscribe",
+    "primaryCta": "Newsletter",
     "secondaryCta": "Partners"
   },
   "about": {
@@ -396,6 +406,7 @@
       "why": "Why",
       "how": "How",
       "partners": "Partners",
+      "news": "News",
       "downloads": "Downloads",
       "privacy": "Privacy Policy",
       "cookieSettings": "Cookie Settings"
