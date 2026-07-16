@@ -43,6 +43,21 @@ export type ContactSectionTranslation = typeof en.contactSection;
 export const defaultContactSection: ContactSectionTranslation = en.contactSection;
 export type NewsSectionTranslation = typeof en.newsSection;
 export const defaultNewsSection: NewsSectionTranslation = en.newsSection;
+export type SubscribeSectionTranslation = typeof en.subscribe;
+export const defaultSubscribeSection: SubscribeSectionTranslation = en.subscribe;
+export interface PrivacySectionTranslation {
+  title: string;
+  lead: string;
+  lastUpdated: string;
+  manageCookies: string;
+  sections: {
+    heading: string;
+    paragraphs?: string[];
+    items?: string[];
+    paragraphsAfter?: string[];
+  }[];
+}
+export const defaultPrivacy: PrivacySectionTranslation = en.privacy;
 
 export function isLang(value: string): value is Lang {
   return value in languages;

@@ -1,0 +1,73 @@
+---
+import type { PrivacySectionTranslation } from "../../i18n";
+
+interface Props {
+  t: PrivacySectionTranslation;
+}
+
+const { t } = Astro.props;
+---
+
+<section
+  id="privacy"
+  class="py-16 bg-surface-2 relative overflow-hidden border-b border-surface-3"
+>
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="text-center mb-10">
+      <h1
+        class="text-5xl md:text-6xl lg:text-7xl font-black leading-tight text-brand tracking-tight"
+      >
+        {t.title}
+      </h1>
+
+      <p
+        class="mx-auto mt-6 max-w-3xl text-xl md:text-2xl text-slate-600 leading-relaxed font-medium"
+      >
+        {t.lead}
+      </p>
+    </div>
+
+    <div
+      class="mx-auto max-w-3xl rounded-2xl bg-surface-1 shadow-xl px-6 py-8 md:px-10 md:py-10"
+    >
+      {
+        t.sections.map((section) => (
+          <div class="mb-10 last:mb-0">
+            <h2 class="text-xl md:text-2xl font-black text-brand mb-3">
+              {section.heading}
+            </h2>
+            {section.paragraphs?.map((paragraph) => (
+              <p class="text-slate-600 leading-relaxed font-medium mb-3">
+                {paragraph}
+              </p>
+            ))}
+            {section.items && (
+              <ul class="list-disc pl-6 mb-3 flex flex-col gap-2 text-slate-600 leading-relaxed font-medium">
+                {section.items.map((item) => (
+                  <li>{item}</li>
+                ))}
+              </ul>
+            )}
+            {section.paragraphsAfter?.map((paragraph) => (
+              <p class="text-slate-600 leading-relaxed font-medium mb-3">
+                {paragraph}
+              </p>
+            ))}
+          </div>
+        ))
+      }
+
+      <button
+        class="mt-2 px-6 py-3 rounded-full text-sm font-bold bg-brand text-white shadow-md hover:bg-brand/80 hover:shadow-lg transition-all cursor-pointer"
+        onclick="openCookieSettings()"
+        type="button"
+      >
+        {t.manageCookies}
+      </button>
+
+      <p class="mt-8 text-sm text-slate-500 leading-relaxed">
+        {t.lastUpdated}
+      </p>
+    </div>
+  </div>
+</section>
