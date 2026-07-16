@@ -13,8 +13,8 @@ interface Props {
 }
 
 const { lang, t } = Astro.props;
-const homeHref = `/${lang}/`;
 const partnersHref = `/${lang}/partners/`;
+const subscribeHref = `/${lang}/subscribe/`;
 ---
 
 <section
@@ -40,8 +40,8 @@ const partnersHref = `/${lang}/partners/`;
 
     <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
       <a
-        href={`${homeHref}#about`}
-        class="inline-flex items-center justify-center rounded-full bg-accent px-6 py-3 text-base font-bold text-brand transition hover:scale-105"
+        href={subscribeHref}
+        class="inline-flex items-center justify-center rounded-full bg-accent px-6 py-3 text-base font-bold text-amber-950 transition hover:scale-105"
       >
         {t.primaryCta}
       </a>

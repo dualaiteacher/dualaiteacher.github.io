@@ -45,6 +45,113 @@
     "lead": "Dissemination materials for press and partners.",
     "emptyState": "No files available in this category yet."
   },
+  "subscribe": {
+    "title": "Stay in the loop.",
+    "lead": "Subscribe to our newsletter for updates on the project, new resources, and AI-in-education insights."
+  },
+  "privacy": {
+    "title": "Privacy & Cookie Policy",
+    "lead": "How the DUAL.AI.TEACHer project handles your personal data and cookies on this website.",
+    "lastUpdated": "This policy was last updated on 3 July 2026.",
+    "manageCookies": "Cookie Settings",
+    "sections": [
+      {
+        "heading": "1. Introduction",
+        "paragraphs": [
+          "Through this page, the DUAL.AI.TEACHer project partnership provides visitors of this website with the information required by Article 13 of Regulation (EU) 2016/679 (the General Data Protection Regulation, \"GDPR\") regarding the processing of their personal data.",
+          "This website is realised within the framework of the DUAL.AI.TEACHer project (call ERASMUS-EDU-2025-PEX-TEACH-ACA, project no. 101249519), co-funded by the European Union under the Erasmus+ programme."
+        ]
+      },
+      {
+        "heading": "2. Data Controller",
+        "paragraphs": [
+          "The Data Controller is Wyższa Szkoła Biznesu i Nauk o Zdrowiu w Łodzi (University of Business and Health Sciences in Łódź), ul. Piotrkowska 278, 90-361 Łódź, Poland, acting as coordinator of the DUAL.AI.TEACHer project. For any question regarding this policy or the processing of your personal data, you can contact us at dualaiteacherproject@gmail.com.",
+          "The coordinator has appointed a Data Protection Officer (DPO), responsible for overseeing consent procedures, data minimisation and compliance with this privacy policy. The DPO can be contacted at dualaiteacherproject@gmail.com.",
+          "The digital platform's technical infrastructure is operated by the University of Maribor on behalf of the Data Controller. Personal data may also be communicated to the other DUAL.AI.TEACHer project partners, who act as autonomous data controllers for their own processing activities within the project."
+        ]
+      },
+      {
+        "heading": "3. Purposes and legal bases of the processing",
+        "paragraphs": [
+          "We process personal data of website visitors for the following purposes:"
+        ],
+        "items": [
+          "Technical operation of the website — ensuring the correct and secure functioning of the site, including the prevention of fraudulent or abusive activity. Legal basis: performance of a task carried out in the public interest within the framework of the project and our legitimate interest in operating a secure website (Article 6(1)(e)–(f) GDPR).",
+          "Newsletter — sending you updates on the project's activities and results via our newsletter provider MailerLite, only if you subscribe. Legal basis: your consent (Article 6(1)(a) GDPR), which you can withdraw at any time using the unsubscribe link included in every newsletter or by writing to dualaiteacherproject@gmail.com.",
+          "Usage analytics — understanding how visitors use the website through Microsoft Clarity, only if you accept analytics cookies in the cookie banner. Legal basis: your consent (Article 6(1)(a) GDPR), which you can withdraw at any time via the \"Cookie Settings\" link in the footer.",
+          "Contact requests — answering enquiries you submit through the contact form embedded on this website (provided by Google Forms). Legal basis: our legitimate interest in responding to your request (Article 6(1)(f) GDPR)."
+        ]
+      },
+      {
+        "heading": "4. Web navigation data",
+        "paragraphs": [
+          "The IT systems used to operate this website collect certain personal data whose transmission is implicit in the use of internet communication protocols. This category of data includes IP addresses, the addresses of the requested pages, the time of the request, and parameters relating to your browser and operating system.",
+          "This website is statically hosted on GitHub Pages, a service of GitHub, Inc. GitHub may log technical data such as visitor IP addresses for security and operational purposes, as described in GitHub's privacy statement."
+        ]
+      },
+      {
+        "heading": "5. Recipients of personal data",
+        "paragraphs": [
+          "Personal data are processed by staff of the Data Controller and of the project partners who are authorised to do so. In addition, the following service providers process data on our behalf or as independent controllers:"
+        ],
+        "items": [
+          "MailerLite — newsletter subscription management and email delivery.",
+          "Microsoft — usage analytics via Microsoft Clarity (only with your consent).",
+          "Google — contact form (Google Forms).",
+          "GitHub, Inc. — website hosting (GitHub Pages)."
+        ],
+        "paragraphsAfter": [
+          "Some of these providers may process data outside the European Economic Area. In such cases, transfers take place on the basis of European Commission adequacy decisions or Standard Contractual Clauses, as set out in each provider's data processing terms."
+        ]
+      },
+      {
+        "heading": "6. Data retention",
+        "items": [
+          "Web navigation data: kept only for the duration of your browsing session, subject to the hosting provider's technical logs.",
+          "Newsletter data: kept until you unsubscribe or, at the latest, 5 years after the end of the project.",
+          "Analytics data: retained by Microsoft Clarity in accordance with Microsoft's retention policy.",
+          "Cookie consent choice: stored in your browser for 365 days."
+        ]
+      },
+      {
+        "heading": "7. Provision of data",
+        "paragraphs": [
+          "Providing personal data is never required to browse this website. However, providing your email address is necessary to subscribe to the newsletter, and providing the data requested in the contact form is necessary for us to answer your enquiry. Failure to provide these data simply means that you will not receive the newsletter or a reply."
+        ]
+      },
+      {
+        "heading": "8. Your rights",
+        "paragraphs": [
+          "As a data subject, the GDPR grants you the right to:"
+        ],
+        "items": [
+          "know whether your personal data are being processed and, if so, access them and all related information;",
+          "have inaccurate personal data corrected and incomplete personal data supplemented;",
+          "have your personal data erased;",
+          "obtain the restriction of processing;",
+          "object to the processing;",
+          "receive your personal data in a portable format;",
+          "withdraw your consent at any time, without affecting the lawfulness of processing carried out before the withdrawal."
+        ],
+        "paragraphsAfter": [
+          "You can exercise these rights by contacting dualaiteacherproject@gmail.com. You also have the right to lodge a complaint with your national data protection authority; the list of EU supervisory authorities is available on the website of the European Data Protection Board at https://edpb.europa.eu/about-edpb/about-edpb/members_en."
+        ]
+      },
+      {
+        "heading": "9. Cookies",
+        "paragraphs": [
+          "Cookies are small text files stored on your device by the websites you visit. This website uses the following cookies and similar technologies:"
+        ],
+        "items": [
+          "Essential — your cookie consent choice is stored locally in your browser for 365 days so that we can remember your preferences. This is strictly necessary and cannot be disabled.",
+          "Analytics (Microsoft Clarity) — the cookies _clck and _clsk are set only after you give your consent through the cookie banner. Clarity runs with analytics storage denied by default, and its cookies are erased if you reject or withdraw your consent."
+        ],
+        "paragraphsAfter": [
+          "You can change your choice at any time using the button below or the \"Cookie Settings\" link in the footer of every page. You can also delete or block cookies through your browser's settings."
+        ]
+      }
+    ]
+  },
   "nav": {
     "what": "What",
     "why": "Why",
@@ -56,7 +163,7 @@
     "titleAccent": "AI-Powered Teaching",
     "titleRest": "& AI Education",
     "subtitle": "for Future-Proof Education",
-    "primaryCta": "Learn more",
+    "primaryCta": "Subscribe",
     "secondaryCta": "Partners"
   },
   "about": {
@@ -290,6 +397,7 @@
       "how": "How",
       "partners": "Partners",
       "downloads": "Downloads",
+      "privacy": "Privacy Policy",
       "cookieSettings": "Cookie Settings"
     },
     "euFlagAlt": "Co-funded by the European Union",
