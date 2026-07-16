@@ -1,0 +1,51 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import SiteNav from "../../../components/site/SiteNav.astro";
+import SiteFooter from "../../../components/site/SiteFooter.astro";
+import CookieConsent from "../../../components/site/CookieConsent.astro";
+import SiteScripts from "../../../components/site/SiteScripts.astro";
+import ConstructionBanner from "../../../components/site/ConstructionBanner.astro";
+import NewsListSection from "../../../components/site/NewsListSection.astro";
+import { formatNewsDate, getNewsPosts, resolveVariant } from "../../../lib/news";
+import {
+  defaultCookieConsent,
+  defaultLang,
+  defaultNewsSection,
+  getDictionary,
+  languages,
+  type Lang,
+} from "../../../i18n";
+
+export function getStaticPaths() {
+  return Object.keys(languages).map((lang) => ({
+    params: { lang },
+  }));
+}
+
+const lang = (Astro.params.lang ?? defaultLang) as Lang;
+const dict = getDictionary(lang);
+const tNews = "newsSection" in dict ? dict.newsSection : defaultNewsSection;
+
+const posts = await getNewsPosts();
+const cards = posts.map((post) => {
+  const entry = resolveVariant(post, lang);
+  return {
+    href: `/${lang}/news/${post.slug}/`,
+    title: entry.data.title,
+    excerpt: entry.data.excerpt,
+    dateLabel: formatNewsDate(entry.data.pubDate, lang),
+    dateISO: entry.data.pubDate.toISOString(),
+    cover: entry.data.cover,
+    coverAlt: entry.data.coverAlt,
+  };
+});
+---
+
+<Layout title={`${tNews.label} | ${dict.meta.title}`} lang={lang}>
+  <CookieConsent t={"cookieConsent" in dict ? dict.cookieConsent : defaultCookieConsent} />
+  <ConstructionBanner t={dict.constructionBanner} />
+  <SiteNav lang={lang} t={dict.nav} />
+  <NewsListSection t={tNews} cards={cards} />
+  <SiteFooter lang={lang} t={dict.footer} />
+  <SiteScripts />
+</Layout>

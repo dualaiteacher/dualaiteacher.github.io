@@ -1,0 +1,62 @@
+---
+import type { ImageMetadata } from "astro";
+import NewsCard from "./NewsCard.astro";
+
+interface Props {
+  t: {
+    label: string;
+    title: string;
+    lead: string;
+    readMore: string;
+    empty: string;
+  };
+  cards: {
+    href: string;
+    title: string;
+    excerpt: string;
+    dateLabel: string;
+    dateISO: string;
+    cover?: ImageMetadata;
+    coverAlt?: string;
+  }[];
+}
+
+const { t, cards } = Astro.props;
+---
+
+<section
+  id="news"
+  class="py-24 md:py-32 bg-surface-2 relative border-b-4 border-brand/20 overflow-hidden"
+>
+  <div
+    class="absolute inset-0 opacity-[0.06] pointer-events-none bg-pattern-light"
+  >
+  </div>
+  <div class="max-w-7xl mx-auto px-6 relative z-10">
+    <div class="text-center mb-14">
+      <span
+        class="inline-block text-sm font-black tracking-widest uppercase text-white bg-brand px-4 py-1.5 rounded-full mb-4 shadow-lg"
+      >
+        {t.label}
+      </span>
+      <h2
+        class="text-[clamp(2.2rem,7vw,4.2rem)] font-black leading-tight text-brand tracking-tight"
+      >
+        {t.title}
+      </h2>
+      <p
+        class="text-xl md:text-2xl text-slate-600/90 max-w-4xl mx-auto font-bold leading-relaxed mt-5"
+      >
+        {t.lead}
+      </p>
+    </div>
+
+    {cards.length > 0 ? (
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        {cards.map((card) => <NewsCard {...card} readMore={t.readMore} />)}
+      </div>
+    ) : (
+      <p class="text-center text-lg font-bold text-slate-600">{t.empty}</p>
+    )}
+  </div>
+</section>

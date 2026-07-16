@@ -39,12 +39,28 @@
     "title": "Kontaktujte nás.",
     "lead": "Pre otázky, spoluprácu či viac info nám pošlite správu cez tento formulár."
   },
+  "downloadsSection": {
+    "label": "Mediálny kit",
+    "title": "Materiály na stiahnutie.",
+    "lead": "Propagačné materiály pre médiá a partnerov.",
+    "emptyState": "V tejto kategórii zatiaľ nie sú k dispozícii žiadne súbory."
+  },
   "nav": {
     "what": "Čo",
     "why": "Prečo",
     "how": "Ako",
     "partners": "Partneri",
+    "news": "Novinky",
     "contact": "Kontakt"
+  },
+  "newsSection": {
+    "label": "Novinky",
+    "title": "Novinky a aktuality projektu.",
+    "lead": "Sledujte najnovšie míľniky, udalosti a výsledky projektu DUAL.AI.TEACHer.",
+    "readMore": "Čítať viac",
+    "backToNews": "Späť na novinky",
+    "followUs": "Zdieľať a sledovať",
+    "empty": "Zatiaľ žiadne novinky — vráťte sa čoskoro."
   },
   "hero": {
     "titleAccent": "Výučba s pomocou AI",
@@ -163,17 +179,17 @@
         "country": "Poľsko",
         "website": "https://www.wsbinoz.edu.pl",
         "linkedin": "https://www.linkedin.com/school/wy%C5%BCsza-szko%C5%82a-biznesu-i-nauk-o-zdrowiu-w-%C5%82odzi/",
-        "facebook": "",
-        "instagram": ""
+        "facebook": "https://www.facebook.com/wsbinoz",
+        "instagram": "https://www.instagram.com/wsbinoz.edu.pl/"
       },
       {
         "type": "Verejný úrad",
         "name": "Consellería de Educación, Ciencia, Universidades e Formación Profesional",
         "country": "Špan.",
-        "website": "",
+        "website": "https://edu.xunta.gal/",
         "linkedin": "",
-        "facebook": "",
-        "instagram": ""
+        "facebook": "https://www.facebook.com/profile.php?id=100069381392220",
+        "instagram": "https://www.instagram.com/edu.xunta/"
       },
       {
         "type": "Univerzita",
@@ -283,6 +299,8 @@
       "why": "Prečo",
       "how": "Ako",
       "partners": "Partneri",
+      "news": "Novinky",
+      "downloads": "Na stiahnutie",
       "cookieSettings": "Voľby cookies"
     },
     "euFlagAlt": "Spolufinancované EÚ",

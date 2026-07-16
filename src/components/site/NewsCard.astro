@@ -1,0 +1,51 @@
+---
+import type { ImageMetadata } from "astro";
+import { Image } from "astro:assets";
+
+interface Props {
+  href: string;
+  title: string;
+  excerpt: string;
+  dateLabel: string;
+  dateISO: string;
+  readMore: string;
+  cover?: ImageMetadata;
+  coverAlt?: string;
+}
+
+const { href, title, excerpt, dateLabel, dateISO, readMore, cover, coverAlt } = Astro.props;
+---
+
+<a
+  href={href}
+  class="group flex flex-col bg-white rounded-2xl border-t-4 border-brand shadow-md transition-all hover:-translate-y-1 hover:shadow-xl overflow-hidden no-underline"
+>
+  {cover ? (
+    <Image
+      src={cover}
+      alt={coverAlt ?? title}
+      class="w-full aspect-video object-cover"
+      loading="lazy"
+      decoding="async"
+    />
+  ) : (
+    <div class="w-full aspect-video bg-brand/10 bg-pattern-light opacity-60" aria-hidden="true"></div>
+  )}
+  <div class="flex flex-col flex-1 p-5">
+    <time datetime={dateISO} class="text-xs font-bold uppercase tracking-wider text-slate-600/80">
+      {dateLabel}
+    </time>
+    <p class="text-xl md:text-2xl font-black text-brand leading-snug tracking-tight mt-2">
+      {title}
+    </p>
+    <p class="text-sm text-slate-600 leading-relaxed mt-2 line-clamp-3">
+      {excerpt}
+    </p>
+    <div class="flex items-center justify-between gap-4 mt-auto pt-4">
+      <div class="w-10 h-1 rounded-full bg-accent"></div>
+      <span class="text-sm font-black uppercase tracking-wide text-brand group-hover:text-accent-text transition-colors">
+        {readMore} →
+      </span>
+    </div>
+  </div>
+</a>

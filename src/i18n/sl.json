@@ -39,18 +39,38 @@
     "title": "Stopite v stik z nami.",
     "lead": "Za vprašanja, sodelovanje ali dodatne informacije nam pošljite sporočilo prek spodnjega obrazca."
   },
+  "downloadsSection": {
+    "label": "Gradiva",
+    "title": "Gradiva za prenos.",
+    "lead": "Diseminacijska gradiva za medije in partnerje.",
+    "emptyState": "V tej kategoriji trenutno ni datotek."
+  },
+  "subscribe": {
+    "title": "Ostanite obveščeni.",
+    "lead": "Naročite se na naše e-novice za novosti o projektu, nove vire in vpoglede o umetni inteligenci v izobraževanju."
+  },
   "nav": {
     "what": "Kaj",
     "why": "Zakaj",
     "how": "Kako",
     "partners": "Partnerji",
+    "news": "Novice",
     "contact": "Kontakt"
+  },
+  "newsSection": {
+    "label": "Novice",
+    "title": "Novice in obvestila o projektu.",
+    "lead": "Spremljajte najnovejše mejnike, dogodke in rezultate projekta DUAL.AI.TEACHer.",
+    "readMore": "Preberi več",
+    "backToNews": "Nazaj na novice",
+    "followUs": "Deli in spremljaj",
+    "empty": "Novic še ni — preverite kmalu."
   },
   "hero": {
     "titleAccent": "Poučevanje z umetno Inteligenco",
     "titleRest": "in o umetni Inteligenci",
     "subtitle": "za izobraževanje, pripravljeno na prihodnost",
-    "primaryCta": "Več informacij",
+    "primaryCta": "Novičnik",
     "secondaryCta": "Partnerji"
   },
   "about": {
@@ -163,17 +183,17 @@
         "country": "Poljska",
         "website": "https://www.wsbinoz.edu.pl",
         "linkedin": "https://www.linkedin.com/school/wy%C5%BCsza-szko%C5%82a-biznesu-i-nauk-o-zdrowiu-w-%C5%82odzi/",
-        "facebook": "",
-        "instagram": ""
+        "facebook": "https://www.facebook.com/wsbinoz",
+        "instagram": "https://www.instagram.com/wsbinoz.edu.pl/"
       },
       {
         "type": "Javni organ",
         "name": "Consellería de Educación, Ciencia, Universidades e Formación Profesional",
         "country": "Španija",
-        "website": "",
+        "website": "https://edu.xunta.gal/",
         "linkedin": "",
-        "facebook": "",
-        "instagram": ""
+        "facebook": "https://www.facebook.com/profile.php?id=100069381392220",
+        "instagram": "https://www.instagram.com/edu.xunta/"
       },
       {
         "type": "Univerza",
@@ -283,6 +303,9 @@
       "why": "Zakaj",
       "how": "Kako",
       "partners": "Partnerji",
+      "news": "Novice",
+      "downloads": "Prenosi",
+      "privacy": "Politika zasebnosti",
       "cookieSettings": "Nastavitve piškotkov"
     },
     "euFlagAlt": "Sofinancira Evropska unija",

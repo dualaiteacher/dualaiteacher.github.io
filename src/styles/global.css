@@ -35,6 +35,79 @@
   background-size: 40px 40px;
 }
 
+.news-prose {
+  max-width: 72ch;
+  color: var(--color-text-2);
+  font-size: 1.125rem;
+  line-height: 1.75;
+}
+
+.news-prose h2,
+.news-prose h3 {
+  color: var(--color-brand);
+  font-weight: 900;
+  letter-spacing: -0.01em;
+  margin: 2rem 0 0.75rem;
+}
+
+.news-prose h2 {
+  font-size: 1.75rem;
+}
+
+.news-prose h3 {
+  font-size: 1.35rem;
+}
+
+.news-prose p {
+  margin: 0 0 1.25rem;
+}
+
+.news-prose ul,
+.news-prose ol {
+  margin: 0 0 1.25rem;
+  padding-left: 1.5rem;
+}
+
+.news-prose ul {
+  list-style: disc;
+}
+
+.news-prose ol {
+  list-style: decimal;
+}
+
+.news-prose li {
+  margin-bottom: 0.5rem;
+}
+
+.news-prose strong {
+  color: var(--color-text-1);
+}
+
+.news-prose a {
+  color: var(--color-brand);
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.news-prose a:hover {
+  color: var(--color-accent-text);
+}
+
+.news-prose blockquote {
+  border-left: 4px solid var(--color-accent);
+  padding-left: 1rem;
+  font-weight: 600;
+  color: var(--color-text-1);
+  margin: 0 0 1.25rem;
+}
+
+.news-prose img {
+  border-radius: 1rem;
+  margin: 1.5rem 0;
+  max-width: 100%;
+}
+
 .consent-banner {
   position: fixed;
   inset-inline: 0;

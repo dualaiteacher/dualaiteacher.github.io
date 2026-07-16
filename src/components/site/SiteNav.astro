@@ -2,7 +2,16 @@
 import { Image } from "astro:assets";
 import LanguagePicker from "./LanguagePicker.astro";
 import dualAiNavbar from "../../assets/branding/dual-ai-navbar.png";
+import FacebookIcon from "../../assets/icons/facebook.svg";
+import InstagramIcon from "../../assets/icons/instagram.svg";
+import LinkedInIcon from "../../assets/icons/linkedin.svg";
 import { type Lang } from "../../i18n";
+
+const socialLinks = [
+  { href: "https://www.linkedin.com/company/dualaiteacher/", label: "LinkedIn", Icon: LinkedInIcon },
+  { href: "https://www.instagram.com/dualaiteacher/", label: "Instagram", Icon: InstagramIcon },
+  { href: "https://www.facebook.com/dualaiteacher/", label: "Facebook", Icon: FacebookIcon },
+];
 
 interface Props {
   lang: Lang;
@@ -11,6 +20,7 @@ interface Props {
     why: string;
     how: string;
     partners: string;
+    news: string;
     contact: string;
   };
 }
@@ -18,6 +28,7 @@ interface Props {
 const { lang, t } = Astro.props;
 const homeHref = `/${lang}/`;
 const partnersHref = `/${lang}/partners/`;
+const newsHref = `/${lang}/news/`;
 const contactHref = `/${lang}/contact/`;
 ---
 
@@ -35,7 +46,7 @@ const contactHref = `/${lang}/contact/`;
         class="h-10 sm:h-12 ml-6 w-auto"
       />
     </a>
-    <ul class="hidden md:flex gap-8 list-none m-0 p-0 ml-16 flex-wrap">
+    <ul class="hidden lg:flex gap-8 list-none m-0 p-0 ml-16 flex-wrap">
       <li>
         <a
           href={`${homeHref}#about`}
@@ -62,14 +73,31 @@ const contactHref = `/${lang}/contact/`;
       </li>
       <li>
         <a
+          href={newsHref}
+          class="text-base font-bold text-slate-600 hover:text-brand no-underline transition-colors uppercase tracking-wide"
+         >{t.news}</a>
+      </li>
+      <li>
+        <a
           href={contactHref}
           class="text-base font-bold text-slate-600 hover:text-brand no-underline transition-colors uppercase tracking-wide"
          >{t.contact}</a>
       </li>
     </ul>
+    <div class="hidden lg:flex items-center gap-2 ml-auto">
+      {socialLinks.map(({ href, label, Icon }) => (
+        <a
+          href={href}
+          aria-label={label}
+          class="inline-flex h-10 w-10 items-center justify-center rounded-full border border-slate-200 text-brand transition-colors hover:border-brand hover:bg-accent/30"
+        >
+          <Icon class="block h-5 w-5" aria-hidden="true" focusable="false" />
+        </a>
+      ))}
+    </div>
     <button
       id="mobileMenuBtn"
-      class="md:hidden ml-auto p-2 rounded-lg hover:bg-surface-2 transition-colors cursor-pointer border-0 bg-transparent text-brand"
+      class="lg:hidden ml-auto p-2 rounded-lg hover:bg-surface-2 transition-colors cursor-pointer border-0 bg-transparent text-brand"
     >
       <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"
         ><path
@@ -83,7 +111,7 @@ const contactHref = `/${lang}/contact/`;
 
   <div
     id="mobileMenu"
-    class="hidden md:hidden border-t border-surface-3 bg-white px-6 pb-6 shadow-xl"
+    class="hidden lg:hidden border-t border-surface-3 bg-white px-6 pb-6 shadow-xl"
   >
     <div class="pt-4">
       <LanguagePicker lang={lang} mobile={true} />
@@ -115,10 +143,27 @@ const contactHref = `/${lang}/contact/`;
       </li>
       <li>
         <a
+          href={newsHref}
+          class="block py-3 text-lg font-black text-brand uppercase border-b border-slate-100"
+         >{t.news}</a>
+      </li>
+      <li>
+        <a
           href={contactHref}
           class="block py-3 text-lg font-black text-brand uppercase border-b border-slate-100"
          >{t.contact}</a>
       </li>
     </ul>
+    <div class="flex items-center gap-2 pt-4">
+      {socialLinks.map(({ href, label, Icon }) => (
+        <a
+          href={href}
+          aria-label={label}
+          class="inline-flex h-10 w-10 items-center justify-center rounded-full border border-slate-200 text-brand transition-colors hover:border-brand hover:bg-accent/30"
+        >
+          <Icon class="block h-5 w-5" aria-hidden="true" focusable="false" />
+        </a>
+      ))}
+    </div>
   </div>
 </nav>

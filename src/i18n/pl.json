@@ -39,12 +39,28 @@
     "title": "Skontaktuj się z nami.",
     "lead": "Jeśli masz pytania, chcesz nawiązać współpracę lub uzyskać więcej informacji, wyślij nam wiadomość, korzystając z poniższego formularza."
   },
+  "downloadsSection": {
+    "label": "Materiały dla mediów",
+    "title": "Materiały do pobrania.",
+    "lead": "Materiały informacyjne dla prasy i partnerów.",
+    "emptyState": "Brak plików w tej kategorii."
+  },
   "nav": {
     "what": "O czym",
     "why": "Dlaczego",
     "how": "Co robimy",
     "partners": "Partnerzy",
+    "news": "Aktualności",
     "contact": "Kontakt"
+  },
+  "newsSection": {
+    "label": "Aktualności",
+    "title": "Aktualności i nowości projektu.",
+    "lead": "Śledź najnowsze kamienie milowe, wydarzenia i wyniki projektu DUAL.AI.TEACHer.",
+    "readMore": "Czytaj więcej",
+    "backToNews": "Powrót do aktualności",
+    "followUs": "Udostępnij i obserwuj",
+    "empty": "Brak aktualności — zajrzyj wkrótce."
   },
   "hero": {
     "titleAccent": "Nauczanie oparte na AI",
@@ -163,17 +179,17 @@
         "country": "Polska",
         "website": "https://www.wsbinoz.edu.pl",
         "linkedin": "https://www.linkedin.com/school/wy%C5%BCsza-szko%C5%82a-biznesu-i-nauk-o-zdrowiu-w-%C5%82odzi/",
-        "facebook": "",
-        "instagram": ""
+        "facebook": "https://www.facebook.com/wsbinoz",
+        "instagram": "https://www.instagram.com/wsbinoz.edu.pl/"
       },
       {
         "type": "Podmiot publiczny",
         "name": "Consellería de Educación, Ciencia, Universidades e Formación Profesional",
         "country": "Hiszpania",
-        "website": "",
+        "website": "https://edu.xunta.gal/",
         "linkedin": "",
-        "facebook": "",
-        "instagram": ""
+        "facebook": "https://www.facebook.com/profile.php?id=100069381392220",
+        "instagram": "https://www.instagram.com/edu.xunta/"
       },
       {
         "type": "Uniwersytet",
@@ -282,7 +298,9 @@
       "what": "O czym",
       "why": "Dlaczego",
       "how": "Co robimy",
-      "partners": "Partners",
+      "partners": "Partnerzy",
+      "news": "Aktualności",
+      "downloads": "Do pobrania",
       "cookieSettings": "Ustawienia plików cookie"
     },
     "euFlagAlt": "Współfinansowane przez Unię Europejską",
